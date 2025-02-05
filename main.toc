@@ -1,0 +1,9 @@
+\babel@toc {russian}{}\relax 
+\contentsline {chapter}{\numberline {1}Интегралы}{3}{}%
+\contentsline {section}{\numberline {1.1}Первообразная и неопределенный интеграл}{3}{}%
+\contentsline {subsection}{\numberline {1.1.1}Таблица интегралов.}{4}{}%
+\contentsline {section}{\numberline {1.2}Способы вычисления неопределенных интегралов}{5}{}%
+\contentsline {subsection}{\numberline {1.2.1}Метод подстановки}{5}{}%
+\contentsline {subsubsection}{Примеры.}{5}{}%
+\contentsline {subsection}{\numberline {1.2.2}Интегрирование по частям}{5}{}%
+\contentsline {subsubsection}{Примеры}{6}{}%

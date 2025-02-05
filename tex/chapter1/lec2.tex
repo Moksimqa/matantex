@@ -1,0 +1,63 @@
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+
+\lecture{2}{}{}
+\subsection{Действительные (вещественные) числа $\mathbb{R}$}
+$0\Leftrightarrow 0,00...0...=+0,00...0...\\$
+M - справа от 0, отложим OF $a_0$ раз $\implies 0<NM\leqslant 1  0<PM\leqslant \frac{1}{10}\\
+a_0,a_0a_1=a_0+\frac{a_1}{10};\\
+a_0,a_1,a_2=a_0+\frac{a_1}{10^1}+\frac{a_2}{10^2};\\
+a_0,a_1,...,a_n=a_0+\frac{a_1}{10^1}+\frac{a_2}{10^2}+...+\frac{a_n}{10^n}; ... ; a_0a_1...a_n =+a_0a_1...$\\
+
+Если M - слева от 0 $\implies $ раскладываем 1-ый отрезок $a_0$ раз, затем
+$\frac{1}{10}$ отрезок и т.д $\implies -a_0,a_1,a_2,...,a_n...$\\
+Если M=E$\implies a_0=0;a_1=9=a_2=...=a_n=...\implies E=0,99...9...\\$
+Каждой точке оси поставили в соответствие десятичную дробь; $x=0,99...; 10x=9,99...=9+x x=1$\\
+\textbf{Определение.} Действительным(вещественным) числом называется бесконечная десятичная дробь, поставленная в соответствие точке вещественной оси.\\
+\textbf{Определение.} Вещественные числа $a=\pm a_0,a_1,...a_n...,$ называется неотрицательным, если оно со знаком +
+(который может быть опущен) и отрицательным, если оно со знаком -\\
+%\textbf{Определение.} Абсолютной величиной от $a=\pm a_0,a_1,...,a_n,...$ называется число $|a|=a_0,a_1,...,a_n,...$\\
+%\textbf{Определение.} Два вщеественных числа $a=a_0,a_1,...,a_n,...$ и $b=b_0,b_1,...,b_n,...$ называются равными(a=b), если у них одинаковые
+%знаки и $a_k=b_k(k=0,1,2,...)$\\
+$a=b;b=c$(у них одинаковые знаки)$\implies a_k=b_k; b_k=c_k \implies a_k=c_k \forall k\implies a=c$\\
+\textbf{Определение.} Неотрицательно вещественное a называется положительным, если $a\neq 0(0=0,000,...,0,...)$\\
+\textbf{Определение.} $a=\pm a_0,a_1,...,a_n,..., b=\pm b_0,b_1,...b_n,... a\neq b$\\
+$a,b$ - неотрицательные $\exists m\geqslant:a_0=b_0;a_1=b_1,...a_{m-1}=b_{m-1}; a_m\neq b_m\\
+a_n>b_n$ тогда $a>b$\\
+$a_n<b_n$ тогда $a<b$\\
+a - неотрциательное, b - отрицательное, тогда $a>b$\\
+a,b - отрицательные, тогда, если $|a|>|b>\implies b>a\\
+|a|<|b|\implies a>b$\\
+a - неотрицальное $\implies a\geqslant 0$\\
+b - положительное $\implies b>0$\\
+c - отрицательное $\implies c<0$\newpage
+$a>b,b>c \implies a>c(?)$\\
+Пусть a,b,c - неотрицальные \\$a=a_0,a_1,...,a_n,...;\;
+b=b_0,b_1,...,b_n,...;\;
+c=c_0,c_1,...,c_n,...;\;\\
+\exists p,q:a_0=b_0...a_{p-1} = b_{p-1}; a_p >b_p \\p,q\geqslant 0 b_0=c_0...b_{q-1}=c_{q-1};
+b_q>c_q \\\exists r=min(p,q):a_0=b_0=c_0... a_{r-1}=b_{r-1}=c_{r-1} a_r\geqslant b_r\geqslant c_r\implies a_r>c_r\implies a>c$\\
+
+\section{Ограниченные и неограниченные множества}
+\textbf{Определение.} $X \subset \mathbb{R}$ называется ограниченным сверху, если $\exists M \in \mathbb{R}:\forall x\in X \implies x\leqslant M.$ M - верхняя грань.\\
+\textbf{Определение.} $X \subset \mathbb{R}$ называется ограниченным снизу, если $\exists m \in \mathbb{R}:\forall x\in X \implies x\geqslant m.$ m - нижняя грань.\\
+\textbf{Определение.} Множество называется ограниченным, если оно ограничено и сверху, и снизу.\\\\
+
+$X$ не ограничено сверху, если $\forall M \in \mathbb{R}\implies \exists x\in X: x > M$ $M=supX$\\
+\textbf{Определение.} $M\in\mathbb{R}$ называется точной верхней гранью $X\subset \mathbb{R}$, если \\
+$1) \forall x \in X\implies x\leqslant M\\
+2) \forall M_1 < M \exists x \in X : x> M_1$\\\\
+
+$M\neq supX,$ если\\ 
+или $\exists x\in X: x> M$\\
+или $\exists M_1 <M:\forall x \in X\implies x\leqslant M_1$\\
+\textbf{\textbf{Определение.}} Пусть $m\in \mathbb{R}$ m - точная нижняя грань $X \subset \mathbb{R}$($m=infX$),если\\
+$1)\forall x\in X \implies x\geqslant m\\
+2)\forall m_1 > M\exists x \in X: x< m_1$\\
+$X$ - неограниченное сверху: $supX = +\inf$\\
+$X$ - неограниченное снизу: $infX =-\inf$\\ 
+\textbf{Теорема 1.} $\forall X \subset \mathbb{R} : X \neq \varnothing, X$ - ограниченно сверху
+$\implies \exists M = supX(M\in\mathbb{R})$\\
+\textbf{Теорема 2.}$\forall X \subset \mathbb{R}: X\neq \varnothing, X$ - ограничено снизу
+$\implies \exists m = infX(m\in\mathbb{R})$\newpage
+\end{document}
