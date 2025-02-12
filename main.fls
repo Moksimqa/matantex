@@ -447,7 +447,19 @@ INPUT .\tex\chapter3\lec2.tex
 INPUT tex\chapter3\lec2.tex
 INPUT C:\Users\moksimqa\AppData\Local\MiKTeX\fonts\tfm\lh\lh-t2a\larm0700.tfm
 INPUT C:\Users\moksimqa\AppData\Local\MiKTeX\fonts\tfm\lh\lh-t2a\larm0500.tfm
+INPUT .\tex\chapter3\lec3.tex
+INPUT tex\chapter3\lec3.tex
+INPUT .\tex\chapter3\lec3.tex
+INPUT tex\chapter3\lec3.tex
+INPUT .\tex\chapter3\lec4.tex
+INPUT tex\chapter3\lec4.tex
+INPUT .\tex\chapter3\lec4.tex
+INPUT tex\chapter3\lec4.tex
+INPUT C:\Users\moksimqa\AppData\Local\MiKTeX\fonts\tfm\lh\lh-t2a\lati0700.tfm
+INPUT C:\Users\moksimqa\AppData\Local\MiKTeX\fonts\tfm\lh\lh-t2a\lati0500.tfm
 INPUT main.aux
+INPUT C:\Users\moksimqa\AppData\Local\MiKTeX\fonts\pk\ljfour\lh\lh-t2a\dpi600\larm0700.pk
+INPUT C:\Users\moksimqa\AppData\Local\MiKTeX\fonts\pk\ljfour\lh\lh-t2a\dpi600\larm0700.pk
 INPUT C:\Users\moksimqa\AppData\Local\MiKTeX\fonts\pk\ljfour\lh\lh-t2a\dpi600\lati1000.pk
 INPUT C:\Users\moksimqa\AppData\Local\MiKTeX\fonts\pk\ljfour\lh\lh-t2a\dpi600\lati1000.pk
 INPUT C:\Users\moksimqa\AppData\Local\MiKTeX\fonts\pk\ljfour\lh\lh-t2a\dpi600\labx1440.pk
@@ -486,5 +498,9 @@ INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy5.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy5.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy7.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy7.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\symbols\msam10.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\symbols\msam10.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\symbols\msam7.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\symbols\msam7.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\symbols\msbm10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\symbols\msbm10.pfb

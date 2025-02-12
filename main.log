@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.9.8)  6 FEB 2025 02:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.9.8)  11 FEB 2025 10:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1003,19 +1003,19 @@ Package: fancyhdr 2024/07/23 v4.3.1 Extensive control of page headers and footer
 )
 
 Package fancyhdr Warning: \fancyhead's `E' option without twoside option is useless.
-(fancyhdr)                Please consider using the `twoside' option on input line 231.
+(fancyhdr)                Please consider using the `twoside' option on input line 235.
 
 
 Package fancyhdr Warning: \fancyhead's `E' option without twoside option is useless.
-(fancyhdr)                Please consider using the `twoside' option on input line 232.
+(fancyhdr)                Please consider using the `twoside' option on input line 236.
 
 
 Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless.
-(fancyhdr)                Please consider using the `twoside' option on input line 234.
+(fancyhdr)                Please consider using the `twoside' option on input line 238.
 
 
 Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless.
-(fancyhdr)                Please consider using the `twoside' option on input line 235.
+(fancyhdr)                Please consider using the `twoside' option on input line 239.
 
 (C:\Program Files\MiKTeX\tex/latex/todonotes\todonotes.sty
 Package: todonotes 2024/01/05 v1.1.7 Todonotes source and documentation.
@@ -1197,7 +1197,12 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 LaTeX Font Info:    Trying to load font information for U+stmry on input line 16.
  (C:\Program Files\MiKTeX\tex/latex/stmaryrd\ustmry.fd) [1
 
-{C:/Users/moksimqa/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]) (main.toc)
+{C:/Users/moksimqa/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]) (main.toc
+Overfull \hbox (4.28061pt too wide) in paragraph at lines 10--10
+ [][] []\T2A/cmr/m/n/10 Определение ин-те-гра-ла Ри-ма-на. Су-ще-ство-ва-ние ин-те-гри-ру-е-мых функ-ций. Необ-ра-ти-мое усло- 
+ []
+
+)
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
@@ -1241,34 +1246,74 @@ Overfull \hbox (18.25357pt too wide) detected at line 72
 \OML/cmm/m/it/10 I \OT1/cmr/m/n/10 = [] \OML/cmm/m/it/10 e[] [] \OT1/cmr/m/n/10 = [] \OML/cmm/m/it/10 e[]d\OT1/cmr/m/n/10 ([] \OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) = \OML/cmm/m/it/10 e[] [] x \OMS/cmsy/m/n/10 ^^@ [] [] \OML/cmm/m/it/10 xe[] dx \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 e[] [] x \OT1/cmr/m/n/10 + [] \OML/cmm/m/it/10 e[]d\OT1/cmr/m/n/10 ([] \OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) = \OML/cmm/m/it/10 e[] [] x \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 e[] [] x \OMS/cmsy/m/n/10 ^^@ []
  []
 
-[5]
-Overfull \hbox (63.87321pt too wide) detected at line 80
-\OML/cmm/m/it/10 I \OT1/cmr/m/n/10 = [] [] [] = \OML/cmm/m/it/10 x[] \OMS/cmsy/m/n/10 ^^@ [] \OML/cmm/m/it/10 x[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 x[] \OMS/cmsy/m/n/10 ^^@ [] [] \OML/cmm/m/it/10 dx \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 x[] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 I \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 a[] [] []
+[5]) (tex/chapter3/lec3.tex [6] [7]
+Overfull \hbox (22.39215pt too wide) in paragraph at lines 53--57
+[]\T2A/cmr/m/n/10 Пусть $\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )$ \T2A/cmr/m/n/10 огра-ни-че-на на $\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 a; b\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 : T \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 a \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 x[] < [] < x[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 b\OMS/cmsy/m/n/10 g\OML/cmm/m/it/10 :M[] [] sup\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ));  \OML/cmm/m/it/10 m[] []
  []
 
 
-Overfull \hbox (81.39978pt too wide) detected at line 91
-\OML/cmm/m/it/10 J[] \OT1/cmr/m/n/10 = [] [] \OML/cmm/m/it/10 dx \OT1/cmr/m/n/10 = [] \OMS/cmsy/m/n/10 ^^@ [] \OML/cmm/m/it/10 x[]\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 x dx \OT1/cmr/m/n/10 = [] + 2\OML/cmm/m/it/10 n [] [] dx \OT1/cmr/m/n/10 = [] + 2\OML/cmm/m/it/10 n\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 J[] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 a[]J[]\OT1/cmr/m/n/10 )
+Overfull \hbox (51.57362pt too wide) in paragraph at lines 72--76
+[]\T2A/cmr/m/n/10 1) Пусть у $\OML/cmm/m/it/10 T[]$ \T2A/cmr/m/n/10 ров-но на 1 точ-ку боль-ше, т.е $[][]$ 
  []
 
-)) [6] (main.aux)
+
+Overfull \hbox (15.5079pt too wide) in paragraph at lines 94--101
+[]\T2A/cmr/m/n/10 Берем $\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 T \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 a \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 x[] < x[] < [] < x[] < x[] < [] < x[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 b\OMS/cmsy/m/n/10 g\OML/cmm/m/it/10 : [][] \OMS/cmsy/m/n/10 )
+ []
+
+[8]
+Overfull \hbox (59.6233pt too wide) in paragraph at lines 111--121
+[]\OML/cmm/m/it/10 s[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 ) \U/msa/m/n/10 6 [] 6 [] 6 \OML/cmm/m/it/10 S[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ) \OT1/cmr/m/n/10 0 \U/msa/m/n/10 6 [] \OMS/cmsy/m/n/10 ^^@ [] \OML/cmm/m/it/10 < " \OMS/cmsy/m/n/10 ) [] ^^@ [] \OT1/cmr/m/n/10 = 0 \OMS/cmsy/m/n/10 ) [] \OT1/cmr/m/n/10 = []\OML/cmm/m/it/10 :[][] \OT1/cmr/m/n/10 = [] = \OML/cmm/m/it/10 I[][] \OMS/cmsy/m/n/10 )
+ []
+
+) (tex/chapter3/lec4.tex [9]
+Overfull \hbox (4.03871pt too wide) in paragraph at lines 5--5
+[]\T2A/cmr/bx/n/14.4 Интегрируемость непре-рыв-ной функ-ции. Ин-те-гри-ру-е-мость мо-
+ []
+
+
+Overfull \hbox (61.57704pt too wide) in paragraph at lines 20--21
+[]\T2A/cmr/bx/n/10 Теорема 1.9. []$\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )$ \T2A/cmr/m/it/10 мо-но-тон-на на $\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 a; b\OT1/cmr/m/n/10 ]([]) \OMS/cmsy/m/n/10 )
+ []
+
+
+Overfull \hbox (57.73007pt too wide) in paragraph at lines 25--29
+[]\T2A/cmr/m/n/10 Пусть $\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )$ \T2A/cmr/m/n/10 мо-но-тон-но воз-рас-та-ет на $\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 a; b\OT1/cmr/m/n/10 ] \OMS/cmsy/m/n/10 ) \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a\OT1/cmr/m/n/10 ) \U/msa/m/n/10 6 \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) \U/msa/m/n/10 6 \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 b\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 x \OMS/cmsy/m/n/10 2 \OT1/cmr/m/n/10 [\OML/cmm/m/it/10 a; b\OT1/cmr/m/n/10 ] \OMS/cmsy/m/n/10 ) \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )[][\OML/cmm/m/it/10 a; b\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 :$ 
+ []
+
+
+Overfull \hbox (53.7575pt too wide) in paragraph at lines 25--29
+\T2A/cmr/m/n/10 Берем $\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 T \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 a \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 x[] < x[] < [] < x[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 b\OMS/cmsy/m/n/10 g \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]\OT1/cmr/m/n/10 ) \U/msa/m/n/10 6 \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) \U/msa/m/n/10 6 \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 x \OMS/cmsy/m/n/10 2 \OT1/cmr/m/n/10 [\OML/cmm/m/it/10 x[]; x[]\OT1/cmr/m/n/10 ] \OMS/cmsy/m/n/10 ) [][][] 
+ []
+
+[10]
+Overfull \hbox (9.32185pt too wide) in paragraph at lines 89--90
+[]\T2A/cmr/bx/n/10 Теорема 1.13. []$\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )$ \T2A/cmr/m/it/10 ин-те-гри-ру-е-ма на $\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 a; b\OT1/cmr/m/n/10 ] \OMS/cmsy/m/n/10 ) 8\OML/cmm/m/it/10 c \OMS/cmsy/m/n/10 2 \U/msb/m/n/10 R \OML/cmm/m/it/10 c \OMS/cmsy/m/n/10 2 \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )[][\OML/cmm/m/it/10 a; b\OT1/cmr/m/n/10 ]$\T2A/cmr/m/it/10 ,причем $[][] \OML/cmm/m/it/10 cf\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 dx \OT1/cmr/m/n/10 =
+ []
+
+[11]
+Overfull \hbox (20.03828pt too wide) in paragraph at lines 94--94
+[]\T2A/cmr/bx/n/14.4 Интегрируемость про-из-ве-де-ния ин-те-гри-ру-е-мых по Ри-ма-ну функ-
+ []
+
+)) [12] (main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 29118 strings out of 474486
- 604806 string characters out of 5753562
- 1947542 words of memory out of 5000000
- 50811 multiletter control sequences out of 15000+600000
- 586760 words of font info for 110 fonts, out of 8000000 for 9000
+ 29141 strings out of 474486
+ 605399 string characters out of 5753562
+ 1951542 words of memory out of 5000000
+ 50826 multiletter control sequences out of 15000+600000
+ 588508 words of font info for 112 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 89i,12n,96p,566b,532s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\lati1000.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1440.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\lass0900.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx2074.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1000.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1000.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1200.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1200.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx2488.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (6 pages, 208976 bytes).
+ 89i,12n,96p,743b,541s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm0700.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\lati1000.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1440.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\lass0900.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx2074.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1000.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1000.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1200.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1200.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx2488.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msam7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (12 pages, 296556 bytes).
 PDF statistics:
- 325 PDF objects out of 1000 (max. 8388607)
+ 443 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

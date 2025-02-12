@@ -76,7 +76,7 @@ I = \int e^{x} \cos{x} \, dx = \frac{1}{2} e^{x} (\sin{x} + \cos{x}) + C
 
 \noindent 3. 
 \[
-I = \int \underbrace{\sqrt{x^{2} + a^{2}}}_{u} \underbrace{dx}_{dv} = x \sqrt{x^{2} + a^{2}} - \int x \frac{2x \, dx}{2 \sqrt{x^{2} + a^{2}}} = x \sqrt{x^{2} + a^{2}} - \int \frac{x^{2} + a^{2} - a^{2}}{\sqrt{x^{2} + a^{2}}} \, dx = x \sqrt{x^{2} + a^{2}} - I + a^{2} \ln{(x + \sqrt{x^{2} + a^{2}})}
+I = \int \underbrace{\sqrt{x^{2} + a^{2}}}_{u} \underbrace{dx}_{dv} = x \sqrt{x^{2} + a^{2}} - \int x \frac{2x \, dx}{2 \sqrt{x^{2} + a^{2}}} = x \sqrt{x^{2} + a^{2}} - \int \frac{x^{2} + a^{2} - a^{2}}{\sqrt{x^{2} + a^{2}}} \, dx\] \[ = x \sqrt{x^{2} + a^{2}} - I + a^{2} \ln{(x + \sqrt{x^{2} + a^{2}})}
 \]
 \[
 I = \frac{x}{2} \sqrt{x^{2} + a^{2}} + \frac{a^{2}}{2} \ln{(x + \sqrt{x^{2} + a^{2}})} + C
@@ -87,7 +87,8 @@ I = \frac{x}{2} \sqrt{x^{2} + a^{2}} + \frac{a^{2}}{2} \ln{(x + \sqrt{x^{2} + a^
 J_{n} = \int \frac{dx}{(x^{2} + a^{2})^{n}} \qquad a > 0, \quad n \in \mathbb{N}
 \]
 \[
-J_{n} = \int \frac{1}{(x^{2} + a^{2})^{n}} \, dx = \frac{x}{(x^{2} + a^{2})^{n}} - \int x \frac{(-n)}{(x^{2} + a^{2})^{n+1}} 2x \, dx = \frac{x}{(x^{2} + a^{2})^{n}} + 2n \int \frac{x^{2} + a^{2} - a^{2}}{(x^{2} + a^{2})^{n+1}} \, dx = \frac{x}{(x^{2} + a^{2})^{n}} + 2n (J_{n} - a^{2} J_{n+1})
+J_{n} = \int \frac{1}{(x^{2} + a^{2})^{n}} \, dx = \frac{x}{(x^{2} + a^{2})^{n}} - \int x \frac{(-n)}{(x^{2} + a^{2})^{n+1}} 2x \, dx = \]
+\[ \frac{x}{(x^{2} + a^{2})^{n}} + 2n \int \frac{x^{2} + a^{2} - a^{2}}{(x^{2} + a^{2})^{n+1}} \, dx = \frac{x}{(x^{2} + a^{2})^{n}} + 2n (J_{n} - a^{2} J_{n+1})
 \]
 \[
 J_{n+1} = \frac{1}{2n a^{2}} \left[ \frac{x}{(x^{2} + a^{2})^{n}} + (2n - 1) J_{n} \right] \qquad n = 1, 2, 3, \dots
