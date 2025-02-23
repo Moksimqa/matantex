@@ -1,0 +1,66 @@
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+
+\lecture{6}{21.02}{}
+\section{Интеграл с переменным верхним (нижним) пределом, его непрерывность и дифференцируемость. Существование первообразной у непрерывной функции. Формула Ньютона-Лейбница.}
+\begin{definition}
+    Пусть $f(x)-\text{ интегрируема на } [a,b].$ Рассмотрим функции $F(x)$ и $G(x)$, определенные на отрезке $[a,b]: \begin{aligned} &F(x) = \int\limits_{a }^{x}   f(t)dt - \text{ интеграл с переменный верхним пределом} \\ &G(x)=\int\limits_{x}^{b}f(t)dt - \text{ интеграл с переменным нижним пределом}\end{aligned}$
+  \\  $F(x)+G(x)=\int\limits_{a}^{b}f(t)dt\equiv const \text{ на } [a,b] $
+\end{definition}
+\begin{theorem}
+    $f(x)$ интегрируема на $[a,b]\implies F(x) \in C[a,b]$
+\end{theorem}
+\begin{proof}
+    По Т1 $\exists M>0: |f(x)|\leqslant M \; \forall x\in[a,b].$ Берем $\forall x_{0} \in [a,b]$ и $\Delta x : x_{0}+\Delta x \in[a,b].$ Тогда рассмотрим $|F(x_{0}+\Delta x)-F(x_{0})|=\left| \int\limits_{a}^{x_{0}+\Delta x}f(t)dt - \int\limits_{a}^{x_{0}}f(t)dt  \right| = \left| \int\limits_{x_{0}           }^{x_{0}+\Delta x} f(t)dt\right| \leqslant \left| \int\limits_{ x_{0}}^{x_{0}+\Delta x} |f(t)|dt \right| \leqslant M|\Delta x| \underset{\Delta x\to 0}{\to} 0 \implies \lim\limits_{\Delta x\to 0} (F(x_{0}+\Delta x)-F(x_{0}))=0,\text{ т.е } \lim\limits_{\Delta x\to 0} F(x_{0}+\Delta x)=F(x_{0})\implies F(x) \text{ непрерывна при $x=x_{0}$.}\\\text{ Но $x_{0} $ - любое из $[a,b]$}\implies F(x)\in C[a,b]   $
+\end{proof}
+
+\begin{theorem}
+    $f(x)$ интегрируема на $[a,b]$, а также $f(x)$ непрерывна при $x=x_{0}\implies \exists F'(x_{0})=f(x_{0})$ (на концах односторонние производные)
+\end{theorem}
+\begin{proof}
+    $f(t) $ непрерывна при $t=x_{0}\implies \forall \varepsilon >0 \exists \delta > 0 : \forall t\in (x_{0}-\delta,x_{0}+\delta)\cap [a,b]\implies |f(t)-f(x_{0})|<\frac{\varepsilon}{2}$\\ 
+    Берем $\Delta x : \Delta x \in (-\delta,\delta) \textbackslash \{0\},x_{0}+\Delta x\in [a,b].$ Рассмотрим $\left| \frac{F(x_{0}+\Delta x)-F(x_{0})}{\Delta x}-f(x_{0}) \right|=$\\ \vspace{0.5cm}$ = \left| \frac{1}{\Delta x} \int\limits_{ x_{0}    }^{x_{0}+\Delta x} f(t)dt- \frac{1}{\Delta x}\int\limits_{x_{0}}^{x_{0}+\Delta x}f(x_{0})dt\right| =\left| \int\limits_{x_{0}}^{x_{0}+\Delta x} \frac{f(t)-f(x_{0})}{\Delta x} dt\right| \leqslant \left| \int\limits_{x_{0}}^{x_{0}+\Delta x} \frac{|f(t)|-|f(x_{0})|}{|\Delta x|}dt\right|    \leqslant \frac{\epsilon}{2} \frac{1}{|\Delta x|} |\Delta x| =\frac{\varepsilon}{2 } <\varepsilon$, т.е
+    $\lim\limits_{\Delta x\to 0}\frac{F(x_{0}+\Delta x)-F(x_{0})}{\Delta x}=F(x_{0})$, т.е $ \exists F'(x_{0})=f(x_{0})$
+\end{proof}
+\begin{theorem}
+    $f(x)\in C[a,b]\implies \exists \text{ первообразная к }f(x) \text{ на } [a,b]$
+\end{theorem}
+\begin{proof}
+    $F(x)=\int\limits_{a   }^{x    } f(t)dt\implies \forall x\in[a,b] \exists F'(x)=f(x)$, т.е $F(x) - \text{ первообразная к } f(x) \text{ на } [a,b]$
+\end{proof}
+\begin{theorem}[Основная теорема интегрального исчисления]
+    $f(x)\in C[a,b], \varPhi(x)-\text{ первообразная к } f(x) \text{ на }[a,b]\implies \int\limits_{a  }^{b    } f(x)dx=\varPhi(x)\bigg|_{a}^{b}=\varPhi(b)-\varPhi(a)$ (Формула Ньютона-Лейбница)
+\end{theorem}
+\begin{proof}
+    
+    $\left. \begin{aligned}&\varPhi (x) - \text{ первообразная к } f(x) \text{ на }[a,b].\\ &F(x)=\int\limits_{a}^{x}f(t)dt-\text{ тоже первообразная на }[a,b]\end{aligned}\right\} \implies \left. \begin{aligned}\varPhi'(x)=f(x)\;  \forall x\in[a,b] \\ F'(x)=f(x) \; \forall x\in[a,b]\end{aligned} \right\} \implies F(x)=\varPhi (x) +C,$ т.е $\int\limits_{a   }^{x    } f(t)dt= \varPhi(x)+C$\\ 
+    при $x=a\implies C=-\varPhi(a)\implies \int\limits_{a}^{x} f(t)dt=\varPhi(x)-\varPhi(a). \text{ При } x=b \implies \int\limits_{a}^{x} f(t)dt=\varPhi(b)-\varPhi(a)$
+\end{proof}
+Для $G(x)$ справедливы теоремы аналогичные Т4.1 Т4.2 Т4.3
+
+\section{Вычисление определенных интегралов способами замены переменных и интегрирования по частям.} 
+\begin{theorem}[Замена переменных]
+    $f(x)\in C[a,b]; \; \varphi(t): \varphi'(t)\in C[\alpha,\beta], \begin{aligned}&\varphi(\alpha)=a\\ &\varphi(b)=b\end{aligned}\; [a,b]-$ множество значений $\varphi(t)$ на $[a,b]\implies \int\limits_{a    }^{b    } f(x)dx=\int\limits_{\alpha}^{\beta} f(\varphi(t))\varphi'(t)dt  $
+\end{theorem}
+\begin{proof}
+    По Т3.16 $\implies \exists \varPhi (x)-\text{ первообразная к } f(x) \text{ на }[a,b], \text{ причем } \int\limits_{a    }^{b    } f(x)dx=\varPhi (b)-\varPhi(a).$ \\
+  Рассмотрим сложную функцию $\varPhi(\varphi(t)) - \text{ дифференцируема на }[a,b] \text{ (по т. о дифф сложной функции)}\\ \frac{d}{dt}(\varPhi(\varphi(t)))=\varPhi'_{x}(x)\bigg|_{x=\varphi(t)} * \varphi'_{t}(t)= f(\varphi(t))\varphi'(t) \; \forall t\in [a,b]\implies \varPhi (\varphi(t))- \text{ первообразная к } \underbrace{f(\varphi(t)) \varphi'(t)}_{\in C[a,b]} \text{ на }[a,b]\implies \int\limits_{a    }^{b    } f(\varphi(t))\varphi'(t)  dt=\varPhi(\varphi(t))\bigg|_{t=\alpha}^{t=\beta}= \varPhi(\varphi(\beta))-\varPhi(\varphi(\alpha))=\varPhi(b)-\varPhi(a)=\int\limits_{a    }^{b    } f(x)dx$
+\end{proof}
+
+\begin{theorem}
+    $u(x),v(x): u'(x), v'(x)\in C[a,b]\implies \int\limits_{ a }^{b    } u(x)v'(x)dx= (u(x)v(x))\bigg|_{a   }^{b}-\int\limits_{a   }^{b    } v(x)u'(x)dx$
+\end{theorem}
+
+\begin{proof}
+    $\frac{d}{dx}(u(x)v(x))=u'(x)v(x)+u(x)v'(x) \; \forall x\in[a,b]\implies u(x)v(x)-\text{ первообразная к } \underbrace{u'(x)v(x)+u(x)v'(x)}_{\in C [a,b]} \\\text{ на }[a,b]\underset{\text{линейность}}{\implies} \int\limits_{a  }^{b    } u(x)v'(x)dx+\int\limits_{a   }^{b    } u'(x)v(x)dx =\int\limits_{a  }^{b    } (u(x)v'(x)+u'(x)v(x))dx=[u(x)v(x)]\bigg|_{a}^{b}$
+\end{proof}
+Пусть $f(x): f^{(n+1)}(x) $ непрерывна в некоторой окрестности точки $x=x_{0}$, тогда $\forall x$ из этой окрестности имеет место: $f(x)=f(x_{0})+(f(x)-f(x_{0}))=f(x_{0})+\int\limits_{x_{0}}^{x} f'(t)dt=f(x_{0}) - \int\limits_{x_{0}}^{x}f'(t)d(x-t)=f(x_{0})-(x-t)f'(t)\bigg|_{t=x_{0}}^{t=x} + \int\limits_{x_{0}}^{x} (x-t)f''(t)dt= f(x_{0})+ \frac{x-x_{0}}{1!}f'(x_{0}) + \int\limits_{x_{0}}^{x}(x-t)f''(t)dt=f(x_{0})+\frac{x-x_{0}}{1!}(x-x_{0})-\int\limits_{x_{0}}^{x}f''(t)d(\frac{(x-t)^{2}}{2})= 
+f(x_{0})+\frac{f'(x_{0})}{1!}(x-x_{0})-\frac{(x-t)^{2}}{2!}f''(t)\bigg|_{t=x_{0}}^{t=x}+\frac{1}{2!}\int\limits_{x_{0}}^{x}(x-t)^{2}f'''(t)dt= f(x_{0}) + \frac{f'(x_{0})}{1}(x-x_{0})+\frac{f'(x_{0})}{2!}(x-x_{0})^{2}+\frac{1}{2!} \int\limits_{x_{0}}^{x} (x-t)^{2} f'''(t)dt= \dots= f(x_{0}) + \frac{f'(x_{0})}{1!}(x-x_{0})+\frac{f''(x_{0})}{2!}(x-x_{0})^{2}+\dots+\frac{f^{(n)}(x_{0})}{n!}(x-x_{0})^{n}+ \frac{1}{n!}\int\limits_{x_{0}}^{x}(x-t)^{n}f^{(n+1)}(t)dt       $
+\\Итого:\begin{center}$\fbox{\centering{\begin{minipage}{\linewidth}\centering$f(x)=f(x_{0})+\frac{f'(x_{0})}{1!}(x-x_{0})+\frac{f''(x_{0})}{2!}(x-x_{0})^{2}+\dots+\frac{f^{(n)}(x_{0})}{n!}(x-x_{0})^{n}+r_{n}(x,f), \newline \text{ где }r_{n}(x,f)=\frac{1}{n!} \int\limits_{x_{0}  }^{x}(x-t)^{n}f^{(n+1)}(t)dt$\end{minipage}}}$\end{center} - формула Тейлора с остаточным членом в интегральной форме
+
+$r_{n}(x,f)=\frac{1}{n!} \int\limits_{x_{0}}^{x}(x-t)^{n}f^{(n+1)}(t)dt.$ На $[x_{0},x]\; (x-t)^{n} \text{ не меняет знак, а } f^{(n+1)}(t) \in C[x_{0},x]\implies \frac{1}{n!}\int\limits_{x_{0}}^{x}(x-t)^{n}f^{(n+1)}(t)dt=\frac{f^{n+1}(\xi)}{n!}\int\limits_{x_{0}}^{x}(x-t)^{n}dt=-\frac{f^{n+1}(\xi)}{n!} \frac{(x-t)^{n+1}}{n+1}\bigg|_{t=x_{0}}^{t=x}= \frac{f^{n+1}(\xi)}{(n+1)!}(x-x_{0})^{n+1} -$ остаточный член в форме Лагранжа (получено при больших ограничениях, чем раньше) 
+
+
+\end{document}
+
+

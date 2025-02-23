@@ -1,0 +1,71 @@
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+\newpage
+\lecture{4}{11.02}{}
+\section{Интегрируемость непрерывной функции. Интегрируемость монотонной функции}
+\begin{theorem}
+    $f(x)\in C[a,b]\implies f(x) \text{ интегрируема на } [a,b]$
+\end{theorem}
+
+\begin{proof}
+    $f(x)\in C[a,b]\underset{\text{т.Кантора}}{\implies} f(x)$ равномерно непрерывна на $[a,b],$ т.е. $\forall \varepsilon>0 \exists \delta>0 \forall x',x''\in[a,b]: |x'-x''|<\delta \implies |f(x')-f(x'')|<\frac{\varepsilon}{b-a}.$\\ 
+    Берем $\forall T=\{a=x_{0}<x_{1}<\dots<x_{n}=b\}.\quad \delta_{T}<\delta;$\\ 
+    $f(x)\in C[x_{k-1},x_{k}]\underset{\text{т. Вейрштрасса}}{\implies} \exists x'_{k},x''_{k}\in[x_{k-1},x_{k}]: \begin {aligned} &M_{k}\underset{x_{k-1}\leqslant x\leqslant x_{k}}{=}\sup{f(x)}=f(x'_{k}) \\ 
+    &m_{k}\underset{x_{k-1}\leqslant x\leqslant x_{k}}{=}\inf (f(x))=f(x''_{k})\end{aligned}\\|x'_{k}-x''_{k}|\leqslant \Delta x_{k}\leqslant \delta_{t}\implies |M_{k}-m_{k}| < \frac{\varepsilon}{b-a}.$\\ 
+    $\left.0\leqslant M_{k}-m_{k}\leqslant \frac{\varepsilon}{b-a} \right| \Delta x_{k} \text{ и } \sum_{k=1}^{n}\implies 0\leqslant S_{T}(f)-s_{T}(f)<\varepsilon\implies \lim\limits_{\delta_{T}\to 0}(S_{T}(f)-s_{T}(f))=0 \underset{\text{кр. инт.}}{\implies}f(x) \text{ интегрируема на } [a,b] $
+    
+\end{proof} 
+
+\begin{theorem}
+    $f(x)$ монотонна на $[a,b](\text{не имеет значения, что из себя представляет множество точек разрыва})\implies f(x) \text{ интегрируема на } [a,b]$
+    
+\end{theorem}
+
+\begin{proof}
+    Пусть $f(x)$ монотонно возрастает на $[a,b]\implies f(a)\leqslant f(x)\leqslant f(b) \forall x\in[a,b]\implies f(x) \text{ ограничена на } [a,b].$\vspace{0.3cm}\\ 
+    Берем $\forall T=\{a=x_{0}<x_{1}<\dots<x_{n}=b\}\qquad f(x_{k-1})\leqslant f(x)\leqslant f(x_{k}) \forall x\in [x_{k-1},x_{k}]\implies \begin{aligned} &M_{k}\underset{x_{k-1}\leqslant x\leqslant x_{k}}=\sup f(x)=f(x_{k})\\ &m_{k}\underset{x_{k-1}\leqslant x\leqslant x_{k}}{=}\inf f(x)=f(x_{k-1})\end{aligned}\\$
+    $0\leqslant S_{T}(f)-s_{T}(f)=\sum_{k=1}^{n}(M_{k}-m_{k})\Delta x_{k}\leqslant \delta_{T}\sum_{k=1}^{n}(M_{k}-m_{k})=\delta_{T}\sum_{k=1}^{n}(f(x_{k})-f(x_{k-1}))=\delta_{T}(f(b)-f(a))\underset{\delta_{T}\to 0}{\to} 0 \implies \lim\limits_{\delta_{T} \to 0}(S_{T}(f)-s_{T}(f))=0 \underset{\text{критерий инт.}}{\implies} f(x) \text{ интегрируема на }[a,b]$
+    \\ Самостоятельно рассмотреть случай монотонного убывания.
+\end{proof}
+
+\noindent Пример. $f(x)=\begin{cases}\frac{1}{k},x\in\left(\frac{1}{k+1}\right.,\left.\frac{1}{k}\right],k\in\mathbb{N}\\0,x=0\end{cases}$\\ 
+У $f(x)$ $\infty$-но много точек разрыва на $[a,b]:x=\frac{1}{k},k=2,3,4,\dots -$ точки разрыва 1-го рода\\ 
+$f(x)$ монотонно возрастает на $[0,1]\implies f(x)$ интегрируема на $[0,1]$
+
+\section{Интегрируемость функции, отличающейся от интегрируемой в конечном количестве точек} 
+\begin{theorem}
+    Пусть $f(x)$ интегрируема на $[a,b]\implies \tilde{f}(x)=\begin{cases}
+        A, x=\tilde{x}\in[a,b]\\ 
+        f(x),x\in[a,b] \textbackslash  \{\tilde{x}\}
+    \end{cases}$ тоже интегрируема на $[a,b],$ причем $\int\limits_{a}^{b}f(x)dx=\int\limits_{a}^{b}\tilde{f}(x)dx$
+\end{theorem}
+\begin{proof}
+    $f(x)$ интегрируема на $[a,b]\implies f(x)$$\begin{aligned}&1)\text{ ограничена на }[a,b],\text{ т.е } \exists M>0:|f(x)|\leqslant M \forall x\in[a,b] \\ &2)\lim\limits_{\delta_{T}\to 0}  S_{T}(f)=\int\limits_{a}^{b}f(x)dx=I,\text{ т.е }\end{aligned}$ \\ 
+    $\forall \varepsilon>0 \exists \delta>0: \forall T: \delta_{T}<\delta \implies|S_{T}(f)-I|<\frac{\varepsilon}{2}.$\\
+    Берем $\delta_{2}=\frac{\varepsilon}{4(M+|A|)}>0 \implies \exists \delta=min(\delta_{1},\delta_{2})>0.\quad \text{ Берем } \forall T=\{a=x_{0}<x_{1}<\dots<x_{n}=b\}: \delta_{T}<\delta;$ \\ 
+    $\begin{aligned}
+        &M_{k}=\sup f(x) \\ 
+        &\tilde{M_{k}}=\sup \tilde{f}(x), &&k=\overline{1,n}
+    \end{aligned}$Рассмотрим $|S_{T}(f)-S_{T}(\tilde{f})|=\left|\sum_{k=1}^{n}(M_{k}-\tilde{M_{k}}\Delta x_{k})\right|\leqslant \delta_{T}*2 (M+|A|)<\\<2\delta(M+|A|)\leqslant 2\delta_{2}(M+|A|)=\frac{\varepsilon}{2}$ \\ 
+    Рассмотрим $|S_{T}(\tilde{f})-I|=|S_{T}(\tilde{f})-S_{T}(f)+S_{T}(f)-I|\leqslant \underbrace{|S_{T}(\tilde{f})-S_{T}(f)|}_{<\frac{\varepsilon}{2}}+\underbrace{|S_{T}(f)-I|}_{<\frac{\varepsilon}{2}}<\varepsilon,\text{ т.е } \lim\limits_{\delta_{T}\to 0}(S_{T}(f)-I)=0\implies\lim\limits_{\delta_{T}\to 0}S(\tilde{f})=I$\\ 
+    Аналогично: $\lim\limits_{\delta_{T}\to 0}s_{T}(\tilde{f})=I \implies \lim\limits_{\delta_{T}\to 0} (S_{T}(\tilde{f})-s_{T}(\tilde{f}))=0\underset{\text{кр. инт.}}{\implies} \tilde{f}(x) $ интегрируема на $[a,b]$. \\ 
+    Т.к $\int \tilde{f}(x)dx=\lim\limits_{\delta_{T}\to 0}S_{T}(f)=\lim\limits_{\delta_{T}\to 0}S_{T}(\tilde{f})\implies \lim\limits_{\delta_{T}\to 0}(S_{T}(\tilde{f}))=\int\limits_{a}^{b}\tilde{f}(x)dx=> \int\limits_{a}^{b}\tilde{f}(x)dx=\int\limits_{a}^{b}f(x)dx    $
+\end{proof}
+
+\begin{corollary}
+    $f(x)$ интегрируема на $[a,b]\implies \tilde{f}(x),$ отличающася от $f(x)$ в \underline{конечном} количестве точек, тоже интегрируема на $[a,b]$,причем $\int\limits_{a}^{b}f(x)dx=\int\limits_{a}^{b}\tilde{f}(x)dx$
+\end{corollary}
+\begin{proof}
+    Применим последнюю теорему надлежащее число раз.
+\end{proof}
+\noindent   Пример. $\chi(x)=\begin{cases}
+    1,x-\text{рац.}\\ 
+    0,x-\text{иррац.}
+\end{cases}$ отличающаяся от $f_{0}(x)\equiv 0$ на $[a,b]$ в счетном количество точек, но при этом $\chi(x) $ не является интегрируемой на $[a,b],$ а $f_{0}(x)$ - является.
+\begin{theorem}[Критерий Лебега] 
+    Пусть $f(x)$ ограничена на $[a,b]$, а $R(f)-$ множество ее точек разрыва $f(x)$ на $[a,b],$ тогда $f(x)$ интегрируема по Риману на $[a,b] \Leftrightarrow R(f)$ имеет меру нуль, т.е $\forall \varepsilon>0 \exists \{\alpha_{i},\beta_{i}\}_{i=1}^{\infty}:R(f)\subset \cup_{i=1}^{\infty}(\alpha_{i},\beta_{i}),$ при этом $\underset{m}{\sup } \sum_{i=1}^{m}(\beta_{i}-\alpha_{i})<\varepsilon$
+\end{theorem}
+\begin{proof}
+    Без доказательства.
+\end{proof}
+\end{document}

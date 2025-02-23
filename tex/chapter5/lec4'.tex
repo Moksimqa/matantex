@@ -1,0 +1,43 @@
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+\lecture{4}{11.02}{}
+\section{Линейные свойства определенного интеграла}
+
+\begin{definition}
+    Если $f(x)$ определена при $x=a$, то положим $\int _{a}^{a}f(x)dx\equiv 0$
+\end{definition}
+\begin{definition}
+    Если $a<b,$ а еще $f(x)$ интегрируема на $[a,b]$, то положим $\int\limits_{b}^{a}f(x)dx\equiv - \int\limits_{a}^{b}f(x)dx$
+\end{definition}
+\begin{theorem}
+    Если $f(x),g(x)$ интегрируемы на $[a,b]$, $f(x)\pm g(x)$ тоже интегрируема на $[a,b]$,причем $\int\limits_{a}^{b}(f(x)\pm g(x)dx)= \int\limits_{a}^{b}f(x)dx \pm \int\limits_{a}^{b} g(x)dx$
+\end{theorem}
+\begin{proof}
+    Если $a=b$, то доказывать нечего: $0=0\pm 0.$\\ 
+    Если $a<b$, то: Берем $\forall T=\{a=x_{0}<x_{1}<x_{2}<\dots<x_{n}=b\};$ Берем $\forall \Xi=\{\xi_{k}\}_{k=1}^{n},$ тогда: 
+    рассмотрим $\sigma_{T}(f\pm g,\Xi)=\sum_{k=1}^{n}(f(\xi_{k})\pm g(\xi_{k}))\Delta x_{k} =\sum_{k=1}^{n}f(\xi_{k})\Delta x_{k} \pm  \sum_{k=1}^{n} g(\xi_{k})\Delta x_{k}=\underset{\underset{\delta_{T}\to 0}{\to} I_{1}}{\sigma_{T}(f,\Xi)} \pm  \underset{\underset{\delta_{T}\to 0}{\to} I_{2}}{\sigma_{T}(g, \Xi)}\to I_{1}+I_{2},$ т.е $\int\limits_{a}^{b}(f(x)\pm g(x))dx=\int\limits_{a}^{b}f(x)dx \pm  \int\limits_{a}^{b}g(x)dx$\\ 
+    Если $a>b \implies \int\limits_{b}^{a}(f(x)\pm g(x))dx=\int\limits_{b}^{a}f(x)dx\pm \int\limits_{b}^{a}g(x)dx= \int\limits_{a}^{b}f(x)dx\pm \int\limits_{a}^{b}g(x)dx$
+\end{proof}
+\begin{theorem}
+    $f(x)$ интегрируема на $[a,b]\implies\forall c\in\mathbb{R}\quad c\in f(x)\text{ интегрируема на }[a,b]$,причем $\int\limits_{a}^{b}cf(x)dx=c \int\limits_{a}^{b}f(x)dx$
+\end{theorem}
+\begin{proof}
+    Самостоятельно.
+\end{proof}
+\section{Интегрируемость произведения интегрируемых по Риману функций}
+\begin{theorem}
+    Если $f(x),g(x)$ интегрируемы на $[a,b]\implies f(x)g(x)$ тоже интегрируема на $[a,b]$
+\end{theorem}
+\begin{proof}
+    пусть $a<b$.
+    $f(x),g(x)$ интегрируемы на $[a,b]\implies f(x),g(x) - \text{ ограничены на }[a,b]$, т.е $\exists M^{(f)}>0,M^{(g)}>0: \begin{aligned}
+        |f(x)|\leqslant M^{(f)} \forall x\in[a,b] \\ 
+        |g(x)|\leqslant M^{(g)} \forall x\in[a,b]
+    \end{aligned}$. Берем $\forall T=\{a=x_{0}<x_{1}<\dots<x_{n}=b\};$ Введем $\begin{aligned}&M_{k}^{(f)}=\underset{x_{k-1}\leqslant x\leqslant x_{k}}{\sup f(x)} &&M_{k}^{(g)}=\sup g(x) &&&M_{k}^{(fg)}=\sup (f(x)g(x))\\ &m_{k}^{(f)}=\inf f(x)
+    &&m_{k}^{(g)}=\inf g(x) &&&m_{k}^{(fg)}=\inf (f(x)g(x))\end{aligned}$\\
+    $\forall \varepsilon>0 \exists x'_{k},x_{k}''\in[x_{k-1},x_{k}]:\begin{aligned}M_{k}^{(fg)}<f(x'_{k})g(x'_{k})+\frac{\varepsilon}{2}\\ m_{k}^{(fg)}>f(x''_{k})g(x''_{k})-\frac{\varepsilon}{2}\end{aligned}
+    \implies 0\leqslant M_{k}^{(fg)}-m_{k}^{(fg)}<f(x_{k}')g(x'_{k})-f(x_{k}'')g(x_{k}'')+\varepsilon =f(x'_{k})g(x_{k}')+f(x'_{k})g(x_{k}'')-f(x'_{k})g(x_{k}'')-f(x_{k}'')g(x''_{k})+\varepsilon=f(x'_{k})(g(x_{k}')-g(x_{k}''))+g(x_{k}'')(f(x_{k}')-f(x_{k}''))+\varepsilon\leqslant M^{(f)}((M_{k})^{g}-m_{k}^{(g)}) +M^{(g)}(M_{k}^{(f)}-m_{k}^{(f)})+\varepsilon\implies 0\leqslant M_{k}^{(fg)}-m_{k}^{(fg)}\leqslant M^{(f)}((M_{k})^{g}-m_{k}^{(g)})+M^{(g)}(M^{(f)}_{k}-m_{k}^{f})\implies 0\leqslant S_{T}(fg)-s_{T}(fg)\leqslant M^{(f)}(S_{T}(g)-s_{T}(g))+M^{(g)}(S_{T}(f)-s_{T}(f))\implies \lim\limits_{\delta_{T}\to 0} (S_{T}(fg)-s_{T}(fg))=0\implies f(x)g(x) \text{ интегрируема на } [a,b] $ \\ 
+     
+\end{proof}
+
+\end{document}

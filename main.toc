@@ -1,16 +1,27 @@
 \babel@toc {russian}{}\relax 
-\contentsline {chapter}{\numberline {1}Интегралы}{3}{}%
-\contentsline {section}{\numberline {1.1}Первообразная и неопределенный интеграл}{3}{}%
-\contentsline {subsection}{\numberline {1.1.1}Таблица интегралов.}{4}{}%
-\contentsline {section}{\numberline {1.2}Способы вычисления неопределенных интегралов}{5}{}%
-\contentsline {subsection}{\numberline {1.2.1}Метод подстановки}{5}{}%
-\contentsline {subsubsection}{Примеры.}{5}{}%
-\contentsline {subsection}{\numberline {1.2.2}Интегрирование по частям}{5}{}%
-\contentsline {subsubsection}{Примеры}{6}{}%
-\contentsline {section}{\numberline {1.3}Определение интеграла Римана. Существование интегрируемых функций. Необратимое условие}{7}{}%
-\contentsline {section}{\numberline {1.4}Суммы Дарбу и их свойства. Связь сумм Дарбу с интегральной суммой }{8}{}%
-\contentsline {section}{\numberline {1.5}Верхний и нижний интегралы Дарбу. Критерий интегрируемости}{9}{}%
-\contentsline {section}{\numberline {1.6}Интегрируемость непрерывной функции. Интегрируемость монотонной функции}{10}{}%
-\contentsline {section}{\numberline {1.7}Интегрируемость функции, отличающейся от интегрируемой в конечном количестве точек}{10}{}%
-\contentsline {section}{\numberline {1.8}Линейные свойства определенного интеграла}{11}{}%
-\contentsline {section}{\numberline {1.9}Интегрируемость произведения интегрируемых по Риману функций}{12}{}%
+\contentsline {chapter}{\numberline {1}Интегралы}{4}{}%
+\contentsline {section}{\numberline {1.1}Первообразная и неопределенный интеграл}{4}{}%
+\contentsline {subsection}{\numberline {1.1.1}Таблица интегралов.}{5}{}%
+\contentsline {section}{\numberline {1.2}Способы вычисления неопределенных интегралов}{6}{}%
+\contentsline {subsection}{\numberline {1.2.1}Метод подстановки}{6}{}%
+\contentsline {subsubsection}{Примеры.}{6}{}%
+\contentsline {subsection}{\numberline {1.2.2}Интегрирование по частям}{6}{}%
+\contentsline {subsubsection}{Примеры}{7}{}%
+\contentsline {chapter}{\numberline {2}Определенный интеграл}{8}{}%
+\contentsline {section}{\numberline {2.1}Определение интеграла Римана. Существование интегрируемых функций. Необратимое условие}{8}{}%
+\contentsline {section}{\numberline {2.2}Суммы Дарбу и их свойства. Связь сумм Дарбу с интегральной суммой }{9}{}%
+\contentsline {section}{\numberline {2.3}Верхний и нижний интегралы Дарбу. Критерий интегрируемости}{10}{}%
+\contentsline {section}{\numberline {2.4}Интегрируемость непрерывной функции. Интегрируемость монотонной функции}{12}{}%
+\contentsline {section}{\numberline {2.5}Интегрируемость функции, отличающейся от интегрируемой в конечном количестве точек}{12}{}%
+\contentsline {chapter}{\numberline {3}Свойства определенного интеграла}{14}{}%
+\contentsline {section}{\numberline {3.1}Линейные свойства определенного интеграла}{14}{}%
+\contentsline {section}{\numberline {3.2}Интегрируемость произведения интегрируемых по Риману функций}{15}{}%
+\contentsline {section}{\numberline {3.3}Интегрируемость функции на внутреннем отрезке. Аддитивность определенного интеграла}{16}{}%
+\contentsline {section}{\numberline {3.4}Монотонность определенного интеграла. Строгая монотонноость определенного интеграла от непрерывной функции}{17}{}%
+\contentsline {section}{\numberline {3.5}Интегрируемость модуля интегрируемых по Риману функций. Связь интеграла от функции с интегралом от ее модуля}{18}{}%
+\contentsline {section}{\numberline {3.6}Неравенство Коши-Буняковского для определенных интегралов. Теорема о среднем и ее обобщение}{18}{}%
+\contentsline {chapter}{\numberline {4}Основные правила интегрирования.}{20}{}%
+\contentsline {section}{\numberline {4.1}Интеграл с переменным верхним (нижним) пределом, его непрерывность и дифференцируемость. Существование первообразной у непрерывной функции. Формула Ньютона-Лейбница.}{20}{}%
+\contentsline {section}{\numberline {4.2}Вычисление определенных интегралов способами замены переменных и интегрирования по частям.}{21}{}%
+\contentsline {chapter}{\numberline {5}Геометрические приложения определенного интеграла.}{23}{}%
+\contentsline {section}{\numberline {5.1}Спрямляемость гладкой кривой. Выражение длины дуги гладкой кривой в виде определенного интеграла. Формулы длины дуги плоской кривой, заданной в декартовых либо полярных координатах.}{23}{}%

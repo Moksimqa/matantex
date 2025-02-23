@@ -1,0 +1,113 @@
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+\newpage
+\lecture{5}{14.02}{}
+\section{Интегрируемость функции на внутреннем отрезке. Аддитивность определенного интеграла}
+\begin{theorem}
+    $f(x)\text{ интегрируема на }[a,b]\implies \forall [c,d]\subset [a,b] f(x)\text{ интегрируема на } [a,b]$
+\end{theorem}
+\begin{proof}
+    $f(x) \text{ интегрируема на } [a,b] \implies \lim\limits_{\delta_{T}\to 0}(S_{T}(f,[a,b])-s_{T}(f,[a,b]))\implies \text{ т.е } \forall \varepsilon>0 \exists \delta>0: \forall T, \delta_{T}<\delta \to 0\leqslant S_{T}(f,[a,b])-s_{T}(f,[a,b])<\varepsilon$\\ 
+    $\text{Берем }\forall \tau - \text{ разбиение }[c,d]. \text{ Дополним его до } T(\text{разбиение }[a,b]). \text{ Считаем, что } a\leqslant c< d\leqslant b;\\ T|_{[c,d]}=\tau; \delta_{T}<\delta$\\ 
+    $\text{Рассмотрим } 0\leqslant  S_{T}(f,[c,d])-s_{T}(f,[c,d])\leqslant S_{T}(f,[a,b])-s_{T}(f,[a,b])<\varepsilon,\text{ т.е } \lim\limits_{\delta_{T}\to 0}(S_{T}(f,[c,d])-s_{T}(f,[c,d]))=0\underset{кр. инт.}{\implies} f(x) \text{ интегрируема на }[c,d] $
+\end{proof}
+\begin{theorem}
+    $f(x) \text{ интегрируема на } [a,b] \text{ и интегрируема на } [b,c]\implies f(x) \text{ интегрируема на } [a,c],\text{ причем } \\\int\limits_{a    }^{c    } f(x)=\int\limits_{a  }^{b    } f(x)dx+\int\limits_{b    }^{c    } f(x)dx$
+\end{theorem}
+\begin{proof}
+    $\left.\begin{aligned}&\exists \int\limits_{a    }^{b    } f(x)dx=I_{1},\\& \exists \int\limits_{b  }^{c    }f(x)dx=I_{2}\end{aligned}\right\} \implies \text{Пусть } a<b<c:\quad f(x) \text{ограничена на } [a,b] \text{ и ограничена на }[b,c]\implies f(x) \text{ ограничена на }[a,c]\implies \exists m,M: m\leqslant f(x)\leqslant M \forall x \in [a,c]$\\ 
+    $\begin{aligned}&\lim\limits_{\delta_{\tau_{1}}\to 0}S_{\tau_{1}}(f,[a,b])=I_{1},&&\implies \forall \varepsilon>0 \exists \delta_{1}>0 : \forall \tau_{1}(\text{разбиение }[a,b]), \delta_{\tau_{1}}<\delta_{1}\implies |S_{\tau_{1}}(f,[a,b])-I_{1}|<\frac{\varepsilon}{3}\\ &\lim\limits_{\delta_{\tau_{2}}\to 0}S_{\tau_{2}}(f,[b,c])=I_{2}&&\implies \forall \varepsilon>0 \exists \delta_{2}>0(\text{разбиение }[b,c]),\delta_{\tau_{2}}<\delta_{2}\implies |S_{\tau_{2}}(f,[b,c])-I_{2}|<\frac{\varepsilon}{3}\end{aligned}$\\ 
+    $\exists \delta_{3}=\frac{\varepsilon}{3(M-m)+1}>0. \text{ Берем } \delta=\min(\delta_{1},\delta_{2},\delta_{3})>0. \text{ Берем } \forall T(\text{разбиение }[a,c])=\{a=x_{0}<x_{1}<\dots<x_{n}=c\}\implies\exists k: b\in[x_{k-1},x_{k}]\quad\begin{aligned}
+        M_{k}=\sup{f(x)}, \quad M'_{k}\underset{x_{k-1}\leqslant x\leqslant b}{=}\sup{f(x)}, \quad M''_{k}\underset{b\leqslant x\leqslant x_{k}}{=}\sup{f(x)}.\end{aligned}\\ \text{ Рассмотрим } T_{1}=T \cup {b}\implies \delta_{T_{1}}\leqslant \delta_{T}<\delta\\
+    |S_{T}(f,[a,c])-(I_{1}+I_{2})|=|S_{T}(f,[a,c])-S_{T_{1}}(f,[a,c])+S_{T_{1}}(f,[a,c])-(I_{1}+I_{2})|\leqslant |S_{T}(f,[a,c])-S_{T_{1}}(f,[a,c])|+|S_{T_{1}}(f,[a,c])-I_{1}-I_{2}|=\underbrace{|M_{k}(x_{k}-x_{k-1})-M'_{k}(b-x_{k-1})-M''_{k}(x_{k}-b)|}_{(M_{k}-M_{k}'')(x_{k}-b)+(M_{k}-M_{k}')(b-x_{k-1})\leqslant (M-m)(x_{k}-x_{k-1})\leqslant (M-m)\delta_{T}<\delta(M-m)\leqslant \delta_{3}(M-m)}+|S_{\tau_{1}}(f,[a,b])+S_{\tau_{2}}(f,[b,c])-I_{1}-I_{2}|\leqslant \\ 
+    \leqslant (M-m)\delta_{3}+|S_{\tau_{1}}(f,[a,b]-I_{1})|+|S_{\tau_{2}}(f,[b,c])-I_{2}|<\frac{\varepsilon}{3}+\frac{\varepsilon}{3}+\frac{\varepsilon}{3}=\varepsilon\implies\lim\limits_{\delta_{T}\to 0}(S_{T}(f,[a,c])-I_{1}-I_{2})=0=\lim\limits_{\delta_{T}\to 0}(S_{T}(f,[a,c]))=I_{1}+I_{2} \tcircle{$\implies$} $
+    \\Аналогично (самостоятельно) $\lim\limits_{\delta_{T}\to 0}s_{T}(f,[a,c])=I_{1}+I_{2} \\ \tcircle{$\implies$} \lim\limits_{\delta_{T}\to 0}(S_{T}(f,[a,c])-s_{T}(f,[a,c]))=0\underset{\text{кр. инт.}}{\implies} f(x)\text{ интегрируема на }[ a,c], \text{ причем } (\text{т.к } \lim\limits_{\delta_{T}\to 0}S_{T}(f,[a,c])=I_{1}+I_{2} )\implies \int\limits_{a    }^{c    } f(x)dx=\int\limits_{a    }^{b    } f(x)dx+\int\limits_{b    }^{c    } f(x)dx $ \\ 
+    Теперь пусть $a<c<b\underset{\text{Т3.4}}{\implies} f(x) \text{ интегрируема на }[a,c]\implies\text{ работает только что рассмотренный случай }\implies \int\limits_{a    }^{b    } f(x)dx=\int\limits_{a    }^{c    } f(x)dx+\int\limits_{c    }^{b   }f(x)dx\implies \int\limits_{a  }^{c    } f(x)dx=\int\limits_{a    }^{b    } f(x)dx+\int\limits_{b    }^{c    } f(x)dx$
+\end{proof}
+\section{Монотонность определенного интеграла. Строгая монотонноость определенного интеграла от непрерывной функции}
+\begin{theorem}
+    $\int\limits_{a    }^{b    } 1dx=b-a$
+\end{theorem}
+\begin{proof}
+    Самостоятельно.
+\end{proof}
+\begin{theorem}
+    Пусть $a\leqslant b, f(x) \text{ интегрируема на }[a,b], f(x)\geqslant 0 \text{ на }[a,b]\implies \int\limits_{a   }^{b    } f(x)dx\geqslant 0$
+\end{theorem}
+\begin{proof}
+    1) $a=b$ - очевидно.\\
+    2) $a<b\implies \exists \int\limits_{a    }^{b    } f(x)dx=I\geqslant S_{T}(f)=\sum_{k=1}^{n   } \underset{\geqslant 0}{m_{k}}\underset{\geqslant 0}{\Delta x_{k}}\geqslant 0$
+\end{proof}
+\begin{theorem}
+    $a\leqslant b; f(x) \text{ и } g(x) \text{ интегрируемы на  }[a,b], \text{ причем } f(x)\geqslant g(x)  x\in[a,b]\implies \\ \implies\int\limits_{a   }^{b    } f(x)dx\geqslant \int\limits_{a   }^{b    } g(x)dx$
+\end{theorem}
+\begin{proof}
+    Самостоятельно.
+\end{proof}
+\begin{theorem}
+    $f(x)\in C[a,b](a<b), f(x)\geqslant 0 \forall x\in[a,b],\text{ причем } f(x) \not\equiv 0 \text{ на } [a,b]\implies\int\limits_{a    }^{b    } f(x)dx>0$
+\end{theorem}
+\begin{proof}
+    $\exists \xi\in(a,b):f(\xi)=A>0\underset{\text{по т. о сохр. знака}}{\implies} \exists \delta>0: \forall x\in(\xi-\delta,\xi+\delta) f(x)>\frac{A}{2}$
+    \\ $\text{Рассмотрим } \int\limits_{a  }^{b    } f(x)=\underbrace{\int\limits_{a  }^{\xi-\delta}f(x)dx}_{\geqslant 0}+\int\limits_{\xi-\delta   }^{\xi+\delta}f(x)dx +\underbrace{\int\limits_{\xi+\delta}^{b}f(x)dx}_{\geqslant 0} \geqslant 0+\frac{A}{2}2\delta+0=A+\delta\geqslant 0$  
+\end{proof}
+\begin{theorem}
+    $f(x),g(x)\in C[a,b](a<b);f(x)\geqslant g(x) \forall x\in[a,b],\text{ причем } f(x)\not\equiv g(x) \text{ на }[a,b]\implies\int\limits_{a  }^{b    } f(x)dx>\int\limits_{a    }^{b    } g(x)dx$
+\end{theorem}
+\begin{proof}
+    Самостоятельно.
+\end{proof}\newpage
+\section{Интегрируемость модуля интегрируемых по Риману функций. Связь интеграла от функции с интегралом от ее модуля}
+\begin{theorem}
+    $f(x) \text{ интегрируема на} [a,b] \implies |f(x)| \text{ тоже интегрируема на }[a,b],\text{ причем }\\ \left|\int\limits_{a }^{b    } f(x)dx\right|\leqslant \left|\int\limits_{a }^{b    } |f(x)|dx\right|.$
+\end{theorem}
+\begin{proof}
+    1) Если $a=b\implies 0\leqslant 0 \implies$ доказывать нечего. \\ 
+    2) Если $a<b,\text{ то} : f(x) \text{ интегрируема на }[a,b]\underset{\text{кр. инт.}}{\implies}\lim\limits_{\delta_{T}\to 0}(S_{T}(f)-s_{T}(f))=0,\text{ т.е }  \varepsilon>0 \exists \delta>0 : \forall T, \delta_{T}<\delta \implies 0\leqslant S_{T}(f)-s_{T}(f)<\varepsilon $
+    \\ Берем $\forall T=\{a=x_{0}<x_{1}<\dots<x_{n}=b\},\delta_{T}<\delta$\begin{align*}
+        &M_{k}\underset{x_{k-1}\leqslant x\leqslant x_{k}}{=}\sup{f(x)} &&M_{k}'\underset{x_{k-1}\leqslant x\leqslant x_{k}}{=}\sup{|f(x|)} \\ 
+        &m_{k}\underset{x_{k-1}\leqslant x\leqslant x_{k}}{=}\inf{f(x)} &&m_{k}'\underset{x_{k-1}\leqslant x\leqslant x_{k}}{=}\inf{|f(x)|} 
+    \end{align*}
+    \noindent а) $0\leqslant m_{k}\leqslant M_{k}\implies f(x)\geqslant 0 \text{ на }[x_{k-1},x_{k}\implies|f(x)|=f(x) \text{ на }[x_{k-1},x_{k}]\implies m'_{k}=m_{k},M_{k}'=M_{k}\implies M_{k}'-m_{k}'=M_{k}-m_{k}$\\ 
+    б) $m_{k}\leqslant M_{k}\leqslant 0 \implies f(x)\leqslant 0 \text{ на }[x_{k-1},x_{k}]\implies |f(x)| = -f(x) \text{ на }[x_{k-1},x_{k}],M_{k}'=-m_{k},m_{k}'=-M_{k}\implies M_{k}'-m_{k}'=M_{k}-m_{k}$\\ 
+    в) $m_{k}\leqslant 0\leqslant M_{k}\implies M_{k}'=\max(m_{k},-m_{k})\implies M_{k}'-m_{K}'\leqslant M_{k}'\leqslant M_{k}-m_{k}\implies\text{ в любом случае } \\ \left.0\leqslant M_{k}'-m_{k}'\leqslant M_{k}-m_{k}\right| \Delta x_{k} \text{ и } \sum_{k=1}^{n}\implies 0\leqslant S_{T}(|f|)-s_{T}(|f|)\leqslant S_{T}(f)-s_{T}(f)<\varepsilon\implies\lim\limits_{\delta_{T}\to 0}(S_{T}(|f|)-s_{T}(|f|))=0\underset{\text{кр. инт}}{\implies} |f(x)| \text{ интегрируема на }[a,b]. $\\ 
+    $-|f(x)|\leqslant f(x)\leqslant |f(x)| \quad\forall x\in[a,b]\implies -\int\limits_{a  }^{b    } |f(x)|dx\leqslant \int\limits_{a }^{b    } f(x)dx\leqslant \int\limits_{a }^{b    } |f(x)|dx\implies \\ \implies \left| \int\limits_{a }^{b    } f(x)dx\right|\leqslant \int\limits_{a    }^{b    } |f(x)|dx$
+    \\ Если $a>b\implies \left|\int\limits_{a    }^{b    } f(x)dx\right|\leqslant \left| \int\limits_{a   }^{b    } |f(x)|dx\right|$
+\end{proof}
+\section{Неравенство Коши-Буняковского для определенных интегралов. Теорема о среднем и ее обобщение}
+\begin{theorem}[Неравенство Коши-Буняковского]
+    $f(x),g(x) \text{ интегрируемы на } [a,b]\implies\\\implies \left[\int\limits_{a    }^{b    } f(x)g(x)dx\right]^{2}\leqslant \left[\int\limits_{a  }^{b    } f^{2}(x)dx\right]\left[\int\limits_{a    }^{b    } g^{2}(x)dx\right]$
+\end{theorem}
+\begin{proof}
+    Пусть $a<b$.\\
+    Рассмотрим $\varphi(\lambda)=\int\limits_{a    }^{b    } (\lambda f(x)+g(x))^{2}=\lambda^{2}\underbrace{\int\limits_{a    }^{b    } f^{2}(x)dx}_{=A}+2\lambda\underbrace{\int\limits_{a    }^{b    } f(x)g(x)dx}_{=B}+\underbrace{\int\limits_{a    }^{b    } g^{2}(x)dx}_{=C}=A\lambda^{2}+2B\lambda+C$\\ 
+    Если $A=0\implies B=0\implies B^{2}\leqslant AC$\\ 
+    Если $A\geqslant 0 \implies B^{2} -AC\leqslant 0,\text{ т.е } B^{2}\leqslant AC\implies \left[\int\limits_{a }^{b    } f(x)g(x)dx\right]\leqslant \left(\int\limits_{a   }^{b    } f^{2}(x)dx\right)\left(\int\limits_{a   }^{b    } g^{2}(x)dx\right)$\\ 
+    Если $a=b\implies$ верно\\
+    Если $a>b\implies$ верно
+\end{proof}
+\begin{theorem}[1-ая теорема о среднем]
+    $f(x),g(x)\text{ интегрируемы на }[a,b]; m\underset{[a,b]}{=}\inf{f(x)},M\underset{[a,b]}{=}\sup{f(x)}, \\g(x)\geqslant 0 \; \forall x\in[a,b]\implies\exists \mu \in [m,M]:\quad \int\limits_{a }^{b    } f(x)g(x)dx=\mu\int\limits_{a }^{b    } g(x)dx $
+\end{theorem}
+\begin{proof}
+    $a<b.$ Пусть $g(x)\geqslant 0\text{ на }[a,b].$\\ 
+    $m\leqslant f(x)\leqslant M\quad \forall x\in[a,b]\\$
+    $mg(x)\leqslant f(x)g(x)\leqslant Mg(x)\implies m\int\limits_{a    }^{b    } g(x)dx\leqslant \int\limits_{a   }^{b    } f(x)g(x)dx\leqslant M\int\limits_{a  }^{b    } g(x)dx$\\ 
+    1) Если $\int\limits_{a    }^{b    } g(x)dx=0\implies \int\limits_{a  }^{b    } f(x)g(x)dx=0\implies \text{ утверждение верно }\forall \mu \in[m,M]$\\ 
+    2) Если $\int\limits_{a    }^{b    } g(x)dx>0\implies m\leqslant \underbrace{\frac{\int\limits_{a }^{b    } f(x)g(x)dx}{\int\limits_{a   }^{b    } g(x)dx}}_{\mu}\leqslant M\implies \int\limits_{a }^{b    } f(x)g(x)dx=\mu\int\limits_{a }^{b    } g(x)dx$\\ 
+    Если $g(x)\leqslant 0$ на $[a,b],$ то рассмотрим $\tilde{g}(x)=-g(x)\geqslant 0$ на $[a,b].$\\
+    Если $a\geqslant b \implies$ самостоятельно.  
+\end{proof}
+\begin{corollary}
+    Если в условиях предыдущей теоремы $f(x) \in C[a,b]\implies \exists \xi \in[a,b] : \int\limits_{a  }^{b    } f(x)g(x)dx=f(\xi)\int\limits_{a  }^{b    } g(x)dx$
+\end{corollary}
+\begin{proof}
+    По теореме Вейрештрасса: $\exists \alpha,\beta\in[a,b]: f(\alpha)=m\quad f(\beta)=M\qquad \mu\in[m,M]\underset{\text{т.Коши}}{\implies} \exists \mu \in[\alpha,\beta]\subset[a,b]:f(\xi)=\mu$
+\end{proof}
+\begin{corollary}
+    Если $f(x)\text{ интегрируема на } [a,b], m\underset{a\leqslant x\leqslant b}{=}\inf{f(x)}, \; M\underset{a\leqslant x\leqslant b}{=}\sup{f(x)}\implies \exists \mu \in [m,M] : \int\limits_{a}^{b} f(x)dx=\mu(b-a).$ А если еще $f(x)\in C [a,b]\implies \exists \xi \in[a,b]: \int\limits_{a  }^{b    } f(x)dx=f(\xi)(b-a)$
+\end{corollary}
+\begin{proof}
+    Самостоятельно.
+\end{proof}
+\end{document}

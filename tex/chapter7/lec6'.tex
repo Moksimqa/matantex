@@ -1,0 +1,44 @@
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+\lecture{6}{21.02}{}
+\section{Спрямляемость гладкой кривой. Выражение длины дуги гладкой кривой в виде определенного интеграла. Формулы длины дуги плоской кривой, заданной в декартовых либо полярных координатах.}
+\begin{definition}
+    Пусть $\varphi(t),\psi(t),\chi(t)\in C[a,b].$ Рассмотрим множество точек в пространстве, которое обозначим $L=\{M(x,y,z), x=\varphi(t),y=\psi(t),z=\chi(t),t\in[\alpha,\beta]\}$ - такое множество точек нзывается простой кривой, если
+    $ \forall t_{1},t_{2}\in[\alpha,\beta] : t_{1}\neq t_{2}\implies M_{1}(x_{1},y_{1},z_{1})\neq M_{2}(x_{2},y_{2},z_{2}),$ где $\begin{cases}x_{i}=\varphi(t_{i})\\ y_{i}=\psi(t_{i})\\z_{i}=\chi(t_{i})\end{cases}i=1,2,\dots$
+   \\ Если при этом $z=\chi(t) \equiv 0 \text{ на }[a,b],$ то плоская простая кривая.
+\end{definition}
+
+\begin{definition}
+    Говорят, что система уравнений $\begin{cases}x=\varphi(t)\\ y=\psi(t)\\ z=\chi(t)\end{cases}t\in\{t\}-\text{ промежуток,}$ задает параметрически кривую $L$, если промежуток $\{t\} $ можно разбить на конечный или бесконечный (счетный) набор отрезков $[\alpha_{i},\beta_{i}],$ покрывающих данный промежуток $\{t\}$ и пересекающихся не более чем концами, так, что на каждом отрезке $[\alpha_{i},\beta_{i}]$ L - простая кривая.
+\end{definition}
+Везде далее, если не оговорено противного \underline{кривая - параметрически заданная кривая}
+\newpage
+\begin{definition}
+    Кривая $L : \begin{cases}
+        x=\varphi(t)\\ y=\psi(t)\\ z=\chi(t)
+    \end{cases}t\in[\alpha,\beta] \text{ называется гладкой, если } \varphi'(t),\psi'(t),\chi'(t)\in C[a,b], \text{ а еще } \\(\varphi'(t))^{2}+(\psi'(t))^{2}+(\chi'(t))^{2}>0 \forall t\in [\alpha,\beta]$
+\end{definition}
+\noindent$L: \begin{cases}
+    x=\varphi(t)\\ y=\psi(t) \\ z=\chi(t)
+\end{cases} t\in [\alpha,\beta]\quad T=\{\alpha=t_{0}<t_{1}<\dots<t_{k-1}<t_{k}<\dots<t_{n}=\beta\}\;
+    M_{k}(x,y,z): \begin{cases}
+        x=\varphi(t_{k}) \\ y=\psi(t_{k}) \\ z=\chi(t_{k})
+    \end{cases}$ \\ 
+    Рассмотрим $l_{T}=\sum_{k=1}^{n} |\overrightarrow{M_{k-1}M_{k}}|=\sum_{k=1}^{n}\sqrt{\left[\varphi(t_{k})-\varphi(t_{k-1})\right]^{2}+\left[\psi(t_{k})-\psi(t_{k-1})\right]^{2}+\left[\chi_{k}-\chi_{k-1}\right]^{2}} - $ длина ломаной, вписанной в $L$. $T_{1}=T\cup {\tilde{t}}\implies l_{T_{1}}\geqslant l_{T}$ (по неравенству треугольника). Тогда: $T_{1}\succ T\to l_{T_{1}}\geqslant l_{T}$
+
+\begin{definition}
+    Кривая $L $ называется спрямляемой, если $\{l_{T}\}$ - ограниченное сверху множество.
+\end{definition}
+\begin{definition}
+    Если $L$ - спрямляемая кривая, то число $l=l(L)=\underset{T}{\sup{\{l_{T}\}}}$ называется длиной кривой $L$. 
+\end{definition}
+\begin{theorem}
+    $L: \begin{cases}
+        x=\varphi(t)\\ y=\psi(t)\\ z=\chi(t)
+    \end{cases} t \in [\alpha,\beta] - $ гладкая кривая $\implies L$ - спрямляемая, причем\\ $l(L)=\int\limits_{\alpha}^{\beta}\sqrt{()\varphi'(t))^{2}+(\psi'(t))^{2}+(\chi'(t))^{2}} $ 
+\end{theorem}
+
+\vspace{1cm}
+\begin{flushright}
+    \textit{tg: @moksimqa}
+\end{flushright}
