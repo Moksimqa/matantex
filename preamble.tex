@@ -19,9 +19,9 @@
 \usepackage{fancybox}
 \usepackage{indentfirst}
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=3cm,bindingoffset=0cm]{geometry}
-
+\usepackage{multirow}
 \pdfminorversion=7
-
+\usetikzlibrary{decorations.pathreplacing}
 % Don't indent paragraphs, leave some space between them
 \usepackage{parskip}
 
@@ -52,6 +52,13 @@
   \tikz[baseline=(C.base)]\node[draw,circle,inner sep=0.5pt](C) {#1};\!
 }
 
+%for matrix
+\makeatletter
+\renewcommand*\env@matrix[1][*\c@MaxMatrixCols c]{%
+  \hskip -\arraycolsep
+  \let\@ifnextchar\new@ifnextchar
+  \array{#1}}
+\makeatother
 
 \everymath{\displaystyle}
 

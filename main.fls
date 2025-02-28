@@ -183,6 +183,15 @@ INPUT C:\Program Files\MiKTeX\tex\generic\iftex\iftex.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\geometry\geometry.cfg
 INPUT C:\Program Files\MiKTeX\tex\latex\geometry\geometry.cfg
 INPUT C:\Program Files\MiKTeX\tex\latex\geometry\geometry.cfg
+INPUT C:\Program Files\MiKTeX\tex\latex\multirow\multirow.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\multirow\multirow.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarydecorations.pathreplacing.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarydecorations.pathreplacing.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarydecorations.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarydecorations.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\modules\pgfmoduledecorations.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\libraries\decorations\pgflibrarydecorations.pathreplacing.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\libraries\decorations\pgflibrarydecorations.pathreplacing.code.tex
 INPUT C:\Program Files\MiKTeX\tex\latex\parskip\parskip.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\parskip\parskip.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\kvoptions\kvoptions.sty
@@ -489,6 +498,22 @@ INPUT .\tex\chapter7\lec6'.tex
 INPUT tex\chapter7\lec6'.tex
 INPUT .\tex\chapter7\lec6'.tex
 INPUT tex\chapter7\lec6'.tex
+INPUT .\tex\chapter7\lec7.tex
+INPUT tex\chapter7\lec7.tex
+INPUT .\tex\chapter7\lec7.tex
+INPUT tex\chapter7\lec7.tex
+INPUT .\tex\chapter7\lec8.tex
+INPUT tex\chapter7\lec8.tex
+INPUT .\tex\chapter7\lec8.tex
+INPUT tex\chapter7\lec8.tex
+INPUT .\tex\chapter8.tex
+INPUT tex\chapter8.tex
+INPUT .\tex\chapter8.tex
+INPUT tex\chapter8.tex
+INPUT .\tex\chapter8\lec8'.tex
+INPUT tex\chapter8\lec8'.tex
+INPUT .\tex\chapter8\lec8'.tex
+INPUT tex\chapter8\lec8'.tex
 INPUT main.aux
 INPUT C:\Users\moksimqa\AppData\Local\MiKTeX\fonts\pk\ljfour\lh\lh-t2a\dpi600\larm0700.pk
 INPUT C:\Users\moksimqa\AppData\Local\MiKTeX\fonts\pk\ljfour\lh\lh-t2a\dpi600\larm0700.pk

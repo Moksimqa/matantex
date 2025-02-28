@@ -1,0 +1,43 @@
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+\newpage
+\lecture{8}{28.02}{}
+
+\begin{theorem}[Критерий квадрируемости]
+    $P$ - плоская фигура, тогда: $P - $ квадрируема $\Leftrightarrow \forall \varepsilon>0 \exists Q,S: Q\subset P \subset S,$ причем  $0\leqslant \tilde{\mu}(S) - \tilde{\mu}(Q)<\varepsilon$
+    
+\end{theorem}
+\begin{proof}
+    $\implies$ Пусть $P$ - квадрируема $\implies \exists \mu(P)=\underline{\mu}(P)=\overline{\mu}(P)\implies\forall \varepsilon>0 \exists Q,S : Q\subset P \subset S, $ причем $\begin{aligned}
+         &\tilde{\mu}(P)>\underline(\mu)(P) - \frac{\varepsilon}{2} \\ 
+         &\tilde(\mu)(S)<\overline(\mu)(P)+\frac{\varepsilon}{2}
+    \end{aligned}\implies 0\leqslant \tilde{\mu}(S) - \tilde{\mu}(Q)<(\mu(P)+ \frac{\varepsilon}{2})-(\mu(P)-\frac{\varepsilon}{2})=\varepsilon$
+    \\$\impliedby $ Пусть $\forall \varepsilon>0 \exists Q,S : Q\subset P \subset S,$ причем $0\leqslant \tilde{\mu}(S)-\tilde{\mu}(Q)<\epsilon$, но $\tilde{\mu}(Q)\leqslant \underline(\mu)(P)\leqslant \overline{\mu}(P) \leqslant \tilde{\mu}(S)\implies 0\leqslant\\ \leqslant  \overline{\mu}(P)-\underline{\mu}(P)<\varepsilon\implies \forall \varepsilon>) 0\leqslant \overline{\mu}(P) - \underline{\mu}(P)<\varepsilon\implies \overline{\mu}(P)-\underline{\mu}(P)=0 \implies \underline{\mu}(P)=\overline{\mu}(P),$ т.е $P$ - квадрируема
+
+
+\end{proof}
+\section{Квадрируемость криволинейной трапеции. Выражение плоащиди криволинейной трапеции в виде определенного интеграла. Формула площади криволинейного сектора (без доказательства)}
+\begin{definition}
+    Пусть $f(x) \in C[a,b], f(x)\geqslant 0 \;\forall x\in[a,b].$ Плоская фигура $P=\{(x,y): a\leqslant x\leqslant b , 0\leqslant y \leqslant f(x)\} $ называется криволинейной трапецией. 
+\end{definition}
+\begin{theorem}[Критерий квадрируемости]
+    $f(x)\in C[a,b], f(x)\geqslant 0 \; \forall x\in[a,b]\implies$ криволинейная трапеция $P=\{(x,y): a\leqslant x\leqslant b, 0\leqslant y\leqslant f(x)\}$ является квадрируемой фигурой, причем $\mu(P)=\int\limits_{a   }^{b    } f(x)dx$
+\end{theorem}
+\begin{proof}
+    $f(x)\in C[a,b] \implies \exists \int\limits_{a}^{b}f(x)dx = I\underset{\text{кр.инт}}{\implies} \forall \varepsilon>0 \exists \delta>0: \forall T, \delta_{T}<\delta\implies 0\leqslant S_{T}(f)-s_{T}(f)<\varepsilon,$ т.е $\exists Q,S - $ ступенчатые фигуры (являются многоугольниками)$: Q\subset P \subset S , $ причем $0\leqslant \tilde{\mu}(S )-\tilde{\mu}(Q)<\varepsilon \underset{\text{Т5.4}}{\implies} P-$ квадрируемая фигура $\implies \exists \mu(P): \left.\begin{aligned}&\mu(P)=\underline{\mu}(P)=\sup{\tilde{\mu}(Q)}\geqslant \underset{\substack{Q: Q\subset P \\ Q - \text{ступенчатая} \\ \text{фигура}}}{\sup}{\tilde{\mu}(Q)}=\underset{T}{\sup}{s_{T}(f)}=\underline{I}=I
+    \\&\mu(P)=\overline{\mu}(P)=\underset{S \supset P}{\inf}{\tilde{\mu}(S)}\leqslant \underset{\substack{S: S\supset P \\ S - \text{ступенчатая} \\ \text{фигура}}}{\inf}{\tilde{\mu}(S)}=\underset{T}{\inf}{S_{T}(f)}=\overline{I}=I\end{aligned}\right\} \implies I\leqslant \mu(P)\leqslant I\implies \mu(P)=I$
+\end{proof}
+Замечание. Если $f(x)\in C[a,b], f(x)\leqslant 0,$ то $\int\limits_{a   }^{b    } f(x)dx=-\mu(P)$
+
+Если $f(x)\in C[a,b]$, причем меняет знак на $[a,b]\implies \int\limits_{ a }^{b    } f(x)dx-$ алгебраическая разность площадей. 
+
+\begin{definition}
+    $r,\varphi - $ полярные координаты. Пусть $r(\varphi)\in C[\alpha,\beta].$ Плоскя фигура $P=\{(r,\varphi):\alpha\leqslant \varphi\leqslant \beta, 0\leqslant r\leqslant r(\varphi)\}$
+\end{definition}
+
+\begin{theorem}
+    $r,\varphi -$ полярные координаты $r(\varphi)\in C[\alpha,\beta]\implies$ криволинейный сектор $P=\{(r,\varphi): \alpha\leqslant \varphi\leqslant \beta , 0\leqslant r\leqslant r(\varphi)\}-$ квадрируемая фигура, причем $\mu(P)=\frac{1}{2}\int\limits_{\alpha}^{\beta}r^{2}(\varphi)d\varphi$
+\end{theorem}
+
+
+\end{document}

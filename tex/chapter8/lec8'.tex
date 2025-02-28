@@ -1,0 +1,82 @@
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+\lecture{8}{28.02}{}
+
+\section{Несобственный интеграл первого рода, их сходимость и расходимость. Независимость сходимости (расходимости) несобственного интеграла первого рода от значения его постоянного (неособенного) предела}
+
+
+\begin{definition}
+    Пусть $\forall c\geqslant a\; f(x)$ интегрируема на $[a,c]$. Выражение $\int\limits_{a   }^{+\infty}f(x)dx  $ называется несобственным интегралом I рода от $f(x) \text{ на } [a,+\infty).$ Если $\exists \lim\limits_{c \to +\infty}\int\limits_{a}^{c} f(x)dx=A,$ то число $A$ называется величиной этого интеграла. Обозначение: $\int\limits_{a    }^{+\infty}f(x)dx=A$   
+\end{definition}
+\begin{definition}
+    Если $\exists \lim\limits_{c    \to +\infty}\int\limits_{a  }^{b    } f(x)dx, $ то $\int\limits_{a  }^{+\infty}f(x)dx  $ называется сходящися, иначе - расходящимся.
+\end{definition}
+
+\begin{theorem}
+    $\int\limits_{a }^{+\infty} f(x)dx  $ сходится (расходится) $\implies \forall a' \geqslant a \int\limits_{a'}^{+\infty}f(x)dx $ тоже сходится (расходится).
+\end{theorem}
+\begin{proof}
+    $\forall c\geqslant a, \forall a'\geqslant a \; \exists \int\limits_{a  }^{c    } f(x)dx=\underbrace{\int\limits_{a }^{a'}  f(x)dx}_{\substack{\text{собственный интеграл}\\\text{(число)}}}+ \int\limits_{a'}^{c}f(x)dx\underset{c\to+\infty}{\implies} \int\limits_{a   }^{+\infty}f(x)dx $ и $\int\limits_{a'}^{+\infty}f(x)dx $ сходятся или расходятся одновременно. А их величины (в случае сходимости) отличаются на $\int\limits_{a   }^{a'}f(x)dx,$ (т.е на  константу)
+    
+\end{proof}
+
+\begin{definition}
+    Пусть $\forall c\leqslant a\; f(x)$ интегрируема на $[c,a]$. Выражение $\int\limits_{-\infty  }^{a} f(x)dx$ называется несобственным интегралом I рода от $f(x)$ на $(-\infty,a]$. Если $\exists \lim\limits_{c\to -\infty}\int\limits_{c}^{a}f(x)dx=A,$ то число $A$ называется величиной этого интеграла. Обозначение: $\int\limits_{-\infty}^{a}f(x)dx=A$
+\end{definition}
+\begin{definition}
+    Если $\exists \lim\limits_{c\to -\infty}\int\limits_{a}^{b}f(x)dx,$ то $\int\limits_{-\infty}^{a}f(x)dx$ называется сходящимся, иначе - расходящимся.
+\end{definition}
+\begin{theorem}
+    $\int\limits_{-\infty   }^{a}f(x)dx  $ сходится (расходится) $\implies \forall a'\leqslant a \;\; \int\limits_{-\infty}^{a'} f(x)dx  $ тоже сходится (расходится)
+\end{theorem}
+\begin{proof}
+    Самостоятельно.
+\end{proof}
+
+\begin{definition}
+        Пусть $ \forall a,b\; f(x)$ - интегрируема на $[a,b]$. Выражение $\int\limits_{-\infty}^{+\infty}f(x)dx $ называется несобственным интегралом I рода от $f(x)$ на $(-\infty,+\infty)$. Если $\exists c: \int\limits_{-\infty   }^{a}f(x)dx $ и $\int\limits_{a    }^{+\infty}f(x)dx $ сходятся, то $\int\limits_{-\infty}^{+\infty}f(x)dx $ называется сходящимся, а число $A=\int\limits_{-\infty}^{a}f(x)dx + \int\limits_{a }^{+\infty}f(x)dx $ называется величиной $\int\limits_{-\infty}^{+\infty}f(x)dx.$ Обозначение: $\int\limits_{-\infty }^{+\infty  } f(x)dx = A$. Если такого $c$ не существует, то $\int\limits_{-\infty}^{+\infty}f(x)dx  $ называется расходящимся.
+\end{definition}
+\begin{theorem}
+    $\int\limits_{-\infty}^{+\infty}f(x)dx $ сходится (расходится) $\implies \forall c' \int\limits_{-\infty}^{c'}f(x)dx $ и $\int\limits_{c'}^{+\infty}f(x)dx $ являются сходящимися, при этом $\int\limits_{-\infty    }^{+\infty  } f(x)dx=\int\limits_{-\infty   }^{c'}  f(x)dx+\int\limits_{c'}^{+\infty}f(x)dx $
+\end{theorem}
+
+\begin{proof}
+    $\exists c: \int\limits_{-\infty    }^{c}f(x)dx $ и $\int\limits_{c}^{+\infty}f(x)dx \;$ сходятся $\implies \left.\begin{aligned}\exists \lim\limits_{a    \to +\infty}\int\limits_{c}^{a} f(x)dx\\ \exists \lim\limits_{b \to -\infty } \int\limits_{b    }^{c    } f(x)dx\end{aligned} \right| \left.\begin{aligned} \int\limits_{c }^{+\infty  } f(x)dx=\lim\limits_{a \to +\infty}\int\limits_{c  }^{a    } f(x)dx \\ \int\limits_{-\infty    }^{c    } f(x)dx=\lim\limits_{b \to -\infty}\int\limits_{b}^{c} f(x)dx \end{aligned} \right| \overset{\substack{\text{Т6.1}\\\text{Т6.2}}}{\implies} \forall c' \qquad \left.\begin{aligned} \int\limits_{c'}^{+\infty}f(x) dx \text{ сходится}\\ \int\limits_{-\infty}^{c'}f(x)dx \text{ сходится}  \end{aligned}\right| \begin{aligned}&\int\limits_{c'}^{+\infty} f(x)dx\lim\limits_{a   \to +\infty}\int\limits_{c'}^{a}f(x)dx -\text{ число} \\ &\int\limits_{-\infty  }^{c'}  f(x)dx = \lim\limits_{b \to -\infty}\int\limits_{b  }^{c'}f(x)dx  - \text{ число}\end{aligned}$
+    Рассмотрим $\int\limits_{c'}^{+\infty}f(x)dx+\int\limits_{-\infty   }^{c'}  f(x)dx =\\= \lim\limits_{a \to +\infty}\int\limits_{c'}^{a}f(x)dx+\lim\limits_{b   \to -\infty}\int\limits_{b}^{c'} f(x)dx= \lim\limits_{a \to +\infty}\left[\int\limits_{c'}^{c}f(x)dx +\int\limits_{c}^{a}f(x)dx\right]+\lim\limits_{b   \to -\infty}\left[\int\limits_{b    }^{c    } f(x)dx+\int\limits_{c }^{c'}f(x)dx\right]=\int\limits_{c'}^{c}f(x)dx+\int\limits_{c   }^{c'}f(x)dx+\lim\limits_{a \to +\infty}\int\limits_{c  }^{a    } f(x)dx+\lim\limits_{b \to -\infty}f(x)dx = \int\limits_{c }^{+\infty}f(x)dx+\int\limits_{-\infty}^{c}f(x)dx=\int\limits_{-\infty}^{+\infty}f(x)dx$
+\end{proof}
+
+Пример. $\int\limits_{1}^{+\infty} \frac{dx}{x^{p}},\quad f(x)=\frac{1}{x^{p}} $ непрерывна при $x\geqslant 1$ (даже при $x>0$) $\implies $интегрируема на $[a,c] \forall c\geqslant 1$ 
+\\ $p>1 \quad \int\limits_{1}^{c} \frac{dx}{x^{p}}= \frac{x^{1-p}}{1-p}\bigg|_{x=1}^{x=c}=\frac{1}{x-p}\left(\frac{1}{c^{p-1}}-1\right)\underset{c\to+\infty}{\to} \frac{1}{p-1}\implies \int\limits_{1}^{+\infty}\frac{dx}{x^{p}}=\frac{1}{p-1}$ (сходится)
+\\ $p<1\quad \int\limits_{1}^{c}\frac{dx}{x^{p}}=\frac{1}{1-p}\left(\frac{1}{c^{p-1}}-1\right)\underset{c\to+\infty}{\to} +\infty \implies \int\limits_{1}^{c}\frac{dx}{x^{p}}=+\infty$ (расходится)
+\\ $p=1 \quad \int\limits_{1}^{c}\frac{dx}{x}=\ln{(x)}\bigg|_{x=1}^{x=c}=\ln{(c)}\underset{c\to+\infty}{\to}+\infty \implies \int\limits_{1}^{+\infty}\frac{dx}{x} =+\infty$ (расходится)
+\\ Итого: $\int\limits_{1}^{+\infty}\frac{dx}{x^{p}} $ - сходится при $p>1$. Расходится при $p\leqslant 1$. $\implies \forall a>0 \int\limits_{a}^{+\infty}\frac{dx}{x^{p}} $ - сходится при $p>1$. Расходится при $p\leqslant 1$
+
+
+\section{Несобственные интегралы второго рода, их сходимость и расходимость. Независимость сходимости (расходимости) несобственного интеграла второго рода от значения его постоянного (неособенного) предела}
+\begin{definition}
+    Пусть $\forall c\in[a,b) \bigg[\forall c\in (a,b]\bigg] f(x)$ интегрируема на $[a,c]\; \bigg[\text{на }[c,b]\bigg].$ Выражение $\int\limits_{a  }^{b    } f(x)dx$ называется несобственным интегралом второго рода с особой точкой $b-0 \;\bigg[a+0\bigg]$ от $f(x)$ на $[a,b)\;\bigg[\text{на }(a,b]\bigg]$. 
+    Если $\exists \lim\limits_{c    \to b-0} \int\limits_{ a    }^{c    } f(x)dx=A \; \bigg[\exists \lim\limits_{c  \to a+0}\int\limits_{c  }^{b    } f(x)dx=A \bigg], $ то число $A$ называется его величиной. Обозначение: $\int\limits_{a }^{b    } f(x)dx=A.$ Интеграл, имеющий конечную величину называется сходящимся, в противном случае - расходящимся.
+\end{definition}
+
+\begin{theorem}
+    $\int\limits_{a }^{b    } f(x)dx $ с особой точкой $b-0$ сходится (расходится) $\implies \forall c\in[a,b) \; \int\limits_{c    }^{b    } f(x)dx $ с особой точкой $b-0$ тоже сходится (расходится).  
+\end{theorem}
+\begin{proof}
+    Самостоятельно.
+\end{proof}
+
+\begin{theorem}
+    $\int\limits_{a }^{b    } f(x)dx $ с особой точкой $a+0$ сходится $\implies \forall c\in(a,b] \;\int\limits_{a    }^{c    } f(x)dx$ с особой точкой $a+0$ тоже сходится (расходится). 
+
+\end{theorem}
+\begin{proof}
+    Самостоятельно.
+\end{proof}
+
+Самостоятельно. Ввести понятие $\int\limits_{a  }^{b    } f(x)dx$ с двумя особыми точками $b-0$ и $a+0$. Дать определение сходимости (расходимости) такого интеграла. Доказать, что если такой интеграл сходится, то его величина не зависит от выбора промежуточной точки $c\in (a,b)$
+
+
+\vspace{1cm}
+\begin{flushright}
+    \textit{tg: @moksimqa}
+\end{flushright}
