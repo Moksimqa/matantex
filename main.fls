@@ -514,7 +514,13 @@ INPUT .\tex\chapter8\lec8'.tex
 INPUT tex\chapter8\lec8'.tex
 INPUT .\tex\chapter8\lec8'.tex
 INPUT tex\chapter8\lec8'.tex
+INPUT .\tex\chapter8\lec9.tex
+INPUT tex\chapter8\lec9.tex
+INPUT .\tex\chapter8\lec9.tex
+INPUT tex\chapter8\lec9.tex
 INPUT main.aux
+INPUT C:\Users\moksimqa\AppData\Local\MiKTeX\fonts\pk\ljfour\lh\lh-t2a\dpi600\lati0700.pk
+INPUT C:\Users\moksimqa\AppData\Local\MiKTeX\fonts\pk\ljfour\lh\lh-t2a\dpi600\lati0700.pk
 INPUT C:\Users\moksimqa\AppData\Local\MiKTeX\fonts\pk\ljfour\lh\lh-t2a\dpi600\larm0700.pk
 INPUT C:\Users\moksimqa\AppData\Local\MiKTeX\fonts\pk\ljfour\lh\lh-t2a\dpi600\larm0700.pk
 INPUT C:\Users\moksimqa\AppData\Local\MiKTeX\fonts\pk\ljfour\lh\lh-t2a\dpi600\lati1000.pk

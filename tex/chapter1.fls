@@ -1,22 +1,22 @@
-PWD c:\Users\moksimqa\Documents\Projects\latexmatan\tex
+PWD c:\Users\moksimqa\Documents\Projects\latexmatan
 INPUT C:\Users\moksimqa\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
 INPUT c:\Users\moksimqa\Documents\Projects\latexmatan\tex\chapter1.tex
-OUTPUT chapter1.log
+OUTPUT c:\Users\moksimqa\Documents\Projects\latexmatan\tex\chapter1.log
 INPUT C:\Program Files\MiKTeX\tex\latex\subfiles\subfiles.cls
 INPUT C:\Program Files\MiKTeX\tex\latex\subfiles\subfiles.cls
 INPUT C:\Program Files\MiKTeX\tex\latex\import\import.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\import\import.sty
-INPUT ..\main.tex
-INPUT ..\main.tex
-INPUT ..\main.tex
+INPUT c:\Users\moksimqa\Documents\Projects\latexmatan\tex\..\main.tex
+INPUT c:\Users\moksimqa\Documents\Projects\latexmatan\tex\..\main.tex
+INPUT c:\Users\moksimqa\Documents\Projects\latexmatan\main.tex
 INPUT C:\Program Files\MiKTeX\tex\latex\base\report.cls
 INPUT C:\Program Files\MiKTeX\tex\latex\base\report.cls
 INPUT C:\Program Files\MiKTeX\tex\latex\base\size10.clo
 INPUT C:\Program Files\MiKTeX\tex\latex\base\size10.clo
 INPUT C:\Program Files\MiKTeX\tex\latex\base\size10.clo
-INPUT ..\preamble.tex
-INPUT ..\preamble.tex
-INPUT ..\preamble.tex
+INPUT .\preamble.tex
+INPUT .\preamble.tex
+INPUT preamble.tex
 INPUT C:\Program Files\MiKTeX\tex\latex\base\inputenc.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\base\inputenc.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\base\fontenc.sty
@@ -188,6 +188,15 @@ INPUT C:\Program Files\MiKTeX\tex\generic\iftex\iftex.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\geometry\geometry.cfg
 INPUT C:\Program Files\MiKTeX\tex\latex\geometry\geometry.cfg
 INPUT C:\Program Files\MiKTeX\tex\latex\geometry\geometry.cfg
+INPUT C:\Program Files\MiKTeX\tex\latex\multirow\multirow.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\multirow\multirow.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarydecorations.pathreplacing.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarydecorations.pathreplacing.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarydecorations.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarydecorations.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\modules\pgfmoduledecorations.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\libraries\decorations\pgflibrarydecorations.pathreplacing.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\libraries\decorations\pgflibrarydecorations.pathreplacing.code.tex
 INPUT C:\Program Files\MiKTeX\tex\latex\parskip\parskip.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\parskip\parskip.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\kvoptions\kvoptions.sty
@@ -316,14 +325,14 @@ INPUT C:\Program Files\MiKTeX\tex\latex\transparent\transparent.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\transparent\transparent.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\transparent\transparent-nometadata.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\transparent\transparent-nometadata.sty
-INPUT .\chapter1.aux
-INPUT .\chapter1.aux
-INPUT chapter1.aux
+INPUT c:\Users\moksimqa\Documents\Projects\latexmatan\tex\chapter1.aux
+INPUT c:\Users\moksimqa\Documents\Projects\latexmatan\tex\chapter1.aux
+INPUT c:\Users\moksimqa\Documents\Projects\latexmatan\tex\chapter1.aux
 INPUT C:\Program Files\MiKTeX\tex\latex\cyrillic\t2acmr.fd
 INPUT C:\Program Files\MiKTeX\tex\latex\cyrillic\t2acmr.fd
 INPUT C:\Program Files\MiKTeX\tex\latex\cyrillic\t2acmr.fd
 INPUT C:\Users\moksimqa\AppData\Local\MiKTeX\fonts\tfm\lh\lh-t2a\larm1000.tfm
-OUTPUT chapter1.aux
+OUTPUT c:\Users\moksimqa\Documents\Projects\latexmatan\tex\chapter1.aux
 INPUT C:\Program Files\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Program Files\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Program Files\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
@@ -341,10 +350,10 @@ INPUT C:\Program Files\MiKTeX\tex\latex\graphics\lscape.sty
 INPUT C:\Users\moksimqa\AppData\Local\MiKTeX\fonts\tfm\lh\lh-t2a\larm2074.tfm
 INPUT C:\Users\moksimqa\AppData\Local\MiKTeX\fonts\tfm\lh\lh-t2a\labx2074.tfm
 INPUT C:\Users\moksimqa\AppData\Local\MiKTeX\fonts\tfm\lh\lh-t2a\labx2488.tfm
-INPUT .\chapter1\lec1.tex
-INPUT chapter1\lec1.tex
-INPUT .\chapter1\lec1.tex
-INPUT chapter1\lec1.tex
+INPUT c:\Users\moksimqa\Documents\Projects\latexmatan\tex\chapter1\lec1.tex
+INPUT c:\Users\moksimqa\Documents\Projects\latexmatan\tex\chapter1\lec1.tex
+INPUT c:\Users\moksimqa\Documents\Projects\latexmatan\tex\chapter1\lec1.tex
+INPUT c:\Users\moksimqa\Documents\Projects\latexmatan\tex\chapter1\lec1.tex
 INPUT C:\Users\moksimqa\AppData\Local\MiKTeX\fonts\tfm\lh\lh-t2a\larm1200.tfm
 INPUT C:\Users\moksimqa\AppData\Local\MiKTeX\fonts\tfm\lh\lh-t2a\labx1200.tfm
 INPUT C:\Users\moksimqa\AppData\Local\MiKTeX\fonts\tfm\lh\lh-t2a\larm0900.tfm
@@ -428,23 +437,23 @@ INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmbsy6.tfm
 INPUT C:\Users\moksimqa\AppData\Local\MiKTeX\fonts\tfm\public\stmaryrd\stmary10.tfm
 INPUT C:\Users\moksimqa\AppData\Local\MiKTeX\fonts\tfm\public\stmaryrd\stmary8.tfm
 INPUT C:\Users\moksimqa\AppData\Local\MiKTeX\fonts\tfm\public\stmaryrd\stmary6.tfm
-OUTPUT chapter1.pdf
+OUTPUT c:\Users\moksimqa\Documents\Projects\latexmatan\tex\chapter1.pdf
 INPUT C:\Users\moksimqa\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT C:\Users\moksimqa\AppData\Local\MiKTeX\fonts\tfm\lh\lh-t2a\larm0700.tfm
 INPUT C:\Users\moksimqa\AppData\Local\MiKTeX\fonts\tfm\lh\lh-t2a\larm0500.tfm
-INPUT .\chapter1\lec2.tex
-INPUT chapter1\lec2.tex
-INPUT .\chapter1\lec2.tex
-INPUT chapter1\lec2.tex
-INPUT .\chapter1\lec3.tex
-INPUT chapter1\lec3.tex
-INPUT .\chapter1\lec3.tex
-INPUT chapter1\lec3.tex
-INPUT .\chapter1\lec4.tex
-INPUT chapter1\lec4.tex
-INPUT .\chapter1\lec4.tex
-INPUT chapter1\lec4.tex
-INPUT chapter1.aux
+INPUT c:\Users\moksimqa\Documents\Projects\latexmatan\tex\chapter1\lec2.tex
+INPUT c:\Users\moksimqa\Documents\Projects\latexmatan\tex\chapter1\lec2.tex
+INPUT c:\Users\moksimqa\Documents\Projects\latexmatan\tex\chapter1\lec2.tex
+INPUT c:\Users\moksimqa\Documents\Projects\latexmatan\tex\chapter1\lec2.tex
+INPUT c:\Users\moksimqa\Documents\Projects\latexmatan\tex\chapter1\lec3.tex
+INPUT c:\Users\moksimqa\Documents\Projects\latexmatan\tex\chapter1\lec3.tex
+INPUT c:\Users\moksimqa\Documents\Projects\latexmatan\tex\chapter1\lec3.tex
+INPUT c:\Users\moksimqa\Documents\Projects\latexmatan\tex\chapter1\lec3.tex
+INPUT c:\Users\moksimqa\Documents\Projects\latexmatan\tex\chapter1\lec4.tex
+INPUT c:\Users\moksimqa\Documents\Projects\latexmatan\tex\chapter1\lec4.tex
+INPUT c:\Users\moksimqa\Documents\Projects\latexmatan\tex\chapter1\lec4.tex
+INPUT c:\Users\moksimqa\Documents\Projects\latexmatan\tex\chapter1\lec4.tex
+INPUT c:\Users\moksimqa\Documents\Projects\latexmatan\tex\chapter1.aux
 INPUT C:\Users\moksimqa\AppData\Local\MiKTeX\fonts\pk\ljfour\lh\lh-t2a\dpi600\labx1000.pk
 INPUT C:\Users\moksimqa\AppData\Local\MiKTeX\fonts\pk\ljfour\lh\lh-t2a\dpi600\labx1000.pk
 INPUT C:\Users\moksimqa\AppData\Local\MiKTeX\fonts\pk\ljfour\lh\lh-t2a\dpi600\larm1000.pk
@@ -469,8 +478,6 @@ INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi7.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi7.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr5.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr5.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr7.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr7.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb

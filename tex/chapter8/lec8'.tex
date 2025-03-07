@@ -9,7 +9,7 @@
     Пусть $\forall c\geqslant a\; f(x)$ интегрируема на $[a,c]$. Выражение $\int\limits_{a   }^{+\infty}f(x)dx  $ называется несобственным интегралом I рода от $f(x) \text{ на } [a,+\infty).$ Если $\exists \lim\limits_{c \to +\infty}\int\limits_{a}^{c} f(x)dx=A,$ то число $A$ называется величиной этого интеграла. Обозначение: $\int\limits_{a    }^{+\infty}f(x)dx=A$   
 \end{definition}
 \begin{definition}
-    Если $\exists \lim\limits_{c    \to +\infty}\int\limits_{a  }^{b    } f(x)dx, $ то $\int\limits_{a  }^{+\infty}f(x)dx  $ называется сходящися, иначе - расходящимся.
+    Если $\exists \lim\limits_{c    \to +\infty}\int\limits_{a  }^{c    } f(x)dx, $ то $\int\limits_{a  }^{+\infty}f(x)dx  $ называется сходящися, иначе - расходящимся.
 \end{definition}
 
 \begin{theorem}
@@ -24,7 +24,7 @@
     Пусть $\forall c\leqslant a\; f(x)$ интегрируема на $[c,a]$. Выражение $\int\limits_{-\infty  }^{a} f(x)dx$ называется несобственным интегралом I рода от $f(x)$ на $(-\infty,a]$. Если $\exists \lim\limits_{c\to -\infty}\int\limits_{c}^{a}f(x)dx=A,$ то число $A$ называется величиной этого интеграла. Обозначение: $\int\limits_{-\infty}^{a}f(x)dx=A$
 \end{definition}
 \begin{definition}
-    Если $\exists \lim\limits_{c\to -\infty}\int\limits_{a}^{b}f(x)dx,$ то $\int\limits_{-\infty}^{a}f(x)dx$ называется сходящимся, иначе - расходящимся.
+    Если $\exists \lim\limits_{c\to -\infty}\int\limits_{c}^{a}f(x)dx,$ то $\int\limits_{-\infty}^{a}f(x)dx$ называется сходящимся, иначе - расходящимся.
 \end{definition}
 \begin{theorem}
     $\int\limits_{-\infty   }^{a}f(x)dx  $ сходится (расходится) $\implies \forall a'\leqslant a \;\; \int\limits_{-\infty}^{a'} f(x)dx  $ тоже сходится (расходится)
@@ -41,7 +41,7 @@
 \end{theorem}
 
 \begin{proof}
-    $\exists c: \int\limits_{-\infty    }^{c}f(x)dx $ и $\int\limits_{c}^{+\infty}f(x)dx \;$ сходятся $\implies \left.\begin{aligned}\exists \lim\limits_{a    \to +\infty}\int\limits_{c}^{a} f(x)dx\\ \exists \lim\limits_{b \to -\infty } \int\limits_{b    }^{c    } f(x)dx\end{aligned} \right| \left.\begin{aligned} \int\limits_{c }^{+\infty  } f(x)dx=\lim\limits_{a \to +\infty}\int\limits_{c  }^{a    } f(x)dx \\ \int\limits_{-\infty    }^{c    } f(x)dx=\lim\limits_{b \to -\infty}\int\limits_{b}^{c} f(x)dx \end{aligned} \right| \overset{\substack{\text{Т6.1}\\\text{Т6.2}}}{\implies} \forall c' \qquad \left.\begin{aligned} \int\limits_{c'}^{+\infty}f(x) dx \text{ сходится}\\ \int\limits_{-\infty}^{c'}f(x)dx \text{ сходится}  \end{aligned}\right| \begin{aligned}&\int\limits_{c'}^{+\infty} f(x)dx\lim\limits_{a   \to +\infty}\int\limits_{c'}^{a}f(x)dx -\text{ число} \\ &\int\limits_{-\infty  }^{c'}  f(x)dx = \lim\limits_{b \to -\infty}\int\limits_{b  }^{c'}f(x)dx  - \text{ число}\end{aligned}$
+    $\exists c: \int\limits_{-\infty    }^{c}f(x)dx $ и $\int\limits_{c}^{+\infty}f(x)dx \;$ сходятся $\implies \left.\begin{aligned}\exists \lim\limits_{a    \to +\infty}\int\limits_{c}^{a} f(x)dx\\ \exists \lim\limits_{b \to -\infty } \int\limits_{b    }^{c    } f(x)dx\end{aligned} \right| \left.\begin{aligned} \int\limits_{c }^{+\infty  } f(x)dx=\lim\limits_{a \to +\infty}\int\limits_{c  }^{a    } f(x)dx \\ \int\limits_{-\infty    }^{c    } f(x)dx=\lim\limits_{b \to -\infty}\int\limits_{b}^{c} f(x)dx \end{aligned} \right| \overset{\substack{\text{Т6.1}\\\text{Т6.2}}}{\implies} \forall c' \qquad \left.\begin{aligned} \int\limits_{c'}^{+\infty}f(x) dx \text{ сходится}\\ \int\limits_{-\infty}^{c'}f(x)dx \text{ сходится}  \end{aligned}\right| \begin{aligned}&\int\limits_{c'}^{+\infty} f(x)dx=\lim\limits_{a   \to +\infty}\int\limits_{c'}^{a}f(x)dx -\text{ число} \\ &\int\limits_{-\infty  }^{c'}  f(x)dx = \lim\limits_{b \to -\infty}\int\limits_{b  }^{c'}f(x)dx  - \text{ число}\end{aligned}$
     Рассмотрим $\int\limits_{c'}^{+\infty}f(x)dx+\int\limits_{-\infty   }^{c'}  f(x)dx =\\= \lim\limits_{a \to +\infty}\int\limits_{c'}^{a}f(x)dx+\lim\limits_{b   \to -\infty}\int\limits_{b}^{c'} f(x)dx= \lim\limits_{a \to +\infty}\left[\int\limits_{c'}^{c}f(x)dx +\int\limits_{c}^{a}f(x)dx\right]+\lim\limits_{b   \to -\infty}\left[\int\limits_{b    }^{c    } f(x)dx+\int\limits_{c }^{c'}f(x)dx\right]=\int\limits_{c'}^{c}f(x)dx+\int\limits_{c   }^{c'}f(x)dx+\lim\limits_{a \to +\infty}\int\limits_{c  }^{a    } f(x)dx+\lim\limits_{b \to -\infty}f(x)dx = \int\limits_{c }^{+\infty}f(x)dx+\int\limits_{-\infty}^{c}f(x)dx=\int\limits_{-\infty}^{+\infty}f(x)dx$
 \end{proof}
 

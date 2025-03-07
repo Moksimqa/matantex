@@ -1,0 +1,99 @@
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+\lecture{9}{07.03}{}
+\begin{theorem}
+    Собственный $\int\limits_{a }^{b    } f(x)dx,$ рассмотрим его как несобственный с особой точкой $b-0$ (с особой $a+0$), сходится, причем значения совпадают.
+\end{theorem}
+\begin{proof}
+    $f(x)$ интегрируема на $\implies$ ограничена $\implies \exists M>0: \forall x\in[a,b]\; |f(x)|\leqslant M$\\ 
+    1) Особая точка $\fbox{$b-0$}$$\qquad \forall C\in[a,b)\quad \left| \int\limits_{a  }^{b    } f(x)dx - \int\limits_{a   }^{c    } f(x)dx \right| = \left| \int\limits_{ c   }^{b    } f(x)dx \right| \leqslant \left| \int\limits_{c    }^{b    } |f(x)|dx\right|= \int\limits_{c   }^{b    } |f(x)|dx\leqslant\\\leqslant \int\limits_{c  }^{b    } Mdx=M(b-c)\underset{c\to b-0}{\to} 0\implies \lim\limits_{c   \to b-0}\int\limits_{a  }^{c    } f(x)dx=\int\limits_{a }^{b    } f(x)dx $\\ 
+    2) Особая точка $\fbox{$a+0$}$ - самостоятельно. 
+\end{proof}
+Пример: $\int\limits_{0 }^{1} \frac{dx}{x^{p}}\qquad \frac{1}{x^{p}}-$ непрерывна при $x>0$
+\\1) $\fbox{$p>1$}$ $\int\limits_{c  }^{1}\frac{dx}{x^{p}} = \frac{x^{1-p}}{1-p}\bigg|_{x=c}^{x=1} =\frac{1}{1-p}\left(1-\frac{1}{c^{p-1}}\right) \underset{c\to 0+0}{\to} +\infty\implies \int\limits_{0}^{1} \frac{dx}{x^{p}}=+\infty$ - расходится
+\\2) $\fbox{$p<1$}$ $\int\limits_{c  }^{1}   \frac{dx}{x^{p}}=\frac{1}{1-p}\left(1-\frac{1}{c^{p-1}}\right) \underset{c\to 0+0}{\to} \frac{1}{1-p}\implies \int\limits_{c}^{1} \frac{dx}{x^{p}}=\frac{1}{1-p}$ - сходится
+\\3) $\fbox{$p=1$}$ $\int\limits_{c  }^{1} \frac{dx}{x}=\ln x\bigg|_{x=c}^{x=1}=\ln 1-\ln c=-\ln c\underset{c\to 0+0}{\to} +\infty\implies \int\limits_{0}^{1} \frac{dx}{x}=+\infty$ - расходится
+\\Итого: $\int\limits_{0}^{a} \frac{dx}{x^{p}} $ - сходится при $p<1$, расходится при $p\geqslant 1$ $\underset{\text{Т6.6}}{\implies} \forall a >0 \int\limits_{0}^{a}\frac{dx}{x^{p}}$ - сходится при $p<1$, расходится при $p\geqslant 1$.
+
+\section{Несобственные интегралы с несколькими особыми точками.}
+В общем случае несобственный интеграл $\int\limits_{a   }^{b    } f(x)dx,$ где $a$ - число или $-\infty$, $b$ - число или $+\infty$, причем на промежутке $(a,b)$ - лишь конечное количество точек, в которых $f(x)$ не является интегрируемой в собственном смысле, разбивается на сумму конечного количества слагаемых, каждое из которых - несобственный интеграл с единственной особенностью (один из пределов интегрирования). Его величина (если $\fbox{$\text{все}$}$ слагаемые сходятся) не зависит от выбора промежуточных точек. \\ 
+Пример: $\int\limits_{-\infty   }^{+\infty}\frac{dx}{x^{2}-1} = \int\limits_{-\infty    }^{-2}\frac{dx}{x^{2}-1}+\int\limits_{-2}^{-1}\frac{dx}{x^{2}-1}+\int\limits_{-1}^{0}\frac{dx}{x^{2}-1}+\int\limits_{0}^{1}\frac{dx}{x^{2}-1}+\int\limits_{1}^{2} \frac{dx}{x^{2}-1}+\int\limits_{2}^{+\infty}\frac{dx}{x^{2}-1}$
+\\ Рассмотрим $\int\limits_{1}^{2}\frac{dx}{x^{2}-1}\quad \forall c \in(1;2] \quad \int\limits_{c   }^{2}\frac{dx}{x^{2}-1}=\frac{1}{2}\ln{\left(\frac{x-1}{x+1}\right)}\bigg|_{x=c}^{x=2}=\frac{1}{2}\ln{\left(\frac{1}{3} \cdot\frac{c+1}{c-1}\right)} \underset{c\to 1+0}{\to} +\infty \implies \\ \implies \int\limits_{1}^{2} \frac{dx}{x^{2}-1}=+\infty$ - расходится $\implies \int\limits_{-\infty   }^{+\infty}\frac{dx}{x^{2}-1} $ - расходится.
+
+
+\section{Формула Ньютона-Лейбница для несобственных интегралов. Вычисление несобственных интегралов способами замены переменной и интегрирования по частям.}
+\begin{theorem}
+    Пусть $f(x) \in C[a,b),$ где $b$ - число или $+\infty$, $F(x)$ - первообразная к $f(x)$ на $[a,b)\implies$ из существования одного из пределов следует существования другого и равно: $\int\limits_{a   }^{b    } f(x)dx=\underbrace{\lim\limits_{c \to b-0}F(c)}_{\text{обозн.} F(b-0)}-F(a)$ $\left(\text{т.е } \int\limits_{a}^{b}F(x)dx=F(x)\bigg|_{x=a}^{x=b-0} \right)$ Т.е формула Ньютона-Лейбница справедлива и для сходящихся несобственных интегралов.
+\end{theorem}
+\begin{proof}
+    $f(x)\in C[a,b)\implies \exists F(x) - $ первообразная к $f(x)$ на $[a,b)$. $\forall c \in [a,b)$ рассмотрим $\int\limits_{a    }^{c    } f(x)dx=F(c)-F(a)$, а теперь $c\to b-0$
+\end{proof}
+\noindent Случай где $a$ - число или $-\infty$, $b$ - число или $+\infty$ рассматривается аналогично.\\
+
+Примеры: $\int\limits_{1}^{+\infty}\frac{dx}{x^{2}}=-\frac{1}{x}\bigg|_{x=1}^{+\infty}=1, \qquad \int\limits_{0}^{1}\frac{dx}{\sqrt{x}}=2\sqrt{x}\bigg|_{x=0}^{x=1}=2 $
+\vspace{0.5cm}
+\begin{theorem}
+    $f(x)\in C[a,b)$ (где $b$ - число или $+\infty$), $\varphi(t): \varphi(t)$ строго возрастает на $[\alpha,\beta)$ (где $\beta$ - число или $+\infty$), $\varphi(\alpha)=a, \lim\limits_{t    \to \beta-0}\varphi(t)=b-0 ,\varphi'(t) \in C[\alpha,\beta) \implies $ из существования одного из интегралов следует существование другого и их равенство: $\int\limits_{a  }^{b  }f(x)dx=\int\limits_{\alpha       }^{\beta}f(\varphi(t))\varphi'(t)dt  $
+\end{theorem}
+\begin{proof}
+    $\exists \Theta(x) -$ обратная функция к $\varphi(t)\implies \Theta(a)=\alpha,\lim\limits_{x\to b-0}\Theta(x)=\beta-0.$ Берем $\forall c \in[a,b)\implies \exists! \gamma \in [\alpha,\beta): \Theta(c)=\gamma,$ т.е $\varphi(\gamma)=c.$ Рассмотрим $\int\limits_{a  }^{c  }f(x)dx\underset{\substack{\text{по Т о} \\ \text{замене} \\ \text{переменной}}}{=}\int\limits_{\alpha       }^{\gamma}f(\varphi(t))\varphi'(t)dt$, а теперь $c\to b-0$
+\end{proof}
+\noindent Случай где $a$ - число или $-\infty$ ($\varphi(t)$ строго убывает) аналогично.\\
+По теореме $6.8:$ если после замены получен собственный интеграл, то так устанавливается сходимость. 
+
+Пример: $\int\limits_{1}^{2} \frac{x e^{x}dx}{\sqrt{x^{2}-1}}=\begin{array}{|c|} \sqrt{x^{2}-1}=t, x^{2}=t^{2}+1, xdx =tdt,\\ x=2 \Leftrightarrow t=\sqrt{3}, x\to 1+0  \Leftrightarrow t\to 0+0\end{array} = \int\limits_{0}^{\sqrt{3}} e^{\sqrt{t^{2}+1}}dt\implies \int\limits_{1}^{2} \frac{x e^{x}dx}{\sqrt{x^{2}-1}}$ - сходится. \\ 
+По теореме $6.8$ особую точку можно перевести в $+\infty$. \\ 
+1) $\int\limits_{-\infty    }^{a}f(x)dx=\begin{array}{|c|} x=-t, dx =-dt,\\ x=a \Leftrightarrow t=-a, x\to -\infty \Leftrightarrow t\to +\infty \end{array}= -\int\limits_{+\infty  }^{-a }  f(-t)dt= \int\limits_{-a   }^{+\infty  } f(-t)dt$ \\ 
+2) $\int\limits_{a  }^{b    } f(x)dx=\begin{array}{|c|} b-0 - \text{ особая точка }, x=\frac{a+bt}{1+t},t=\frac{x-a}{b-x},\\ x=a \Leftrightarrow t= 0 , x\to b-0 \Leftrightarrow t\to +\infty, dx=\frac{(b-a)dt}{(1+t)^{2}}\end{array} = \int\limits_{0}^{+\infty} f\left(\frac{a+bt}{1+t}\right)\frac{(b-a)dt}{(1+t)^{2}}=\\=(b-a)\int\limits_{0}^{+\infty}f\left(\frac{a+bt}{1+t}\right)\frac{dt}{(1+t)^{2}}   $
+\\3) $\int\limits_{a  }^{b    } f(x)dx=\begin{array}{|c|}a+0 - \text{особая точка}, x= \frac{b+at}{1+t}\implies t= \frac{x-b}{a-x},\\ x=b \Leftrightarrow t=0 , x\to a+0\implies t\to +\infty, dx \frac{(a-b)dt}{(1+t)^{2}}\end{array}=\int\limits_{+\infty  }^{0} f\left(\frac{b+at}{1+t}\right)\frac{(a-b)dt}{(1+t)^{2}}=\\=(b-a)\int\limits_{0}^{+\infty}f\left(\frac{b+at}{1+t}\right) \frac{dt}{(1+t)^{2}} $
+\vspace{0.5cm}
+\begin{theorem}
+    $u(x),v(x):  u'(x),v'(x)\in C[a,b)$ (где $b$ - число или $+\infty$) $\implies $ из существования двух пределов следует существование третьего, а также равенство: $\int\limits_{a    }^{b    } u(x)v'(x)dx=\lim\limits_{c    \to b-0}u(c)v(c)- \int\limits_{a    }^{b    } u'(x)v(x)dx -\\-u(a)v(a)$\quad $\left(\int\limits_{a   }^{b    } u(x)v'(x)dx=u(x)v(x)\bigg|_{a}^{b-0}-\int\limits_{a   }^{b    } u'(x)v(x)dx\right)$
+\end{theorem}
+\begin{proof}
+    Берем $\forall c\in[a,b) \implies$(по формуле интегрирования по частям в собственных интегрелах)$\implies \int\limits_{a    }^{c    } u(x)v(x)dx= u(x)v(x)\bigg|_{a}^{c}-\int\limits_{a }^{c    } u'(x)v(x)dx$, а теперь $c\to b-0$
+\end{proof}
+\noindent Случай, где $a$ - число или $-\infty$ - аналогично. 
+По теореме $6.9$ также можно устанавливать сходимость. 
+
+Пример: $\int\limits_{0}^{1} \frac{\ln{(x)}dx}{1+x^{2}}=\int\limits_{0}^{1} \ln{(x)}d(\arctan(x))=\ln{(x)}\arctan{(x)}\bigg|_{0}^{1}- \int\limits_{0}^{1} \frac{\arctan{(x)}}{x}dx$
+\\ Рассмотрим $\lim\limits_{x\to 0+0}(\ln{(x)}\underbrace{\arctan{(x)}}_{\sim x}) = \lim\limits_{x\to 0+0}(x\ln{(x)})=\lim\limits_{x\to 0+0} \frac{\ln{(x)}}{\frac{1}{x}}=\lim\limits_{x\to 0+0}\frac{\left(\frac{1}{x}\right)}{\left(\frac{-1}{x^{2}}\right)}=0 \implies \int\limits_{0}^{1} \frac{\ln{(x)}dx}{1+x^{2}}=\\=-\int\limits_{0}^{1} \frac{\arctan{(x)}dx}{x}  $
+\\ $\frac{\arctan{(x)}}{x}\underset{x\to 0+0}{\to} 1\implies \int\limits_{0}^{1} \frac{\arctan{(x)}dx}{x}  $ можно рассматривать как собственный, так как подынтегральную функцию в данном случае можно доопределить по непрерывности в точке $x=0$  
+\section{Линейные свойства несобственного интеграла. Пример неинтегрируемого произведения интегрируемых функций.}
+Пусть дан $ \int\limits_{a  }^{b    } f(x)dx,$ где $a<b,$ причем $b$ - число или $+\infty$, $b$ - единственная особенность. 
+\begin{definition}
+    $f(x)$ называется интегрируемой на $[a,b)$, если $\int\limits_{a    }^{b    } f(x)dx$ сходится.
+\end{definition} 
+$\fbox{$\text{Остальные случаи аналогично.}$}$
+\begin{theorem}
+ $f(x)$ интегрируема на $[a,b)\implies \forall k\in \R \; k\cdot f(x)$ - тоже интегрируема на $[a,b)$, причем $\int\limits_{a }^{b    } k\cdot f(x)dx=k\int\limits_{a    }^{b    } f(x)dx$   
+\end{theorem}
+\begin{proof}
+    $\forall c\in[a,b) \implies \int\limits_{a  }^{c    } k\cdot f(x)dx= k\int\limits_{a    }^{c    } f(x)dx$, а теперь $c\to b-0$
+\end{proof}
+\begin{theorem}
+    $f(x),g(x)$ интегрируемы на $[a,b)\implies f(x)\pm g(x)$ тоже интегрируемы на $[a,b)$, причем $\int\limits_{a   }^{b    } (f(x) \pm g(x))dx=\int\limits_{a  }^{b}f(x)dx \pm \int\limits_{a  }^{b    } g(x)dx $
+\end{theorem}
+\begin{proof}
+    Самостоятельно.
+\end{proof}
+Теорема 6.10 и теорема 6.11 - линейные свойства несобственных интегралов.
+\begin{theorem}
+    $f(x),g(x)$ интегрируемы на $[a,b)$, причем $f(x)\geqslant g(x)\; \forall x \in [a,b)\implies \int\limits_{a    }^{b    } f(x)dx\geqslant \int\limits_{a    }^{b    } g(x)dx$
+\end{theorem}
+\begin{proof}
+    $\forall c\in[a,b)\quad \int\limits_{a  }^{c    } f(x)dx \geqslant \int\limits_{a   }^{c    } g(x)dx$, а теперь $c\to b-0$
+\end{proof}
+Пример: $f(x)=\frac{1}{\sqrt{x}}, \quad \int\limits_{0}^{1} \frac{dx}{\sqrt{x}}-$ сходится. Рассмотрим $g(x)=f(x)$, рассмотрим $\int\limits_{0}^{1} f(x)g(x)dx=\\=\int\limits_{0}^{1} \frac{dx}{x}$- расходится. 
+\section{Связь интеграла от функции с интегралом от ее модуля в случае их интегрируемости}
+\begin{theorem}
+    $f(x), |f(x)|$ интегрируемы на $[a,b)\implies \left|\int\limits_{a    }^{b    } f(x)dx\right| \leqslant \int\limits_{a  }^{b    } |f(x)|dx$ 
+\end{theorem}
+\begin{proof}
+    Самостоятельно.
+\end{proof}
+
+\vspace{1cm}
+\begin{flushright}
+    \textit{tg: @moksimqa}
+\end{flushright}
