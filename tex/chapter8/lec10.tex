@@ -1,0 +1,125 @@
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+\newpage
+\lecture{10}{11.03}{}
+\section{Критерий Коши сходимости несобственных интегралов первого и второго рода.}
+\begin{theorem}[Критерий Коши]
+    $f(x)$ интегрируема в собственном смысле на $[a,c] \;\forall c\geqslant a$, тогда $\int\limits_{a}^{+\infty}f(x)dx \text{ сходится }\Leftrightarrow \exists B\geqslant a : \forall b_{1},b_{2} > B \left|\int\limits_{b_{1}}^{b_{2}} f(x)dx\right| <\varepsilon $
+\end{theorem}
+\begin{proof}
+    $\tcircle{$\implies$}$ Пусть $\int\limits_{0}^{+\infty}f(x)dx $ сходится $\implies \exists  \underbrace{\lim\limits_{c  \to +\infty}\int\limits_{a  }^{c    } f(x)dx}_{\text{=A}}$, т.е $\forall  \varepsilon>0 \; \exists B\geqslant a: \forall b> B\;\left|\int\limits_{a    }^{b    } f(x)dx-A\right|<\\<\frac{\varepsilon}{2}$
+    \\Берем $\forall b_{1},b_{2} > B\implies \left|\int\limits_{b_{1}     }^{b_{2}}f(x)dx\right| = \left| \int\limits_{a}^{b_{2}}f(x)dx-A+A-\int\limits_{a }^{b_{1}}f(x)dx \right|  \leqslant \left| \int\limits_{a   }^{b_{1}}f(x)dx-A\right| +\left| \int\limits_{a }^{b_{2}}f(x)dx -A\right| <\frac{\varepsilon}{2}+\frac{\varepsilon}{2}=\varepsilon $
+    \\$\tcircle{$\impliedby$}$ Пусть $\forall \varepsilon>0 \; \exists B \geqslant 0: \forall b_{1},b_{2}> B \left| \int\limits_{b_{1}}^{b_{2}}f(x)dx\right| <\varepsilon$. Рассмотрим $F(x)=\int\limits_{a }^{x}   f(t)dt,x\geqslant a$
+    \\Возьмем $\forall \{x_{n}\}: x_{n}\geqslant a, \lim\limits_{n  \to \infty} x_{n}=+\infty $ (т.е $\forall B \geqslant a \exists N : \forall n>N\;\; x_{n}>B$), возьмем $\forall m,n>N$ и рассмотрим $\left|F(x_{m})-F(x_{n})\right|=\left|\int\limits_{a    }^{x_{m}}f(t)dt-\int\limits_{a  }^{x_{n}}f(t)dt\right| = \left| \int\limits_{x_{m}}^{x_{n}}f(t)dt\right| <\varepsilon,$ т.е $\forall \varepsilon>0 \;\exists N: \forall m,n>N \implies \left|F(x_{m})-F(x_{n})\right|<\\<\varepsilon$, т.е $\{F(x_{n})\}$ - фундаментальная $\implies \exists \lim\limits_{n  \to \infty}F(x_{n})$ - может зависеть от $x_{n}$. 
+    \\Пусть $\exists x'_{n}: x'_{n}\geqslant a , \lim\limits_{n \to \infty}x'_{n}=+\infty,\lim\limits_{n    \to \infty}F(x'_{n})=A'$
+    \\      $\exists x''_{n}: x''_{n}\geqslant a , \lim\limits_{n   \to \infty}x''_{n}=+\infty ,\lim\limits_{n  \to \infty}F(x''_{n})=A''$  Рассмотрим $\{z_{n}\}: \underbrace{z_{1}}_{=x_{1}'},\underbrace{z_{2}}_{=x''_{1}},\underbrace{z_{3}}_{x'_{2}},\underbrace{z_{4}}_{x''_{2}},\dots,\underbrace{z_{2n-1}}_{x'_{n}},\underbrace{z_{2n}}_{x''_{n}},\dots\implies z_{m}\geqslant a , \lim\limits_{n \to \infty}z_{m}=+\infty \implies \exists \lim\limits_{m    \to \infty}F(z_{m}).$ 
+    Рассмотрим $A' =\lim\limits_{n  \to \infty}F(\underbrace{z_{2n-1}}_{x'_{n}})=\lim\limits_{n   \to \infty} F(\underbrace{z_{2n}}_{x''_{n}})=A'' \implies \exists \lim\limits_{n  \to \infty}F(x)$, т.е $\exists \lim\limits_{c   \to +\infty}\int\limits_{a  }^{c    } f(x)dx,$ т.е $\int\limits_{a  }^{c    } f(x)dx$ сходится
+\end{proof}
+$\int\limits_{-\infty   }^{a    } f(x)dx$ формулировка и доказательство - самостоятельно.
+\begin{theorem}
+    $f(x)$ интегрируема в собственном смысле на $[a,c]\; \forall c \in [a,b)$, тогда: $\int\limits_{a   }^{b    } f(x)dx$ (с особой точкой $b-a$) сходится $\Leftrightarrow \forall \varepsilon> 0 \; \exists B \in[a,b) : \forall b_{1},b_{2}\in (B,b) \; \left| \int\limits_{b_{1}}^{b_{2}}f(x)dx\right|<\varepsilon $
+\end{theorem}
+\begin{proof}
+    Самостоятельно.
+\end{proof}
+$\int\limits_{a }^{b    } f(x)dx$ с особой точкой $a+0$ формулировка и доказательство - самостоятельно.
+
+\section{Абсолютная и условная сходимость несобственных интегралов. Сходимость абсолютно сходящихся несобственных интегралов.}
+\begin{definition}
+    Пусть $f(x)$ интегрируема в собственном смысле на $[a,c] \; \forall c\geqslant a. \int\limits_{a    }^{+\infty}f(x)dx $ называется абсолютно сходящимся, если $\int\limits_{a   }^{+\infty}|f(x)|dx $ является сходящимся.
+\end{definition}
+$\int\limits_{-\infty   }^{a    } f(x)dx,\int\limits_{a }^{b    } f(x)dx$ с особой точкой $b-0$, $\int\limits_{a    }^{b   }f(x)dx $ с особой точкой $a+0 $ - формулировка определений абсолютной сходимости - самостоятельно.
+
+\begin{theorem}
+    $\int\limits_{a }^{+\infty}f(x)dx$ сходится абсолютно $\implies \int\limits_{a  }^{+\infty}f(x)dx $ сходится.    
+\end{theorem}
+\begin{proof}
+    $\int\limits_{a }^{+\infty}f(x)dx$ сходится абсолютно, т.е $\int\limits_{a  }^{+\infty}|f(x)|dx $ сходится $\underset{\text{кр. Коши}}{\implies} \forall \varepsilon>0 \; \exists B \geqslant a: \forall b_{1},b_{2}> B \quad \left| \int\limits_{b_{1}     }^{b_{2}}|f(x)|dx\right|<\varepsilon $. Но $\left| \int\limits_{ b_{1}}^{b_{2}}f(x) dx\right|\leqslant \left| \int\limits_{b_{1}}^{b_{2}}|f(x)|dx \right| <\varepsilon\underset{\text{кр. Коши}}{\implies} \int\limits_{a    }^{+\infty}f(x)dx $ сходится.
+\end{proof}
+$\int\limits_{-\infty}^{a} f(x)dx$ - формулировка и доказательство - самостоятельно.
+\begin{theorem}
+    $\int\limits_{a }^{b}f(x)dx $ с особой точкой $b-0$ сходится абсолютно $\implies \int\limits_{a }^{b    } f(x)dx$ с особой точкой $b-0$ сходится.
+\end{theorem}
+\begin{proof}
+    Самостоятельно.
+\end{proof}
+$\int\limits_{a }^{b    } f(x)dx $ с особой точкой $a+0$ - формулировка и доказательство - самостоятельно.
+
+\section{Необходимое и достаточное условие сходимости несобственных интегралов первого и второго рода от неотрицательных функций.}
+\begin{theorem}
+    $f(x)\geqslant 0 \;\forall x\geqslant a, f(x)$ интегрируема в собственном смысле на $[a,c]\; \forall c\geqslant a; F(x)=\int\limits_{a  }^{x} f(t)dt$, тогда: $\int\limits_{a   }^{+\infty}f(x)dx $ сходится $\Leftrightarrow \exists M>0 : 0\leqslant F(x)\leqslant M \; \forall x\geqslant a$
+\end{theorem}
+\begin{proof}
+    $\forall x_{1},x_{2} : a\leqslant x_{1}\leqslant x_{2}\implies F(x_{2})=\int\limits_{a  }^{x_{2}}f(t)dt= \underbrace{\int\limits_{a }^{x_{1}}f(t)dt}_{=F(x_{1})} +\underbrace{\int\limits_{x_{1}}^{x_{2}} f(t)dt}_{\geqslant 0} \geqslant F(x_{1})\implies F(x)$ монотонно возрастает на $[a,+\infty) (*)$
+    \\ $\tcircle{$\implies$}$ Пусть $\int\limits_{a    }^{+\infty}f(x)dx  $ сходится $\implies \exists \lim\limits_{c  \to +\infty}\int\limits_{a  }^{c    } f(x)dx=A \implies \exists \lim\limits_{x\to +\infty}F(x)dx  =A \underset{(*)}{\implies} 0\leqslant F(x)\leqslant A \; \forall x\geqslant a$ 
+    \\ $\tcircle{$\impliedby$}$ Пусть $\exists M>0: \; 0\leqslant F(x)\leqslant M \; \forall x\geqslant a\implies \exists \underset{x\geqslant a}{\sup}{F(x)}=A$ - число, т.е $\begin{aligned}&1) F(x)\leqslant A \; \forall x\geqslant a \\ &2) \forall \varepsilon>0 \;\exists  B \geqslant A: F(B)> A-\varepsilon\end{aligned}\underset{(*)}{\implies}\\\implies\forall x>B \; F(x)\geqslant F(B)> A-\varepsilon$, т.е $\forall \varepsilon>0 \;\exists B\geqslant a: \forall x> B \quad A-\varepsilon<F(x)\leqslant A<A+\varepsilon$, т.е $|F(x)-A| <\varepsilon$, т.е $\exists \lim\limits_{x\to +\infty}F(x)=A ,$ т.е $ \lim\limits_{ c \to +\infty}\int\limits_{a  }^{c    } f(x)dx$, т.е $\int\limits_{a  }^{+\infty}f(x)dx $ сходится.
+\end{proof}
+$\int\limits_{-\infty   }^{a    } f(x)dx$ - формулировка и доказательство - самостоятельно.
+
+\begin{theorem}
+    $f(x)\geqslant 0 \; \forall x \in [a,b), f(x)$ интегрируема в собственном смысле на $[a,c] \; \forall c\in [a,b) , F(x)= \int\limits_{a }^{x} f(t)dt,$ тогда: $\int\limits_{a   }^{b    } f(x)dx$ с особой точкой $b-0 $ сходится $\Leftrightarrow \exists M>0: 0\leqslant F(x)\leqslant M \; \forall x\in[a,b) $ 
+\end{theorem}
+\begin{proof}
+    Самостоятельно.
+\end{proof}
+$\int\limits_{a }^{b    } f(x)dx$ с особой точкой $a+0$ - формулировка и доказательство - самостоятельно.
+
+
+\section{Признак сравнения (в допредельной и предельной форме) для сходимости несобственных интегралов первого и второго рода от неотрицательных функций.}
+\begin{theorem}[признак сравнения в допредельной форме]
+    $f(x),g(x) $ интегрируемы в собственном смысле на $[a,c]\;\forall c\geqslant a, 0\leqslant f(x)\leqslant g(x )\; \forall x\geqslant a\implies \begin{aligned} &1) \int\limits_{ a   }^{+\infty  } g(x)dx \text{ сходится} \implies \int\limits_{a }^{+\infty}f(x)dx  \text{ сходится} \\ &2) \int\limits_{a  }^{+\infty}f(x)dx \text{ расходится } \implies \int\limits_{a   }^{+\infty} g(x) \text{ расходится}.\end{aligned}$
+\end{theorem} 
+\begin{proof}
+    Рассмотрим $F(x)=\int\limits_{a  }^{x}   f(t)dt, G(x)=\int\limits_{a }^{x} g(t)dt \implies 0\leqslant F(x)\leqslant G(x) \; \forall x\geqslant a $
+    \\ 1) Пусть $\int\limits_{a }^{+\infty  }g(x)dx $ сходится $\implies \exists M >0 : 0\leqslant G(x)\leqslant M \; \forall x\geqslant a \implies 0\leqslant F(x)\leqslant G(x)\leqslant M \; \forall x \geqslant a \underset{\text{Т6.18}}{\implies}\\\implies \int\limits_{a   }^{+\infty}f(x)dx $ сходится. 
+    \\2) Пусть $\int\limits_{a  }^{+\infty}f(x)dx $ расходится. Предположим, что $\int\limits_{a    }^{+\infty}g(x)dx $ сходится $\underset{(1)}{\implies} \int\limits_{a   }^{+\infty}f(x)dx  $ - сходится - противоречие $\implies \int\limits_{a }^{+\infty}g(x)dx $ расходится.
+\end{proof}
+\newpage
+\begin{corollary}
+    $f(x)\geqslant 0 \; \forall x\geqslant a,f(x)$ интегрируема в собственном смысле на $[a,c]\;\forall c \geqslant a; \exists p>1: f(x)=\\=\underline{\underline{O}}\left(\frac{1}{x^{p}}\right)$ при $x\to +\infty\implies \int\limits_{a   }^{+\infty}f(x)dx  $ сходится. 
+\end{corollary}
+\begin{proof}
+    $\exists C>0, \exists b\geqslant \max{(a,1)}: 0\leqslant f(x)\leqslant \frac{c}{x^{p}} \; \forall x\geqslant b.\quad \int\limits_{1}^{+\infty}\frac{dx}{x^{p}} $ сходится (т.к $p>1$) $\implies \\\implies\int\limits_{b }^{+\infty  }\frac{cdx}{x^{p}}\underset{\text{Т6.20}}{\implies} \int\limits_{b  }^{+\infty  }f(x)dx $ сходится
+\end{proof}
+$\int\limits_{-\infty}^{a} $ - формулировка и доказательство признака сравнения (без следствия) - самостоятельно. 
+\begin{theorem}
+    $f(x),g(x)$ интегрируемы в собственном смысле на $[a,c]\;\forall c\in[a,b); 0\leqslant f(x)\leqslant g(x)\;\forall x\in[a,b)\implies \begin{aligned}&1)\int\limits_{a   }^{b    } g(x)dx \text{ с особой точкой $b-0 $ сходится } \implies \int\limits_{a    }^{b    } f(x)dx \text{ с особой точкой $b-0$ сходится}\\ &2)\int\limits_{a  }^{b    } f(x)dx \text{ с особой точкой $b-0$ расходится }\implies \int\limits_{a    }^{b    } g(x)dx \text{ с особой точкой $b-0 $ расходится} \end{aligned}$
+\end{theorem} 
+\begin{proof}
+    Самостоятельно.   
+\end{proof}
+$\int\limits_{a }^{b    } f(x)dx$ с особой точкой $a+0$ - формулировка и доказательство самостоятельно.
+
+\begin{corollary}
+    $f(x)\geqslant 0 \;\forall x\in(0;a], f(x)$ интегрируема в собственном смысле на $[c,a]\; \forall c\in(0;a], \exists p<1: f(x) =\underline{\underline{O}}\left(\frac{1}{x^{p}}\right) $ при $x\to 0+0\implies \int\limits_{0}^{a} f(x)dx$ сходится 
+\end{corollary}
+\begin{proof}
+    Самостоятельно.
+\end{proof}
+\begin{theorem}[признак сравнения в предельной форме]
+    $f(x),g(x)$ интегрируемы в собственном смысле на $[a,c]\;\forall c \geqslant a, f(x)\geqslant 0 \; \forall x\geqslant a, g(x)>0 \; \forall x\geqslant a, \exists \lim\limits_{x\to +\infty}\frac{f(x)}{g(x)}=k\in(0,+\infty) \implies \int\limits_{a    }^{+\infty  } f(x)dx $ и $\int\limits_{a    }^{+\infty}  g(x)dx $ сходятся или расходятся одновременно.
+\end{theorem}
+\begin{proof}
+    $\exists \lim\limits_{x\to +\infty}\frac{f(x)}{g(x)}=k$, т.е $\forall \varepsilon>0\; \exists B \geqslant a : \forall x \geqslant b \implies \left| \frac{f(x)}{g(x)}-k\right| <\varepsilon$, т.е $k-\varepsilon < \frac{f(x)}{g(x)}<k+\varepsilon$
+    \\ Берем $\varepsilon=\frac{k}{2}\implies\left.\begin{aligned} &\frac{k}{2}<\frac{f(x)}{g(x)}<\frac{3k}{2}\\ &\frac{k}{2}g(x)< f(x)< \frac{3k}{2}g(x)\qquad \frac{2}{3k}f(x)<g(x)<\frac{2}{k}f(x)\end{aligned}\right\} \implies $ Т6.20
+\end{proof}
+$\int\limits_{-\infty   }^{a    } f(x)dx$ формулировка и доказательство - самостоятельно. 
+ \begin{theorem}
+    $f(x),g(x)$ интегрируемы в собственном смысле на $[a,c]\; \forall c\in[a,b),f(x)\geqslant 0 \forall x\in[a,b),\\ g(x) >0 \forall x \in[a,b), \exists \lim\limits_{x\to b-0}\frac{f(x)}{g(x)}=k\in(0,+\infty)\implies \int\limits_{a    }^{b    } f(x)dx$ с особой точкой $b-0$ и $\int\limits_{a   }^{b    } g(x)dx$ с особой точкой $b-0$ сходятся или расходятся одновременно. 
+ \end{theorem}
+\begin{proof}
+    Самостоятельно. 
+\end{proof}
+$\int\limits_{a }^{b    } f(x)dx$ с особой точкой $a+0$ формулировка и доказательство - самостоятельно.
+
+\section{Абсолютная и условная сходимость несобственных интегралов. Признаки Дирихле и Абеля для сходимости несобственных интегралов первого и второго рода.}
+\begin{definition}
+    $f(x)$ интегрируема в собственном смысле на $[a,c]\;\forall c\geqslant a. \int\limits_{a  }^{+\infty}f(x)dx $ называется условно сходящимся, если $\int\limits_{a }^{+\infty}f(x)dx $ сходится, но $\int\limits_{a    }^{+\infty}|f(x)|dx $ расходится.
+\end{definition}
+Формулировка определений условно сходящихся $\int\limits_{-\infty}^{a}f(x)dx , \int\limits_{a   }^{b    } f(x)dx$ с особой точкой $b-0$, $\int\limits_{a    }^{b    } f(x)dx$ с особой точкой $a+0$ - самостоятельно.
+
+\begin{theorem}[признак Дирихле]
+    $f(x)$ непрерывна при $x\geqslant a, F(x) $ - первообразная к $f(x) $ на $[a,+\infty)$, причем $\exists M>0: |F(x)|\leqslant M  \; \forall x\geqslant a, g(x): \begin{aligned} &\exists g'(x)\forall x\geqslant a,\\ &g'(x) \text{ непрерывна при } x\geqslant a,\\ &g'(x)\leqslant 0 \forall x \geqslant a,\\ &\lim\limits_{x\to +\infty}g(x)=0 \end{aligned}$ $\implies \int\limits_{a   }^{+\infty  } f(x)g(x)dx$ сходится.
+\end{theorem}
+
+

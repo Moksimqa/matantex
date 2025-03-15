@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.9.8)  7 MAR 2025 19:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.9.8)  15 MAR 2025 14:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1547,24 +1547,54 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--32
 
  []
 
-[33] [34])) [35] (main.aux)
+[33] [34]) (tex/chapter8/lec10.tex [35]
+Overfull \hbox (28.59407pt too wide) in paragraph at lines 10--17
+[]$[] $ \T2A/cmr/m/n/10 Пусть $[] \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 dx$ \T2A/cmr/m/n/10 схо-дит-ся $\OMS/cmsy/m/n/10 ) 9 []$\T2A/cmr/m/n/10 , т.е $\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 " > \OT1/cmr/m/n/10 0 \OMS/cmsy/m/n/10 9\OML/cmm/m/it/10 B \U/msa/m/n/10 > \OML/cmm/m/it/10 a \OT1/cmr/m/n/10 : \OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 b > B  [] <
+ []
+
+[36] [37] [38] [39]
+Overfull \hbox (5.35565pt too wide) in paragraph at lines 119--120
+[]\T2A/cmr/m/n/10 Формулировка опре-де-ле-ний услов-но схо-дя-щих-ся $[] \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 dx; [] f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 dx$ \T2A/cmr/m/n/10 с осо-бой точ-кой $\OML/cmm/m/it/10 b \OMS/cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 0$\T2A/cmr/m/n/10 , $[] \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 dx$
+ []
+
+) (tex/chapter8/lec11.tex
+Overfull \hbox (51.62857pt too wide) in paragraph at lines 5--6
+[] \OT1/cmr/m/n/10 = [] = [] = [] [] 
+ []
+
+[40]
+Overfull \hbox (21.57193pt too wide) in paragraph at lines 39--41
+[]\T2A/cmr/m/n/10 Рассмотрим $\OML/cmm/m/it/10 F\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) = [] \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 dt;  [] f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 dx$ \T2A/cmr/m/n/10 схо-дит-ся $\OMS/cmsy/m/n/10 ) 9 [] [] \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 dx \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 A \OT1/cmr/m/n/10 = [] \OML/cmm/m/it/10 F\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 )
+ []
+
+
+Overfull \hbox (47.76051pt too wide) in paragraph at lines 39--41
+\OT1/cmr/m/n/10 = [] = [] \U/msa/m/n/10 6
+ []
+
+
+Overfull \hbox (36.21458pt too wide) in paragraph at lines 45--54
+[]\T2A/cmr/bx/n/10 Теорема 6.27. []$[][]\OML/cmm/m/it/10 ;$ $g\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) : [][] \OMS/cmsy/m/n/10 ) [] \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 g\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 dx$
+ []
+
+[41] [42] [43])) [44] (main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 29861 strings out of 474486
- 627512 string characters out of 5753562
- 1957542 words of memory out of 5000000
- 51470 multiletter control sequences out of 15000+600000
+ 29878 strings out of 474486
+ 627989 string characters out of 5753562
+ 1958542 words of memory out of 5000000
+ 51481 multiletter control sequences out of 15000+600000
  588508 words of font info for 112 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  89i,18n,96p,1499b,877s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\lati0700.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm0700.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\lati1000.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1440.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\lass0900.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx2074.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1000.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1000.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1200.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1200.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx2488.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msam7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (35 pages, 435846 bytes).
+ <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\lati0700.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm0700.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\lati1000.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1440.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\lass0900.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx2074.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1000.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1000.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1200.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1200.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx2488.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msam7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on main.pdf (44 pages, 490597 bytes).
 PDF statistics:
- 622 PDF objects out of 1000 (max. 8388607)
+ 687 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

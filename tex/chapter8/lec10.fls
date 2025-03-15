@@ -1,0 +1,16 @@
+PWD c:\Users\moksimqa\Documents\Projects\latexmatan\tex\chapter8
+INPUT C:\Users\moksimqa\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
+INPUT c:\Users\moksimqa\Documents\Projects\latexmatan\tex\chapter8\lec10.tex
+OUTPUT lec10.log
+INPUT C:\Program Files\MiKTeX\tex\latex\subfiles\subfiles.cls
+INPUT C:\Program Files\MiKTeX\tex\latex\subfiles\subfiles.cls
+INPUT C:\Program Files\MiKTeX\tex\latex\import\import.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\import\import.sty
+INPUT ..\..\main.tex
+INPUT ..\..\main.tex
+INPUT ..\..\main.tex
+INPUT C:\Program Files\MiKTeX\tex\latex\base\report.cls
+INPUT C:\Program Files\MiKTeX\tex\latex\base\report.cls
+INPUT C:\Program Files\MiKTeX\tex\latex\base\size10.clo
+INPUT C:\Program Files\MiKTeX\tex\latex\base\size10.clo
+INPUT C:\Program Files\MiKTeX\tex\latex\base\size10.clo

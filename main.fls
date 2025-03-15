@@ -518,6 +518,14 @@ INPUT .\tex\chapter8\lec9.tex
 INPUT tex\chapter8\lec9.tex
 INPUT .\tex\chapter8\lec9.tex
 INPUT tex\chapter8\lec9.tex
+INPUT .\tex\chapter8\lec10.tex
+INPUT tex\chapter8\lec10.tex
+INPUT .\tex\chapter8\lec10.tex
+INPUT tex\chapter8\lec10.tex
+INPUT .\tex\chapter8\lec11.tex
+INPUT tex\chapter8\lec11.tex
+INPUT .\tex\chapter8\lec11.tex
+INPUT tex\chapter8\lec11.tex
 INPUT main.aux
 INPUT C:\Users\moksimqa\AppData\Local\MiKTeX\fonts\pk\ljfour\lh\lh-t2a\dpi600\lati0700.pk
 INPUT C:\Users\moksimqa\AppData\Local\MiKTeX\fonts\pk\ljfour\lh\lh-t2a\dpi600\lati0700.pk
@@ -567,3 +575,5 @@ INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\symbols\msam7.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\symbols\msam7.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\symbols\msbm10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\symbols\msbm10.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\symbols\msbm7.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\symbols\msbm7.pfb

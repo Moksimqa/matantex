@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1741365649.40195 "c:/Users/moksimqa/Documents/Projects/latexmatan/main.tex" "main.pdf" "main" 1741365651.36599 0
+["pdflatex"] 1742037502.07548 "c:/Users/moksimqa/Documents/Projects/latexmatan/main.tex" "main.pdf" "main" 1742037503.96653 0
   "C:/Program Files/MiKTeX/fonts/tfm/jknappen/ec/ecrm1000.tfm" 993062122 3148 7e594c8240c71e432203f65ab5f95a51 ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1233951848 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1233951848 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
@@ -48,6 +48,7 @@
   "C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb" 1247596673 31764 459c573c03a4949a528c2cc7f557e217 ""
   "C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msam7.pfb" 1247596673 33366 60462f3d16c3d0f024f1f856e64b09cd ""
   "C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1247596673 34694 870c211f62cb72718a00e353f14f254d ""
+  "C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb" 1247596673 35309 940e81a5b9e04201a07e8b33a3ae6e64 ""
   "C:/Program Files/MiKTeX/tex/context/base/mkii/supp-pdf.mkii" 1580390158 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "C:/Program Files/MiKTeX/tex/generic/babel/babel.sty" 1704647332 150008 7a05b0fdc0167c04e192003e780ab195 ""
   "C:/Program Files/MiKTeX/tex/generic/babel/locale/ru/babel-ru.ini" 1704647337 6080 f38b5a80e1e155723c5fdec306a1777f ""
@@ -270,10 +271,10 @@
   "C:/Users/moksimqa/AppData/Local/MiKTeX/fonts/tfm/public/stmaryrd/stmary7.tfm" 1728739062 848 26631fcb3e4cb6757598b9cda7967b63 ""
   "C:/Users/moksimqa/AppData/Local/MiKTeX/fonts/tfm/public/stmaryrd/stmary8.tfm" 1728739057 848 6125cdd3627e68d3db8013b98e587508 ""
   "C:/Users/moksimqa/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1725800942 24215239 d745990f62584c7ec7462d613203a172 ""
-  "c:/Users/moksimqa/Documents/Projects/latexmatan/main.tex" 1741365648 653 6a113830a252105d9541a6c1ef69dc2e ""
-  "main.aux" 1741365651 8913 c5048bf7d3589dd98ad20da54d801ce5 "pdflatex"
-  "main.tex" 1741365648 653 6a113830a252105d9541a6c1ef69dc2e ""
-  "main.toc" 1741365651 6804 cc5cfe2eeb5ec2b66d946b8d84791736 "pdflatex"
+  "c:/Users/moksimqa/Documents/Projects/latexmatan/main.tex" 1742037501 653 6a113830a252105d9541a6c1ef69dc2e ""
+  "main.aux" 1742037503 11102 2943b2a2ce669a4e7436b4336d45c6e8 "pdflatex"
+  "main.tex" 1742037501 653 6a113830a252105d9541a6c1ef69dc2e ""
+  "main.toc" 1742037503 8706 d0e94dae11f1218e02d8b97df00c832d "pdflatex"
   "preamble.tex" 1741364052 8147 deaa77414cff19522ea176a30062b617 ""
   "tex/chapter3.tex" 1739654785 161 f8c141bd912839ae12bf18be019567bf ""
   "tex/chapter3/lec1.tex" 1738798116 3361 1f6212bca8f13a978b8375531c283e49 ""
@@ -290,8 +291,10 @@
   "tex/chapter7/lec6'.tex" 1740465375 3920 7643e85d0c1f328ed8c8f3f7bc1ed9d0 ""
   "tex/chapter7/lec7.tex" 1740728803 12649 f07408497b677069d3a2bc711e421b33 ""
   "tex/chapter7/lec8.tex" 1740761335 4582 0f7707b0a18a615b2f3c97de5e1e995a ""
-  "tex/chapter8.tex" 1741331384 216 f7c9845e8600b929a31bcff09c4f651e ""
-  "tex/chapter8/lec8'.tex" 1741331523 9910 c9aa14984383a170175c712c1d9d6764 ""
+  "tex/chapter8.tex" 1742020935 276 b084946b6030de46571ae69b09a59b8b ""
+  "tex/chapter8/lec10.tex" 1742020973 16352 b675d95e378f4c633bc5a308b6e78cdb ""
+  "tex/chapter8/lec11.tex" 1742037501 15864 242545197455cffa4f32b3ac317c0224 ""
+  "tex/chapter8/lec8'.tex" 1741706139 9911 a055ce8e7533c78995fae4a2c21e7259 ""
   "tex/chapter8/lec9.tex" 1741365648 13159 21c2f37045f10652f68046845a45cf1a ""
   "tex/title.tex" 1739654912 478 4506dae0de4ded0133cef352b7f8eca0 ""
   (generated)
