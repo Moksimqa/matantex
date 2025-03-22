@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1742648518.34054 "c:/Users/moksimqa/Documents/Projects/latexmatan/main.tex" "main.pdf" "main" 1742648520.41805 0
+["pdflatex"] 1742648680.25194 "c:/Users/moksimqa/Documents/Projects/latexmatan/main.tex" "main.pdf" "main" 1742648682.26633 0
   "C:/Program Files/MiKTeX/fonts/tfm/jknappen/ec/ecrm1000.tfm" 993062122 3148 7e594c8240c71e432203f65ab5f95a51 ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1233951848 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1233951848 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
@@ -272,10 +272,10 @@
   "C:/Users/moksimqa/AppData/Local/MiKTeX/fonts/tfm/public/stmaryrd/stmary7.tfm" 1728739062 848 26631fcb3e4cb6757598b9cda7967b63 ""
   "C:/Users/moksimqa/AppData/Local/MiKTeX/fonts/tfm/public/stmaryrd/stmary8.tfm" 1728739057 848 6125cdd3627e68d3db8013b98e587508 ""
   "C:/Users/moksimqa/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1725800942 24215239 d745990f62584c7ec7462d613203a172 ""
-  "c:/Users/moksimqa/Documents/Projects/latexmatan/main.tex" 1742648517 681 af72d1a619e2be02644db25ee2c83469 ""
-  "main.aux" 1742648520 11480 72dbdad76c7a9bec3b5cb41cbe7dcfe2 "pdflatex"
-  "main.tex" 1742648517 681 af72d1a619e2be02644db25ee2c83469 ""
-  "main.toc" 1742648520 8926 82065648a92df1aa068f219fe64d2009 "pdflatex"
+  "c:/Users/moksimqa/Documents/Projects/latexmatan/main.tex" 1742648677 681 af72d1a619e2be02644db25ee2c83469 ""
+  "main.aux" 1742648681 11472 018f641e665d86cd58124bf02d876b5a "pdflatex"
+  "main.tex" 1742648677 681 af72d1a619e2be02644db25ee2c83469 ""
+  "main.toc" 1742648681 8918 5178291da1b5ec5794ea7b9df7bd4f10 "pdflatex"
   "preamble.tex" 1742545638 8229 83336202196d1aaeeed96f582c43b4f5 ""
   "tex/chapter3.tex" 1739654785 161 f8c141bd912839ae12bf18be019567bf ""
   "tex/chapter3/lec1.tex" 1738798116 3361 1f6212bca8f13a978b8375531c283e49 ""
@@ -297,7 +297,7 @@
   "tex/chapter8/lec11.tex" 1742037501 15864 242545197455cffa4f32b3ac317c0224 ""
   "tex/chapter8/lec8'.tex" 1741706139 9911 a055ce8e7533c78995fae4a2c21e7259 ""
   "tex/chapter8/lec9.tex" 1741365648 13159 21c2f37045f10652f68046845a45cf1a ""
-  "tex/chapter9.tex" 1742541652 171 709e3ceecb9bb2338fc7982cfca19d2b ""
+  "tex/chapter9.tex" 1742648677 163 01d0b46e099ebdd6614bd2ec39e20436 ""
   "tex/chapter9/lec12.tex" 1742648517 7297 2245be4e3ef302f09749436d296e4dbd ""
   "tex/title.tex" 1739654912 478 4506dae0de4ded0133cef352b7f8eca0 ""
   (generated)
