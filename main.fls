@@ -526,6 +526,25 @@ INPUT .\tex\chapter8\lec11.tex
 INPUT tex\chapter8\lec11.tex
 INPUT .\tex\chapter8\lec11.tex
 INPUT tex\chapter8\lec11.tex
+INPUT .\tex\chapter9.tex
+INPUT tex\chapter9.tex
+INPUT .\tex\chapter9.tex
+INPUT tex\chapter9.tex
+INPUT .\tex\chapter9\lec12.tex
+INPUT tex\chapter9\lec12.tex
+INPUT .\tex\chapter9\lec12.tex
+INPUT tex\chapter9\lec12.tex
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi12.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Users\moksimqa\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmib10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmbsy10.tfm
+INPUT C:\Users\moksimqa\AppData\Local\MiKTeX\fonts\tfm\public\stmaryrd\stmary10.tfm
 INPUT main.aux
 INPUT C:\Users\moksimqa\AppData\Local\MiKTeX\fonts\pk\ljfour\lh\lh-t2a\dpi600\lati0700.pk
 INPUT C:\Users\moksimqa\AppData\Local\MiKTeX\fonts\pk\ljfour\lh\lh-t2a\dpi600\lati0700.pk
@@ -553,6 +572,8 @@ INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi5.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi5.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi7.pfb

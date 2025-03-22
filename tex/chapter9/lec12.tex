@@ -1,0 +1,103 @@
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+\lecture{12}{21.03}{}
+\section{Координатное $n$-мерное пространство}
+\begin{definition}
+    $x=(x_{1},x_{2},\dots,x_{n})$ - упорядоченная совокупность из $n$ вещественных чисел. $\mathbb{E}_{n} \ni x=(x_{1},x_{2},\dots,x_{n}), x_{n}\in\R $
+ \end{definition}
+\begin{definition}
+    $x=(x_{1},\dots,x_{n})\in \E_{n}, y = (y_{1},\dots,y_{n})\in\E_{n},\alpha\in\R. x+y \equiv (x_{1}+y_{1},\dots,x_{n}+y_{n}); \alpha x \equiv (\alpha x_{1},\dots,\alpha x_{n})$
+\end{definition}
+\noindent1. $x+y = y+ x$\\ 
+2. $(x+y)+z = x+(y+z)$\\ 
+3. $\exists \theta : x+\theta = x$\\ 
+4. $\forall x\in\E_{n} \exists x':x+x'=\theta$
+5. $\alpha(x+y) = \alpha x + \alpha y$\\
+6. $(\alpha+\beta)x = \alpha x + \beta x$\\
+7. $\alpha(\beta x) = (\alpha\beta)x$\\
+8. $1\cdot x = x$
+\\$\theta = (0,0,\dots,0)\quad x' = (-1)x$
+\begin{proof}
+    Самостоятельно.
+\end{proof}
+\begin{definition}
+    $x=(x_{1},\dots,x_{n})\in \E_{n}, y = (y_{1},\dots,y_{n})\in\E_{n}.$ Скалярным произведением называется $(x,y)\equiv\sum_{k=1}^{n  } x_{k}y_{k} \equiv x_{1}y_{1}+\dots+x_{n}y_{n}$. (В комплексном случае: $(x,y)=\sum_{k=1}^{n}x_{k}\overline{y_{k}} $)
+\end{definition}
+Свойства скалярного произведения:
+\\1. $(y,x)= (x,y)$ (В комплексном пространстве: $(y,x)=\overline{(x,y)}$)
+\\2. $(\alpha x,y)= \alpha(x,y)$
+\\3. $(x+y,z)= (x,z)+(y,z)$
+\\4. $(x,x)\geqslant 0$, причем $(x,x) = 0 \Leftrightarrow x = \theta$ 
+\begin{proof}
+    Самостоятельно для $x$ и $y$.
+\end{proof}
+    $|(x,y)|^{2}\leqslant (x,x)(y,y)$ - неравенство Коши - Буняковского.$\qquad \qquad|(x,y)| \leqslant \|x\|\|y\|$
+\begin{proof}
+    $x = \theta \implies (x,y)^{2} \leqslant (x,x)(y,y)$. 
+    \\$x\neq \theta$. Рассмотрим $0\leqslant\varphi(\lambda) = (\lambda x + y, \lambda x +y) = \lambda^{2} \underbrace{(x,x)}_{A>0}+2\lambda\underbrace{(x,y)}_{B}+\underbrace{(y,y)}_{C} = A\lambda^{2} + 2B \lambda + C \geqslant 0$
+    \\ $0\geqslant \frac{\Delta}{4} = B^{2} - AC$
+\end{proof}
+
+\begin{definition}
+    $x=(x_{1},\dots,x_{n}) \in \E_{n}$. Нормой $x$ называется $\|x\| \equiv \sqrt{(x,x)} =\sqrt{\sum_{k=1}^{n}|x_{k}|^{2} }=\sqrt{|x_{1}|^{2}+\dots+|x_{n}|^{2}}$
+\end{definition}
+Свойства нормы: 
+\\1. $\|x\|\geqslant 0$, причем $\|x\|=0 \Leftrightarrow x = \theta$
+\\2. $\|\alpha x\| = |\alpha|\|x\|$
+\\3. $\|x+y\|\leqslant \|x\|+\|y\|$
+\begin{proof}
+    1, 2 - самостоятельно.
+    3. $\|x+y\|^{2} = (x+y,x+y) = (x,x)+2(x,y)+(y,y) \leqslant \|x\|^{2} + 2|(x,y)| + \|y\|^{2} \leqslant \|x\|^{2} + 2\|x\|\|y\| + \|y\|^{2} = (\|x\| + \|y\|)^{2}$
+\end{proof}
+
+\noindent $\|x\| = \| y+(x-y)\| \leqslant \|y\| + \|x-y\| \implies \|x-y\| \geqslant \|x\| -\|y\|$
+\\$\|x-y\| = \|(-1)(y-x)\| = \|y-x\|\geqslant \|y\| - \|x\|\implies \fbox{$\|x-y\| \geqslant \left| \|x\| -\|y\|\right|$}$
+
+\begin{definition}
+    $x=(x_{1},\dots,x_{n}) \in \E_{n}, y = (y_{1},\dots,y_{n})\in\E_{n}$. Расстоянием от $x$ до $y$ называется $\rho(x,y) \equiv \|x-y\| =\sqrt{|x_{1}-y_{1}|^{2}+\dots+|x_{n}-y_{n}|^{2}} $
+\end{definition}
+Свойства расстояния:
+\\1. $\rho(y,x) =  \rho(x,y)$ 
+\\2. $\rho(x,z)\leqslant \rho(x,y)+\rho(y,z)$
+\\3. $\rho(x,y)\geqslant 0$, причем $\rho(x,y)=0 \Leftrightarrow x = y$
+\begin{definition}
+    $x^{(0)} = (x_{1}^{(0)},\dots,x_{n}^{(0)})\in\E_{n}, \varepsilon>0$.
+    \\$\begin{aligned} &U_{\varepsilon}(x^{(0)}) \equiv \{x\in \E_{n}: \rho\left(x,x^{(0)}\right)<\varepsilon\} - \text{ открытый шар с центром в $x^{(0)}$ и радиусом $\varepsilon$}. 
+    \\&\overset{\circ}{U}_{\varepsilon}(x^{(0)}) \equiv \{x\in \E_{n}: 0 < \rho\left(x,x^{(0)}\right)<\varepsilon\} = U_{\varepsilon}(x^{(0)})\backslash\{x^{(0)}\} -\text{ проколотый открытый шар.}
+    \\&\varepsilon\geqslant 0  \; V_{\varepsilon}(x^{(0)})\equiv \{x\in \E_{n}: \rho\left(x,x^{(0)}\right)\leqslant \varepsilon\} -\text{ замкнутый шар.} 
+    \\&S_{\varepsilon}(x^{(0)})\equiv \{x\in \E_{n}: \rho\left(x,x^{(0)}\right)=\varepsilon\} -\text{ сфера.}
+    \\&\overset{\circ}{U}_{\varepsilon}(x^{(0)}) \subset U_{\varepsilon}(x^{(0)}) \subset  V_{\varepsilon}(x^{(0)}), S_{\varepsilon}(x^{(0)})\subset V_{\varepsilon}(x^{(0)}); U_{\varepsilon}(x^{(0)}) \cup S_{\varepsilon}(x^{(0)}) = V_{\varepsilon}(x^{(0)}) \end{aligned}$
+\end{definition}
+
+\begin{definition}
+    $a_{k}<b_{k}, k = 1,2,\dots,n.$
+    \\$\begin{aligned} &(a_{1}b_{1};,\dots,a_{k}b_{k},\dots,a_{n}b_{n})\equiv\{x=(x_{1},\dots,x_{n})\in\E_{n}: a_{k}<x_{k}<b_{k}, k = 1,2,\dots,n \} -\text{ открытый параллелепипед.}
+        \\&a_{k}\leqslant b_{k},k=1,2,\dots,n. 
+        \\&[a_{1}b_{1},\dots,a_{k}b_{k},\dots,a_{n}b_{n}]\equiv\{x=(x_{1},\dots,x_{n})\in\E_{n}: a_{k}\leqslant x_{k}\leqslant b_{k}, k=1,2,\dots,n\} -\text{ замкнутый параллелепипед.}
+        \\&x^{(0)}=(x_{1}^{(0)},\dots,x_{n}^{(0)}): x_{k}^{(0)} = \frac{a_{k}+b_{k}}{2},k=1,2,\dots,n -\text{ центр.} \end{aligned}$
+\end{definition}
+\begin{definition}
+    $x^{(0)}=(x_{1}^{(0)},\dots,x_{n}^{(0)})\in\E_{n},\varepsilon>0$
+    \\$K_{\varepsilon}(x^{(0)}) \equiv \{x\in\E_{n} : x_{k}^{(0)}-\varepsilon< x_{k} < x_{k}^{(0)}+\varepsilon, k = 1,2,\dots,n\}$ - открытый куб. 
+\end{definition}
+
+\begin{definition}
+    $x^{(0)}\in\E_{n}$. Шаровая окрестность $x^{(0)}$ - открытый шар с центром в $x^{(0)}$; Кубическая окрестность $x^{(0)}$ - открытый куб с центром в $x^{(0)}$
+\end{definition}
+
+\begin{lemma}
+    $x^{(0)}\in \E_{n}.$ 1. $\forall \varepsilon>0 \;\exists \delta> 0 : K_{\delta}(x^{(0)})\subset U_{\varepsilon}(x^{(0)});$ 2. $\forall \delta>0 \; \exists \varepsilon>0 : U_{\varepsilon} (x^{(0)})\subset K_{\delta} (x^{(0)})$
+\end{lemma}
+\begin{proof}
+    1. $\forall \varepsilon>0 \; \exists \delta = \frac{\varepsilon}{\sqrt{n}}>0 \quad \forall x \in K_{\delta}(x^{(0)})\quad x= (x_{1},\dots,x_{n}), x^{(0)}=(x_{1}^{(0)},\dots,x_{n}^{(0)}) \; \\ |x_{k}-x_{k}^{(0)}|< \delta, k=1,2,\dots,n.$
+    \\$\rho\left(x,x^{(0)}\right)=\sqrt{\sum_{k=1}^{n }\left|x_{k}-x_{k}^{(0)}\right|^{2}} < \sqrt{\delta^{2}\cdot n } = \delta \sqrt{ n} = \varepsilon \implies x\in U_{\varepsilon}(x^{(0)}) = > K_{\delta}(x^{(0)})\subset U_{\varepsilon}(x^{(0)})$
+    \\2. $\forall \delta >0 \; \exists \varepsilon = \delta > 0\; \forall x \in U_{\varepsilon}(x^{(0)})\quad x= (x_{1},\dots,x_{n}), x^{(0)}=(x_{1}^{(0)},\dots,x_{n}^{(0)})\quad |x_{k}-x_{k}^{(0)}|< \delta, k=1,2,\dots,n.$
+    \\$\rho\left(x,x^{(0)}\right)=\sqrt{\sum_{k=1}^{n } \left|x_{k}-x_{k}^{(0)}\right|^{2}} < \delta = \varepsilon \implies \left| x_{k}-x_{k}^{(0)}\right|^{2}<\delta^{2}=\varepsilon^{2}, k=1,2,\dots,n = > x \in K_{\delta}(x^{(0)})$, т.е $U_{\varepsilon}(x^{(0)})\subset K_{\delta}(x^{(0)})$
+
+\end{proof}
+
+
+\vspace{1cm}
+\begin{flushright}
+    \textit{tg: @moksimqa}
+\end{flushright}
