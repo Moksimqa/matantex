@@ -1,0 +1,166 @@
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+\lecture{13}{25.03}{}
+\begin{definition}
+    $E \subset \E_{n}, x^{(0)}\in \E.$ $\quad x^{(0)}$ - внутренняя точка $E$, если $\exists \varepsilon>0 : U_{\varepsilon}(x^{(0)})\subset E$ ($\exists \delta>0: K_{\delta}(x^{(0)})\subset E$)
+ \end{definition}
+\begin{definition}
+    $E \subset \E_{n}, \quad E$ - открытое множество, если $\forall x \in \E, x $ - внутренняя точка $E$.
+\end{definition}
+
+\begin{lemma}
+    $\forall \varepsilon>0 \; \forall x^{(0)}\in \E_{n}, U_{\varepsilon}(x^{(0)})$ - открытое множество. 
+\end{lemma}
+\begin{proof}
+    $\forall x \in U_{\varepsilon}(x^{(0)})$, т.е $\rho(x,x^{(0)})<\varepsilon.$ Рассмотрим $\delta = \varepsilon - \rho(x,x^{(0)})>0,U_{\delta}(x),\; \forall y\in U_{\delta}(x)$. Тогда $\rho(y,x^{(0)})\leqslant \rho(y,x) + \rho(x,x^{(0)})< \delta + \rho(x,x^{0})=\varepsilon - \rho(x,x^{(0)})+\rho(x,x^{(0)}) = \varepsilon\implies U_{\delta}(x) \subset U_{\varepsilon}(x^{(0)})$ 
+\end{proof}
+\begin{lemma}
+    $\forall \varepsilon>0 \; \forall x^{(0)}\in \E_{n}, K_{\varepsilon}(x^{(0)})$ - открытое множество. 
+\end{lemma}
+\begin{proof}
+    Самостоятельно.
+\end{proof}
+\begin{lemma}
+    $a_{k}< b_{k}, k=1,2,\dots,n\implies (a_{1}b_{1},\dots,a_{n}b_{n})$ - открытое множество
+\end{lemma}
+\begin{proof}
+    Самостоятельно. Берем произвольный $x$ из этого параллелепипеда и ищем кубическую окрестность.
+\end{proof}
+\begin{definition}
+    $E \subset \E_{n}, x^{(0)}\in \E, x^{(0)}$ - изолированная точка $\E$, если $\exists \varepsilon>0 : \overset{\circ}{U}_{\varepsilon}(x^{(0)}) \cap \E = \varnothing$
+\end{definition}
+
+\begin{definition}
+    $E \subset \E_{n}, x^{(0)} \in E_{n}, x^{(0)}$ - предельная точка $E$, если $\forall \varepsilon>0 \;\overset{\circ}{U}(x^{(0)})\cap E\neq \varnothing$
+\end{definition}
+\begin{definition}
+    $E \subset \E_{n},x^{(0)} \in \E_{n}, x^{(0)}$ - точка прикосновения $E$, если $\forall \varepsilon>0\; U_{\varepsilon}(x^{(0)})\cap E \neq  \varnothing$
+\end{definition}
+
+\begin{definition}
+    $E \subset \E_{n}.$ Замыкание $E: \overline{E} \equiv \{x\in \E_{n}: x - \text{ точка прикосновения } E\}$ \qquad $E \subset \overline{E}$
+\end{definition}
+
+\begin{definition}
+    $E \subset \E_{n}, E$ - замкнутое, если $E = \overline{E}$ 
+\end{definition}
+\begin{lemma}
+    $\forall \varepsilon \geqslant 0, \forall x^{(0)}\in \E_{n}, V_{\varepsilon}(x^{(0)})$ - замкнутое множество.
+\end{lemma}
+\begin{proof}
+    $\forall x \in \E_{n}: x \notin V_{\varepsilon}(x^{(0)}),$ т.е $\rho(x,x^{(0)})>\varepsilon, \delta = \rho(x,x^{(0)})-\epsilon>0$. Возьем $U_{\delta}(x)$ и $\forall y \in U_{\delta}(x)$. 
+    \\$\rho(y,x)<\delta= \rho(x,x^{(0)})-\varepsilon$. Воспользуемся неравенством треугольника: $\rho(x,x^{(0)})\leqslant \rho(x,y)+\rho(y,x^{(0)})\implies \rho(y,x^{(0)})\geqslant \rho(x,x^{(0)})-\rho(x,y)> \rho(x,x^{(0)})-\delta = \rho(x,x^{(0)})- \rho(x,x^{(0)})+ \varepsilon = \varepsilon \implies \rho(y,x^{(0)})> \varepsilon \implies y\notin V_{\varepsilon}(x^{(0)}) \implies V_{\varepsilon}(x^{(0)}) \cap  U_{\delta}(x) = \varnothing$
+\end{proof}
+
+\begin{lemma}
+    $\forall \varepsilon>0 \; \forall x^{(0)}\in\E_{n}, S_{\varepsilon}(x^{(0)})$ - замкнутое множество. 
+\end{lemma}
+\begin{proof}
+    Самостоятельно. 
+\end{proof}
+\begin{lemma}
+    $a_{k}\leqslant b_{k}, k = 1,2,\dots ,n\implies [a_{1}b_{1},\dots.,a_{n}b_{n}]$ - замкнутое множество.
+\end{lemma}
+\begin{proof}
+    Самостоятельно. 
+\end{proof}
+\begin{lemma}
+    $E \subset \E_{n} \implies \overline{E}$ - замкнутое множество. 
+\end{lemma}
+\begin{proof}
+    $E \subset \overline{E} \subset \overline{\overline{E}}\quad \forall x \in \overline{\overline{E}}\implies x$ - точка прикосновения $\overline{E}$, т.е $\forall \varepsilon>0 \; U_{\varepsilon}(x)\cap \overline{E}\neq  \varnothing$. 
+    \\Возьмем $y \in U_{\varepsilon}(x)\cap \overline{E}\implies y $ - точка прикосновения $E\implies \forall \delta>0 \; U_{\delta}(y)\cap E \neq  \varnothing$. Возьем $U_{\delta}(y) \subset U_{\varepsilon}(x)\\ z\in U_{\delta}(y)\cap E \subset U_{\varepsilon}(x) \cap E$. Таким образом, $\forall x \in \overline{\overline{E}}\; \forall \varepsilon>0 \;\exists z \in U_{\varepsilon}(x) \cap E \implies x$ - точка прикосновения $E$, т.е $x \in \overline{E}, \overline{\overline{E}} \subset \overline{E}$
+\end{proof}
+\begin{definition}
+    $E\in\E_{n}$. Дополнение к $E: CE \equiv \E_{n}\backslash E$
+\end{definition}
+$E\cap CE = \varnothing, E\cup CE = \E_{n}, C(CE) = E$
+
+\begin{lemma}
+    $E$ - открытое множество $\Leftrightarrow CE$ - замкнутое множество.
+\end{lemma}
+\begin{proof}
+    $\tcircle{$\implies$}$ $E$ - открытое множество. $\forall x \notin CE,$ т.е $x \in E\; \exists \varepsilon>0: U_{\varepsilon}(x)\subset E\implies U_{\varepsilon}(x)\cap CE = \varnothing\implies x$ - не есть точка прикосновения $CE\implies CE $ - замкнутое множество. 
+    \\$\tcircle{$\impliedby$}$ $CE$ - замкнутое множество. $x$ - точка прикосновения $CE\implies x\in CE \implies \forall y \in E, y$ - не есть точка прикосновения $CE\implies \exists \delta>0: U_{\delta}(y)\cap CE = \varnothing\implies U_{\delta}(y)\subset E \implies E$ - открытое множество.
+\end{proof}
+\begin{corollary}
+    $E$ - замкнутое $\Leftrightarrow CE$ - открытое. 
+\end{corollary}
+
+\section{Последовательности в $\E_{n}$}
+\begin{definition}
+    $E\subset \E_{n}, E $ - ограниченное множество, если $\exists M > 0 : \| x\| \leqslant M \;\forall x \in E$
+\end{definition}
+
+
+\begin{definition} 
+    $\forall m \in \N \; \exists x^{(m)}=\left(x_{1}^{(m)},\dots,x_{n}^{(m)}\right)\in \E_{n}.$ $\{x^{(m)}\}_{m=1}^{\infty}$ - последовательность.
+\end{definition}
+$\{x^{(m)}\}_{m=m_{0}}^{\infty}=\{x^{(m_{0})},x^{(m_{0}+1)},\dots\}$
+\begin{definition}[сходимость по расстоянию]
+    $a \in \E_{n}, a$ - предел $\{x^{(m)}\}$, если $\forall \varepsilon>0 \; \exists  N: \forall m>N \; \rho(x^{(m)},a)=\|x^{(m)}-a\|<\varepsilon$ $\left(\lim\limits_{m \to \infty}\rho(x^{(m)},a) = \lim\limits_{m \to \infty}\|x^{(m)}-a\| = 0 \right)$
+\end{definition}
+\begin{definition}[покоординатная сходимость]
+    $a=(a_{1},\dots,a_{n})\in \E_{n}, a$ - предел $\{x^{(m)}\}$, если $\forall k = 1,2,\dots,n$ \; $\lim\limits_{m    \to \infty}x_{k}^{(m)}=a_{k}$, т.е $\forall k =1,2,\dots,n\;\forall \varepsilon>0 \exists N_{k}: \forall m> N_{k}\; |x^{(m)}_{k}-a_{k}| < \varepsilon $
+\end{definition}
+\begin{theorem}
+    Опр. 1 $\Leftrightarrow$ Опр. 2. 
+\end{theorem}
+\begin{proof}
+    $\tcircle{$\implies$}$ $\forall \varepsilon>0 \;\exists N : \forall m> N \; \rho(x^{(m)},a)= \| x^{(m)}-a\| <\varepsilon\quad \sum_{k=1}^{n } \left| x_{k}^{(m)}-a\right|^{2}<\varepsilon^{2}\implies\\\implies \forall k=1,2,\dots,n \; \left|x_{k}^{(m)}-a\right| <\varepsilon \implies \lim\limits_{m  \to \infty}x_{k}^{(m)}=a_{k} $
+    \\$\tcircle{$\impliedby$}$ $\forall k=1,2,\dots,n \; \forall \varepsilon>0 \; \exists N_{k}: \forall m>N_{k} \; \left|x_{k}^{(m)}-a_{k}\right|<\frac{\varepsilon}{\sqrt{n}}\implies \| x^{(m)}-a\| ^{2} = \sum_{k=1}^{n } \left|x_{k}^{(m)}-a_{k}\right|^{2} < \frac{\varepsilon^{2}}{n}\cdot n = \varepsilon^{2},$т.е $\|x^{(m)}-a\|<\varepsilon$
+\end{proof}
+\begin{definition}
+    $E\subset \E_{n}, x\in \E_{n}, x $ - граничаня точка $E$, если $\forall \varepsilon>0 \; U_{\varepsilon}(x)\cap E \neq  \varnothing, U_{\varepsilon}(x)\cap CE \neq  \varnothing$
+\end{definition}
+
+\begin{definition}
+    $E \subset \E_{n},$ граница $E: \partial E \equiv \{x\in\E_{n}, x - \text{ граничная точка $ E $}\}$
+\end{definition}
+
+\begin{lemma}
+    $E\subset \E_{n}\implies \partial E \subset \overline{E}$
+\end{lemma}
+\begin{proof}
+    $\forall \varepsilon>0 \; \forall x^{(0)}\in \E_{n}, \partial U_{\varepsilon}(x^{(0)})= \partial V_{\varepsilon}(x^{(0)})=\partial S_{\varepsilon}(x^{(0)})=S_{\varepsilon}(x^{(0)}), \partial \overset{\circ}{U}_{\varepsilon}(x^{(0)})=S_{\varepsilon}(x^{(0)}) \cup \{x^{(0)}\}$ - проверить.
+\end{proof}
+\begin{definition}
+    Если последовательность имеет предел, то она называется сходящейся, иначе - расходящейся.
+\end{definition}
+\begin{theorem}[Единственность предела]
+    $\{x^{(m)}\}$ - сходится $ \implies$ ее предел единственный. 
+\end{theorem}
+\begin{proof}
+    Самостоятельно. 
+\end{proof}
+
+\begin{theorem}
+    $\{x^{(m)}\}$ - сходится $\implies \{x^{(m)}\}$ ограничена 
+\end{theorem}
+\begin{proof} 
+    Самостоятельно. 
+\end{proof}
+
+\begin{theorem}
+    $\lim\limits_{m \to \infty}x^{(m)}= x, \lim\limits_{m   \to \infty}y^{(m)}=y, \lim\limits_{ m   \to \infty  } \alpha_{m}=\alpha\implies \exists \lim\limits_{m  \to \infty  } \left(x^{(m)}+y^{(m)}\right) = x+y,$ \\$ \exists \lim\limits_{m    \to \infty  } \left( \alpha_{m}x^{(m)}\right) = \alpha x, \exists \lim\limits_{m    \to \infty  } \left(x^{(m)} ,y^{(m)}\right)=(x,y)$    
+\end{theorem}
+\begin{proof}
+    $\{x^{(m)}\}$ - сходится $\implies $ ограничена, т.е $\exists M>0 : \|x^{(m)}\|\leqslant M, \forall m=1,2,\dots$.
+   \\ $\lim\limits_{m \to \infty}x^{(m)} =x$, т.е $\forall \varepsilon>0 \exists N_{1}: \forall m> N_{1} \; \|x^{(m)}-x\|<\frac{\varepsilon}{2(\|y\|+1)}$
+    \\$\lim\limits_{m   \to \infty}y^{(m)} =y  $, т.е $\forall \varepsilon>0 \exists N_{2}: \forall m>N_{2}\ \|y^{(m)}-y\|<\frac{\varepsilon}{2M}$
+    \\$\forall \varepsilon>0 \exists N = \max{(N_{1},N_{2})}: \forall n> N \; \left| (x^{(m)},y^{(m)})-(x,y)\right| = \left| (x^{(m)},y^{(m)})-(x^{(m)},y)+(x^{(m)},y)-(x,y)\right|\leqslant \left| (x^{(m)},y^{(m)}-y)\right| + \left| (x^{(m)}-x,y)\right|\leqslant \|x^{(m)}\|\|y^{(m)}-y\|+\|x^{(m)}-x\|\|y\|< M\cdot \frac{\varepsilon}{2M} + \frac{\varepsilon}{2(\|y\| + 1)}\|y\| < \varepsilon$
+\end{proof}
+\begin{corollary}[непрерывность нормы]
+    $\lim\limits_{m\to \infty}x^{(m)}=x\implies \exists \lim\limits_{m  \to \infty}\|x^{(m)}\| = \|x\|  $
+\end{corollary}
+\begin{proof}      
+    $\|x^{(m)}\|=\lim\limits_{m \to \infty  } \sqrt{(x^{(m)},x^{(m)})}=\sqrt{\lim\limits_{m \to \infty  } (x^{(m)},x^{(m)})}=\sqrt{(x,x)}=\|x\|$
+    
+\end{proof}
+\begin{corollary}[непрерывность расстояния]
+    $\lim\limits_{m \to \infty}x^{(m)}=x, \lim\limits_{m  \to \infty}y^{(m)}=y \implies \exists \lim\limits_{ m \to \infty}\rho(x^{(m)},y^{(m)})=\rho(x,y)   $
+\end{corollary}
+\begin{proof}
+    Самостоятельно
+\end{proof}
+

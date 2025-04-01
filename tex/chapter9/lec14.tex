@@ -1,0 +1,84 @@
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+\lecture{14}{28.03}{}
+\begin{definition}
+    $\{x^{(m)}\}$ - последовательность в $\E_{n}$; $1\leqslant m_{1}< m_{2} <\dots< m_{p}< m_{p+1}<\dots$\\ Тогда $\{x^{(m_{p})}\}_{p=1}^{\infty}$ называется подпоследовательностью $\{x^{(m)}\}$. Обозначение: $x^{(m_{p})}\subset x^{(m)}$.
+\end{definition}
+$m_{1}\geqslant 1, m_{2} \geqslant 2, m_{3}\geqslant 3 , \dots , m_{p}\geqslant p, \dots$
+
+\begin{theorem}
+    $\lim\limits_{m \to \infty}x^{(m)}=a \implies \forall \{x^{(m_{p})}\}\subset \{x^{(m)}\} \implies \exists \lim\limits_{p    \to \infty}x^{(m_{p})}=a $
+\end{theorem}
+\begin{proof}
+    Самостоятельно. Расписываем определение предела, только индекс нумерации обозначим через $p$.
+\end{proof}
+\begin{theorem}[Больцано-Вейерштрасса]
+    $\{x^{(m)}\}$ - ограничена $\implies \exists \{x^{(m_{p})}\}\subset \{x^{(m)}\}: \exists \lim\limits_{p \to \infty}x^{(m_{p})}  $
+\end{theorem}
+\begin{proof}
+    $\{x^{(m)}\}$ - ограничена, т.е $\exists M>0 :  \|x^{(m)}\|\leqslant M$, т.е $\sum_{k=1}^{n}|x_{k}^{(m)}|^{2}\leqslant M^{2} \implies |x_{1}^{(m)}| \leqslant M$. Рассмотрим числовую последовательность только первых координат $\{x_{1}^{(m)}\}$ - ограничена $\underset{\text{т. Больцано - Вейерштрасса}}{\implies} \exists \{x_{1}^{(m_{p_{1}})}\}_{p_{1}=1}^{\infty}\subset \{x_{1}^{(m)}\}: \exists \lim\limits_{p_{1}       \to \infty}x_{1}^{(m_{p_{1}})} =a_{1}\in\R$.  Рассмотрим $\{x^{m_{p_{1}}}\}_{p_{1}=1}^{\infty}\subset \{x^{(m)}\}$. Для второй координаты получим $\{x_{2}^{(m_{p_{2}})}\}$ - ограничена $\underset{\text{т. Больцано - Вейерштрасса}}{\implies} \exists \{x_{2}^{(m_{p_{2}})}\}_{p_{2}=1}^{\infty}\subset \{x_{2}^{(m)}\}: \exists \lim\limits_{p_{2}\to \infty}x_{2}^{(m_{p_{2}})} =a_{2}\in\R$. $\{x^{(m_{p_{2}})}\}_{p_{2}=1}^{\infty}\subset \{x^{(m_{p_{1}})}\}\subset \{x^{(m)}\}$. Сделаем конечное число шагов. На $n$-ом шаге $\exists \{x^{(m_{p_{n}})}\}_{p_{n}=1}^{\infty}\subset \{ x^{(m)}\}: \exists \lim\limits_{p_{k}\to \infty}x_{k}^{(m_{p_{k}})} = a_{k }\implies \exists\lim\limits_{ p_{n}\to \infty}x^{(m_{p_{n}})}=a=(a_{1},a_{2},\dots,a_{n}) $
+\end{proof}
+
+\begin{theorem}[Критерий Коши]
+    $\{x^{(m)}\}$ - сходится $\Leftrightarrow \forall \varepsilon>0 \exists N: \forall m,p> n \; \rho(x^{(m)},x^{(p)})= \| x^{(m)}-x^{(p)}\| <\varepsilon$
+\end{theorem}
+\begin{proof}
+    $\tcircle{$\implies$}$ $\exists \lim\limits_{ m\to \infty}x^{(m)}=a ,  $ т.е $\forall \epsilon>0 \exists N: \forall m> N \; \| x^{(m)}=a \| <\frac{\varepsilon}{2}$. 
+    \\$ \forall m,p > N \implies \| x^{(m)}-x^{(p)}\| = \| x^{(m)}-a + a - x^{(p)}\| \leqslant \| x^{(m)}-a \| + \| x^{(p)}-a\| <\frac{\varepsilon}{2} + \frac{\varepsilon}{2}=\varepsilon$. 
+    \\$\tcircle{$\impliedby$}$ $\forall \varepsilon>0 \exists N: \forall m,p > N \; \rho(x^{(m)},x^{(p)})=\| x^{(m)}-x^{(p)}\| =\sqrt{\sum_{k=1}^{n } \left|x_{k}^{(m)}-x_{k}^{(p)}\right|^{2}}<\varepsilon\implies \forall k=1,2,\dots,n \; |x_{k}^{(m)}-x_{k}^{(p)}|<\varepsilon\implies  \{ x_{k}^{(m)}\}_{m=1}^{\infty} $ - фундаментальная $\implies \exists \lim\limits_{m\to \infty}x_{k}^{(m)}=a_{k}\in\R\implies \exists \lim\limits_{m \to \infty}  x^{(m)}=a=(a_{1},a_{2},\dots,a_{n})\in \E_{n}$
+\end{proof}
+
+
+\section{Функции в $\E_{n}$} 
+\begin{definition}
+    $E_{x}\subset \E_{n}, \forall x \in E_{x}$ по некоторому закону ($f$) поставлено в соответствие число $y\in R$, следовательно $y= f(x)=f(x_{1},\dots,x_{n})$. $E_{x}$ - множество определения, $E_{y} \equiv \{y\in \R: y = f(x), x\in E_{x}\}$ - множество значений.
+\end{definition}
+\begin{definition}
+    $y = f(x), x \in E \subset \E_{n}$. Тогда множество $G \equiv\{(x_{1},\dots,x_{n};y):(x_{1},\dots,x_{n})\in E, y=f(x)\}\subset \E_{n+1}, G$ - график функции $y=f(x)$  
+\end{definition}
+
+Примеры: 
+\\1. $f(x)\equiv c = const\qquad a_{1},\dots,a_{n}\in \R \quad f(x)=f(x_{1},\dots,x_{n})=a_{1}x_{1}+\dots+an_{x}$ - линейная форма. 
+\section{Предел функции}
+\begin{definition}[Коши]
+    $f(x)$ определена при $x\in E,x^{(0)}$ - предельная точка $E$. Число $A$ называется пределом $f(x)$ при $x\to x_{0}$ по множеству $E$, если $\forall \varepsilon>0\; \exists \delta> 0 : \forall x\in E\cap \overset{\circ}{U_{\delta}}(x^{(0)}) \; |f(x)-A| <\varepsilon$
+\end{definition}
+\begin{definition}[Гейне]
+    $f(x)$ определена при $x\in E,x^{(0)}$ - предельная точка $E$. Число $A$ называется пределом $f(x)$ при $x\to x_{0}$ по множеству $E$, если $\forall \{ x^{(m)}\}: x^{(m)}\in E, x^{(m)}\neq x^{(0)}, \lim\limits_{ m   \to \infty}x^{(m)}=x^{(0)}\implies \lim\limits_{ m\to \infty}f(x^{(m)})=A  $
+\end{definition}
+Обозначение: $\lim\limits_{x\to x^{(0)}} f(x)=A, x\in E$
+
+\begin{theorem}
+    $f(x)$ определена при $x\in E,x^{(0)}$ - предельная точка $E\implies $ (Определение 1 $\Leftrightarrow$ Определение 2)
+\end{theorem} 
+\begin{proof}
+    $\tcircle{$\implies$}$ $\forall \varepsilon>0 \; \exists \delta>0 : \forall x \in \cap \overset{\circ}{U_{\delta}}(x^{(0)})\implies |f(x)-A|<\varepsilon$. 
+    \\Берем $\forall \{x^{(m)}\}: x^{(m)}\neq  x^{(0)}, \lim\limits_{ m \to \infty}x^{(m)}=x^{(0)},x^{m}\in E$
+    \\$\forall \delta>0 \exists N : \forall m> N \; 0 < \| x^{(m)}-x^{(0)}\| <\delta$, т.е $x^{(m)}\in \overset{\circ}{U_{\delta}}(x^{(0)})\implies |f(x^{(m)})-A| < \varepsilon$
+    \\ $\tcircle{$\impliedby$}$ $\exists \varepsilon>0 : \forall \delta>0 \; \exists x \in E \cap \overset{\circ}{U_{\delta}}(x^{(0)})$, но $|f(x)-A| \geqslant \varepsilon$. Возьмем $\delta = \delta_{m}=\frac{1}{m}\quad \exists x^{(m)}\in E \cap \overset{\circ}{U_{\delta_{m}}}(x^{(0)})$, но $|f(x^{(m)})-A| \geqslant \varepsilon$. 
+    Мы построили последовательность $\{x^{(m)}\},x^{(m)}\in E, x^{(m)}\neq x^{(0)}, 0 < \| x^{(m)}-x^{(0)}\| <\\< \delta_{m}=\frac{1}{m}$, т.е $\lim\limits_{m\to \infty}x^{(m)}=x^{(0)} \quad \lim\limits_{m   \to \infty  } f(x^{(m)})=A\implies 0 = \lim\limits_{m   \to \infty}\left|f(x^{(m)})-A\right| \geqslant \varepsilon$ - противоречие.
+\end{proof}
+
+
+\begin{theorem}
+     $f(x),x\in E, \exists \lim\limits_{\substack{{x\to x_{0}}\\x\in E}}f(x) =A \implies \forall F \subset E: x^{(0)}$ - предельная точка $F\implies \exists \lim\limits_{\substack{{x\to x_{0}}\\ x\in F}}f(x)=A $
+\end{theorem}
+\begin{proof}
+    $\forall \varepsilon>0 \; \exists \delta>0 : \forall x \in E \cap \overset{\circ}{U_{\delta}}(x^{(0)})\implies |f(x)-A|<\varepsilon$. Возьем $\forall x \in F \cap \overset{\circ}{U_{\delta}}(x^{(0)})\subset \\ \subset E \cap \overset{\circ}{U_{\delta}}(x^{(0)})\implies |f(x)-A| <\varepsilon$
+\end{proof}
+\begin{theorem}
+    $\lim\limits_{\substack{x \to x_{0}\\x\in E}} f(x)=A , \lim\limits_{ \substack{x\to x_{0}\\x\in E}} g(x)=B  \implies \exists \lim\limits_{\substack{x\to x_{0}\\x\in E}} (f(x)\pm g(x))=A\pm B; \exists  \lim\limits_{\substack{x\to x_{0}\\x\in E}} (f(x)\cdot g(x))=A\cdot B;$ если $B\neq 0 \implies \exists \lim\limits_{\substack{x\to x_{0}\\ x\in E}} \frac{f(x)}{g(x)}=\frac{A}{B} $
+\end{theorem}
+\begin{proof}
+    Самостоятельно. Берем определения по Гейне.
+\end{proof}
+\begin{theorem}
+    $\exists \lim\limits_{\substack{x\to x_{0}\\ x\in E}} f(x) \implies \exists \eta > 0 \; \exists M>0: |f(x)| \leqslant M \; \forall x \in E \cap \overset{\circ}{U_{\eta}}(x^{(0)})$
+\end{theorem}
+\begin{proof}
+    Самостоятельно. Берем определение по Коши.
+\end{proof}
+\vspace{1cm}
+\begin{flushright}
+    \textit{tg: @moksimqa}
+\end{flushright}
