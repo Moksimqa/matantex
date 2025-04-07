@@ -1,0 +1,78 @@
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+\lecture{15}{04.04}{}
+\begin{theorem}
+    $\lim\limits_{\substack{x\to x^{(0)} \\ x\in E}}f(x)=A\neq 0 \implies \exists \eta >0 : \forall x \in E \cap \overset{\circ}{U}_{\eta}(x^{(0)})\implies \operatorname{sgn}f(x)=\operatorname{sgn}A $
+\end{theorem}
+\begin{proof}
+    Самостоятельно.
+\end{proof}
+\begin{theorem}
+    $\lim\limits_{\substack{x\to x^{(0)} \\ x\in E }} f(x)=A, \lim\limits_{\substack{x\to x^{(0)}\\ x\in E}}g(x) =B, f(x)\geqslant g(x)\; \forall x \in E \implies A\geqslant B  $
+\end{theorem}
+\begin{proof}
+    Самостоятельно.
+\end{proof}
+\begin{theorem} 
+    $\lim\limits_{\substack{x\to x^{(0)}\\x\in E}} f(x)= \lim\limits_{\substack{x\to x^{(0)} \\ x\in E}} h(x)=A, f(x)\leqslant g(x)\leqslant h(x)\;\forall x \in E \implies \exists \lim\limits_{\substack{x \to x^{(0)} \\ x\in E}} g(x)=A   $
+\end{theorem}
+\begin{proof}
+    Самостоятельно.
+\end{proof}
+
+\begin{definition}
+    $x^{(0)}\in \E_{n}, \delta > 0 \; \tilde{U}_{\delta}(x^{(0)})\equiv U_{\delta}(x^{(0)})\backslash \left(U_{k=1}^{n}\{x_{k}\neq x_{k}^{(0)}\}   \right)$
+\end{definition}
+$E= U_{\delta}(x^{(0)}), E= \overset{\circ}{U}_{\delta}(x^{(0)}), E = K_{\delta}(x^{(0)}), E= \overset{\circ}{K}_{\delta}(x^{(0)}), E = \tilde{U}_{\delta}(x^{(0)})\quad \lim\limits_{\substack{x\to x_{0} \\ (x\in E)}} f(x) $
+
+\begin{definition}
+    $x^{(0)}=(x_{1}^{(0)},\dots,x_{n}^{(0)})\in \E_{n},\tilde{\delta}>0, f(x)=f(x_{1},\dots,x_{n}),x\in \tilde{U}_{\tilde{\delta}}(x^{(0)})\;(k_{1},k_{2},\dots,k_{n})$ - перестановка $(1,2,\dots,n)$. Повторный предел: $\lim\limits_{x_{k_{1}}\to x_{k_{1}}^{(0)}}\lim\limits_{x_{k_{2}}\to x_{k_{2}}^{(0)}}\dots \lim\limits_{x_{k_{n}}\to x_{k_{n}}^{(0)}} f(x_{1},x_{2},\dots,x_{n})$, если $\exists$
+\end{definition}
+
+Примеры: $(n=2, \text{ точка }(0;0))$ 
+\\1. $f(x,y)=\frac{x^{2}}{x^{2}+y^{2}}\quad \lim\limits_{x\to 0} \lim\limits_{y\to 0} \frac{x^{2}}{x^{2}+y^{2}}=\lim\limits_{x\to 0} 1=1 $;\qquad $\lim\limits_{y\to 0} \lim\limits_{x\to 0}\frac{x^{2}}{x^{2}+y^{2}} =\lim\limits_{y\to 0} 0 = 0$. $\lim\limits_{(x,y)\to (0,0)}\frac{x^{2}}{x^{2}+y^{2}}$.\\ Рассмотрим $\lim\limits_{\substack{(x,y)\to (0,0)\\(x,y)\in(x,kx)}}\frac{x^{2}}{x^{2}+y^{2}}= \lim\limits_{x\to 0}\frac{x^{2}}{x^{2}+k^{2}x^{2}}=\frac{1}{1+k^{2}}\implies \nexists \lim\limits_{(x,y)\to (0,0)}\frac{x^{2}}{x^{2}+y^{2}}   $
+\\2.$f(x,y)=\frac{x^{2}y}{x^{4}+y^{2}} \quad \lim\limits_{x\to 0} \lim\limits_{y\to 0} \frac{x^{2}y}{x^{4}+y^{2}}=\lim\limits_{x\to 0} 0=0;\qquad \lim\limits_{y\to 0}\lim\limits_{x\to 0} \frac{x^{2}y        }{x^{4}+y^{2}}=\lim\limits_{y\to 0} 0=0$. \\Рассмотрим $\lim\limits_{\substack{(x,y)\to (0,0)\\(x,y)\in(x,kx)}} \frac{x^{2}y}{x^{4}+y^{2}}=\lim\limits_{x\to 0}\frac{kx^{3}}{x^{4}+k^{2}x^{2}}=\lim\limits_{x\to 0}  \frac{kx}{k^{2}+x^{2}}=0$. \\Посмотрим $\lim\limits_{\substack{(x,y)\to (0,0)\\ (x,y)\in(x,x^{2})}} \frac{x^{2}y}{x^{4}+y^{2}}=\lim\limits_{x\to 0}   \frac{x^{4}}{x^{4}+x^{4}}=\frac{1}{2}\implies \nexists \lim\limits_{(x,y)\to (0,0)}\frac{x^{2}y}{x^{4}+y^{2}} $
+\\3. $f(x,y)=y\sin{\frac{1}{x}}\quad \lim\limits_{x\to 0} \lim\limits_{y\to 0} y\sin{\frac{1}{x}}=\lim\limits_{x\to 0} 0    =0;\qquad \lim\limits_{y\to 0} \underbrace{\lim\limits_{x\to 0} y\sin{\frac{1}{x}}}_{\nexists} \implies  \nexists \;\lim\limits_{y\to 0} \lim\limits_{x\to 0} y\sin{\frac{1}{x}}$.
+\\Рассмотрим $|f(x,y)|\leqslant|y|$, т.е $\underbrace{-|y|}_{\to 0} \leqslant f(x,y)\leqslant \underbrace{|y|}_{\to_{0}} \implies \exists \lim\limits_{ (x,y)\to (0,0)}f(x,y)=0 $
+
+\section{Непрерывные функции нескольких переменных}
+\begin{definition}
+    $f(x)$ определена на $E\subset \E_{n}, x^{(0)}\in E$. $f(x)$ называется непрерывной при $x=x^{(0)}\in E $ по $E $, если $\forall \varepsilon>0  \; \exists \delta>0: \forall x \in E \cap U_{\delta}(x^{(0)})\implies |f(x)-f(x^{(0)})| <\varepsilon$.\\ $x^{(0)}\in E, x^{(0)}$ - не есть изолированная точка $\lim\limits_{\substack{ x \to x_{0} \\ x\in E}} f(x) = f(x^{(0)})\Leftrightarrow f(x)$ непрерывна при $x=x^{(0)}$ по $E$.
+\end{definition}
+Определение непрерывности функции по Гейне написать самостоятельно.
+\begin{definition}
+    $f(x)$ определена на $E\subset \E_{n}$. $f(x)$ непрерывна на $E$ по $E$, если $\forall x^{(0)}\in E , f(x)$ непрерывна при $x=x_{0}$ по $E$.
+\end{definition}
+\noindent$f(x) = f(x_{1},\dots,x_{k},\dots,x_{n}), \;x\in  $ окрестности $x^{(0)}$. Рассмотрим $\varphi(x_{k})=f(x_{1}^{(0)},\dots,x_{k-1}^{(0)},x_{k}^{(0)},x_{k+1}^{(0)},\dots,x_{n}^{(0)})$
+\begin{definition}
+    $t= (t_{1},t_{2},\dots,t_{p})\in E \subset \E_{p}; \; x = (x_{1},\dots,x_{n})\in F\subset \E_{n};\; \varphi_{1}(t),\dots,\varphi_{n}(t)$ определены на $E\in \E_{p}$, причем $\forall t \in E \; (\varphi_{1}(t),\dots,\varphi_{n}(t))\in F\subset \E_{n}, f(x)=f(x_{1},\dots,x_{n})$ определена на $F\subset \E_{n}$.\\ Тогда $y(t) = f(\varphi_{1}(t),\dots,\varphi_{n}(t))$, определенная на $E$, называется сложной функцией.
+\end{definition}
+\begin{theorem}
+    $\exists y(t) = f(\varphi_{1}(t),\dots,\varphi_{n}(t))$ в окрестности $t^{(0)}\in E$. Пусть $\varphi_{1}(t),\dots,\varphi_{n}(t)$ - непрерывны при $t=t^{(0)}$ по $E$, $f(x)$ - непрерывна при $x=x^{(0)}= (x_{1}^{(0)},\dots,x_{n}^{(0)})=(\varphi_{1}(t^{(0)}),\dots,\varphi_{n}(t^{(0)}))\in F$ по $F$. \\Тогда $y(t)$ - непрерывна при $t=t^{(0)}$ по $E$. 
+\end{theorem}
+\begin{proof}
+    $f(x)$ непрерывна при $x=x^{(0)}\in F$ по $F$, т.е $ \forall \varepsilon>0 \; \exists \sigma>0 : \forall x \in F\cap K_{\sigma}(x^{(0)})\implies |f(x)-f(x^{(0)})|<\varepsilon$. $\forall k = 1,2,\dots,n$ $\varphi_{k}(t)$ непрерывна при $t=t^{(0)}\in E$ по $E$, т.е $\forall \sigma>0 \; \exists \delta_{k}>0 : \\\forall t \in E \cap  U_{\delta_{k}}(t^{(0)})\implies  |\varphi_{k}(t)-\varphi_{k}(t^{(0)})|<\sigma\implies \forall \varepsilon>0 \; \exists \delta = \min(\delta_{1},\dots,\delta_{n})>0\implies \forall k=1,\dots,n \; |\varphi_{k}(t)-\\-\varphi_{k}(t^{(0)})|<\sigma$. Рассмотрим $x=(x_{1},\dots,x_{n})= (\varphi_{1}(t),\dots,\varphi_{n}(t))\in F\cap K_{\sigma}(x^{(0)})$. Тогда $|y(t)-y(t^{(0)})|=\\=|f(\varphi_{1}(t), \dots,\varphi_{n}(t)) - f(\varphi_{1}(t^{(0)}),\dots,\varphi_{n}(t^{(0)}))|<\varepsilon$. 
+\end{proof}
+$L \equiv M(t) , t\in [\alpha,\beta]; M(t)\equiv (\varphi_{1}(t),\varphi_{2}(t),\dots,\varphi_{n}(t)), \varphi_{k}(t) \in C[\alpha,\beta]$  
+\begin{definition}
+    $E\subset \E_{n}.$ Если $\forall x^{(1)},x^{(2)} \in E \; \exists $ непрерывная кривая $M(t): M(\alpha) = x^{(1)}, M(\beta) = x^{(2)},\\ \forall t \in [\alpha,\beta] \; M(t)\in E$, то $E$ называется связным множеством.     
+\end{definition}
+\begin{definition}
+    $E \subset \E_{n}.$ Если $E$ открытое множество и $E$ связное множество, то $E$ - область.
+\end{definition}
+\begin{definition}
+    Замыканием области $E$ называется замкнутая область.
+\end{definition}
+\begin{theorem}
+    $f(x)$ непрерывна на $E\in \E_{n}$ по $E$, где $E$ - связное множество. Берем $\forall x^{(1)},x^{(2)}\in E.$ Пусть $f(x^{(1)})=A, f(x^{(2)})=B$. Тогда $\forall C \in [A,B] \; \exists x^{(0)} \in E : f(x^{(0)})=C$.
+\end{theorem}
+\begin{proof}
+    $\exists M(t) : M(\alpha) = x^{(1)}, M(\beta) = x^{(2)}, \forall t \in [\alpha,\beta] \; M(t)\in E$. $M(t)=(\varphi_{1}(t) , \dots , \varphi_{n}(t)), \\\varphi_{k}(t)\in C[\alpha,\beta], k=1,2,\dots,n.$
+    Рассмотрим $u(t) = f( M(t)) = f(  \varphi_{1}(t),\dots,\varphi_{n}(t))$. Тогда $u(t)\in C[\alpha,\beta]$. $u(\alpha) = f(\varphi_{1}(\alpha),\dots,\varphi_{n}(\alpha))=f(x^{(1)})=A, u(\beta) = f(\varphi_{1}(\beta),\dots,\varphi_{n}(\beta))=f(x^{(2)})=B$. Согласно теореме из первого семестра $\forall c\in [A,B] \; \exists \gamma \in [\alpha,\beta] : c = u(\gamma) =f(M(\gamma)) =f(\varphi_{1}(\gamma),\dots,\varphi_{n}(\gamma))=f(x^{(0)})$, где $x^{(0)} = (\varphi_{1}(\gamma),\dots,\varphi_{n}(\gamma))\in E$, т.к $E$ связное множество. 
+\end{proof}
+
+
+\vspace{1cm}
+\begin{flushright}
+    \textit{tg: @moksimqa}
+\end{flushright}

@@ -47,3 +47,4 @@
 \contentsline {section}{\numberline {7.2}Последовательности в $\ensuremath {\mathbb {E}}_{n}$}{49}{}%
 \contentsline {section}{\numberline {7.3}Функции в $\ensuremath {\mathbb {E}}_{n}$}{51}{}%
 \contentsline {section}{\numberline {7.4}Предел функции}{51}{}%
+\contentsline {section}{\numberline {7.5}Непрерывные функции нескольких переменных}{53}{}%
