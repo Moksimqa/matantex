@@ -48,3 +48,4 @@
 \contentsline {section}{\numberline {7.3}Функции в $\ensuremath {\mathbb {E}}_{n}$}{51}{}%
 \contentsline {section}{\numberline {7.4}Предел функции}{51}{}%
 \contentsline {section}{\numberline {7.5}Непрерывные функции нескольких переменных}{53}{}%
+\contentsline {section}{\numberline {7.6}Производные и дифференциалы функций нескольких переменных}{54}{}%
