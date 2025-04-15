@@ -1,0 +1,81 @@
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+\lecture{17}{11.04}{}
+\begin{definition}
+    $y=f(x)$ определена в окрестности $x^{(0)}\in \E_{n}.$ Если $\Delta y = f(x^{(0)}+\Delta x) - f(x^{(0)})= \underset{\text{ск. пр.}}{(A,\Delta x)} + \alpha(\Delta x),$ где $A = (A_{1}, \dots , A_{n})\in \E_{n}, \alpha (\Delta x) = \overline{\overline{o}}(\| \Delta x\| )(\|\Delta x\| \to 0)$, то $y=f(x)$ называется дифференцируемой при $x=x^{(0)}$, а $dy \equiv (A,\Delta x)= \sum_{i =1}^{n}A_{i}\Delta x_{i}  = A_{1}\Delta x_{1} + \dots+ A_{n}\Delta x_{n}$ - дифференциалом функции $f(x)$ при $x=x^{(0)}$.
+ \end{definition}
+Если $x $ - независимая переменная, то $dx \equiv  \Delta x(dx_{i}=\Delta x_{i}); dy = \sum_{i  =1}^{n  } A_{i}dx_{i}$
+\begin{theorem}
+    $y=f(x)$ - дифференцируемая при $x=x^{(0)}\implies y=f(x)$ непрерывна при $x=x^{(0)}$.
+\end{theorem}
+\begin{proof}
+    $\Delta y = A\Delta x + \alpha(\Delta x) $, где $\alpha (\Delta x )= \overline{\overline{o}}(\| \Delta x\| )(\|\Delta x\| \to 0) $, т.е $\forall \varepsilon > 0 \exists \delta_{1}> 0 : \forall \Delta x, \|\Delta x\| < \delta_{1} \implies |\alpha(\Delta x)|< \frac{\varepsilon}{2}$
+    \\$\delta_{2} = \frac{\varepsilon}{2(\|A\| + 1)}, \delta = \min{(\delta_{1},\delta_{2},1)} \implies \forall \Delta x : \|\Delta x\| < \delta \implies \left| f(x) - f(x^{(0)})\right| = |\Delta y | \leqslant |(A,\Delta x )| + |\alpha(\Delta x)| \leqslant$ \\ нер-во Коши - Буняковского  $\leqslant\|A\|\|\Delta x\| + \frac{\varepsilon}{2}\| \Delta x\| < \|A\|\cdot \frac{\varepsilon}{2(\|A\| + 1)} + \frac{\varepsilon}{2}\cdot 1 < \frac{\varepsilon}{2} + \frac{\varepsilon}{2} = \varepsilon$.  
+\end{proof}
+\begin{theorem}
+    $y=f(x)$ дифференцируемая при $x=x^{(0)}, dy = (A,dx) = \sum_{i=1}^{n}  A_{i}dx_{i} \implies \forall i = 1, \dots , n \; \exists \frac{\partial f}{\partial x_{i}}(x^{(0)}) = A_{i} $
+\end{theorem}
+\begin{proof}
+    $\Delta y = A\Delta x + \alpha(\Delta x) $, где $ \alpha (\Delta x )= \overline{\overline{o}}(\| \Delta x\| )(\|\Delta x\| \to 0) $, т.е $\forall \varepsilon > 0 \exists \delta_{1}> 0 : \forall \Delta x, \|\Delta x\| < \delta_{1} \implies |\alpha(\Delta x)|< \frac{\varepsilon}{2} \| \Delta x\|$\qquad 
+    $\Delta x = (0,\dots, 0 , \Delta x_{i}, 0 , \dots, 0), 0 < |\Delta x_{i} < \delta \; \| \Delta x \| = |\Delta x_{i}| $\\ 
+    $\left| \frac{ f(x_{1}^{(0)},\dots,x_{i-1}^{(0)},x_{i}^{(0)}+\Delta x_{i}, x_{i+1}^{(0)},\dots,x_{n}^{(0)})- f(x_{1}^{(0)},\dots,x_{n}^{(0)})}{\Delta x_{i}} - A_{i}\right| = \left| \frac{(A,\Delta x) + \alpha (\Delta x)}{ \Delta x_{i}}-A_{i}\right| = \left| \frac{A_{i}\Delta x_{i}+ \alpha(\Delta x)}{\Delta x_{i}} - A_{i}\right| =\\= dy = df = \sum_{i   =1}^{n  } \frac{\partial{f}}{\partial{x_{i}}}(x^{(0)})dx_{i}$
+\end{proof}
+\begin{theorem}
+    $y=f(x):$ в окрестности $x^{(0)} \exists \frac{\partial {f }}{ \partial{x_{i}}}(x), \forall i= \overline{1,n}; \frac{\partial{f}}{\partial{x_{i}}}(x)$ - непрерывна при $x=x^{(0)} \implies y=f(x)$ дифференцируемая при $x=x^{(0)}$.
+\end{theorem}
+\begin{proof}
+    $\Delta y =f( x^{(0 )}+\Delta x ) - f(x^{(0)}) = f( x_{1}^{(0)} +\Delta x_{1}, x_{2}^{(0)} +\Delta x_{2}, \dots, x_{n}^{(0)} +\Delta x_{n}) - f(x_{1}^{(0)}, x_{2}^{(0)}, \dots, x_{n}^{(0)}) =\\= \sum_{i =1}^{n  } \left[f(x_{1}^{(0)} , \dots , x_{i-1}^{(0)} ,x_{i}^{(0)}+\Delta x_{i} , \dots , x_{n}^{(0)} + \Delta x_{n} ) - f( x_{1}^{(0)} , \dots ,x_{i}^{(0)}, x_{i+1}^{(0)}+\Delta x_{i+1},\dots,x_{n}^{(0)} + \Delta x_{n})\right] =\\ $ т. Лагранжа 
+    $=  \sum_{ i    =1}^{n}  \frac{\partial{f}}{\partial{x_{i}}}(x_{1}^{(0)},\dots,x_{i-1}^{(0)}+\underbrace{\theta_{i}\Delta x_{i}}_{\substack{\text{частичное приращение} \\0<\theta_{i}<1}}, x_{i+1}^{(0)}+\Delta x_{i+1},\dots,x_{n}^{(0)}+\Delta x_{n})\cdot \Delta x_{i} = \\ = \sum_{ i =1}^{n  } \frac{\partial{f}}{\partial{x_{i}}}(x^{(0)})\cdot\Delta x_{i}+\alpha(\Delta x)$ 
+    \\$\alpha(\Delta x) = \sum_{i=1}^{n} \alpha_{i} (\Delta x) \Delta x_{i}$, где $\alpha_{i}(\Delta x) = \frac{\partial{f}}{\partial{x_{i}}}(x_{1}^{(0)},\dots,x_{i-1}^{(0)}, x_{i}^{(0)}+\theta_{i}\Delta x_{i}, x_{i+1}^{(0)}+\Delta x_{i+1},\dots,x_{n}^{(0)}+\Delta x_{n}) - \\ - \frac{\partial{f}}{\partial{x_{i}}}(x_{1}^{(0)}, \dots,x_{i}^{(0)}, \dots , x_{n}^{(0)})$ \\ $ |\Delta x_{i}| \leqslant \|\Delta x\| = \sqrt{\Delta x_{1}^{2} + \dots + \Delta x_{n}^{2}}  \implies | \alpha(\Delta x) | \leqslant \|x\| \cdot \underbrace{\sum_{i   =1}^{n}| \alpha_{i}(\Delta x)|}_{\to 0 } = \overline{\overline{o}}(  \|\Delta x\| )$ 
+\end{proof}
+
+\begin{definition}
+    Плоскость $\pi$ с уравнением $z= g( x,y)$ - касательная плоскость к поверхности $\sigma (z=f(x,y)) $ в точке $M_{0}(x_{0},y_{0},z_{0})\in \sigma(z=f(x,y))$, если $f(x,y)-g(x,y) = \overline{\overline{o}}(\sqrt{\underset{\Delta x^{2}}{(x-x_{0})^{2}}+\underset{\Delta y^{2}}{(y-y_{0})^{2}}})$ при $(x,y)\to (x_{0},y_{0})$.
+\end{definition}
+\noindent$z_{0} = f(x_{0},y_{0}), M_{0}(x_{0},y_{0},z_{0})\qquad \pi: z-z_{0} = A(x-x_{0})+B (y-y_{0}), g(x,y) = f(x_{0},y_{0}) +A(x-x_{0})+B(y-y_{0})$\\ 
+$f(x,y) - g(x,y) = \underset{\Delta z}{f(x,y)-f(x_{0},y_{0})} - A(x-x_{0}) - B(y-y_{0}) = \Delta z - A\Delta x - B\Delta y$ \\ 
+
+$z = f(x_{0},y_{0}) + \frac{\partial{f}}{\partial{x}}(x_{0},y_{0})\cdot(x-x_{0})+ \frac{\partial{f}}{\partial{y}}(x_{0},y_{0})\cdot(y-y_{0})$ - касательная плоскость. 
+
+Нормалью к поверхности $\sigma$ в какой-то точке называют вектор, перпендикулярный касательной плоскости в этой точке.\\
+$\vec{N} = \{ \frac{\partial{f}}{\partial{x}}(x_{0},y_{0}), \frac{\partial{f}}{\partial{y}}(x_{0},y_{0}), -1\} ; \alpha \vec{N}$ - нормальный вектор ($\alpha \neq 0$). 
+\\ $\vec{n} = \pm  \frac{\vec{N}}{\|\vec{N}\|} = \pm \frac{\{ \frac{\partial{f}}{\partial{x}}(x_{0},y_{0}), \frac{\partial{f}}{\partial{y}}(x_{0},y_{0}), -1\}}{\sqrt{(\frac{\partial{f}}{\partial{x}}(x_{0},y_{0}))^{2}+(\frac{\partial{f}}{\partial{y}}(x_{0},y_{0}))^{2}+1}};$\qquad $\frac{x-x_{0}}{\frac{\partial{f}}{\partial{x}}}\bigg|_{(x_{0},y_{0})} = \frac{y-y_{0}}{\frac{\partial{f}}{\partial{y}}}\bigg|_{(x_{0},y_{0})} = \frac{z-z_{0}}{-1};$  
+$\begin{cases}
+    x= x_{0} + \frac{\partial{f}}{\partial{x}}\bigg|_{(x_{0},y_{0})}\cdot t \\
+    y= y_{0} + \frac{\partial{f}}{\partial{y}}\bigg|_{(x_{0},y_{0})}\cdot t \\
+    z= z_{0} - t
+\end{cases}$
+\begin{theorem}
+$  y(t) = f(\varphi_{1}(t),\dots, \varphi_{n}(t))$ в окрестности $t^{(0)} = (t_{1}^{(0)}, \dots , t_{p}^{(0)}) \in \E_{p}, f(x) = f(x_{1},\dots,x_{n})$ - дифференцируема при $x=x^{(0)} = (x_{1}^{(0)},\dots,x_{n}^{(0)}) = ( \varphi_{1}(t^{(0)}),\dots,\varphi_{n}(t^{(0)}))\in \E_{n}$. Если $\exists j ( j= \overline{1,p}) : \exists \frac{d\varphi_{i}}{dt_{j}}(t^{(0)}) \implies \exists \frac{\partial{y} }{ \partial{t_{j}}}(t^{(0)}) = \sum_{i   =1}^{n  } \frac{\partial{f}}{\partial{x_{i}}}(x^{(0)})\cdot \frac{d\varphi_{i}}{dt_{j}}(t^{(0)})$.\\
+Если $\forall i =1,\dots,n , \varphi_{i}(t) $ дифференцируема при $t=t^{(0)}$, то $y(t)$ - дифференцируема при $t=t^{(0)}$.  
+\end{theorem}
+\begin{proof}
+    $ \Delta y = \Delta f = f(x^{(0)}+\Delta x) - f(x^{(0)}) = \sum_{i=1}^{n} \frac{\partial{f}}{\partial{x_{i}}}(x^{(0)})\cdot \Delta x_{i} + \alpha(\Delta x)$, где $\alpha(\Delta x) = \overline{\overline{o}}(\| \Delta x\| )(\|\Delta x\| \to 0), \alpha(\underset{\substack{\text{нулевой}\\ \text{элемент}}}{\theta}) = \alpha ( 0, \dots , 0) = 0$ \\ 
+    $\Delta t_{j}\neq 0 ;  \frac{\Delta y}{\Delta t_{j}} = \sum_{i  =1}^{n}  \frac{\partial{f}}{\partial{x_{i}}}(x^{(0)})\cdot \underbrace{\frac{\Delta x_{i}}{\Delta t_{j}}}_{{\to \frac{\partial{\varphi_{i}}}{\partial{t_{j}}}(t^{(0)})}} + \frac{\alpha(\Delta x)}{\Delta t_{j}}; \; \frac{\alpha(\Delta x)}{\Delta t_{j}} = (\|\Delta x\| \neq  0 ) = \frac{\alpha(\Delta x)}{\| \Delta x\|}\cdot \frac{\sqrt{\Delta x_{1}^{2} + \dots + \Delta x_{n}^{2}}}{\Delta t_{j}} =\\ =  \frac{\alpha(\Delta x)}{\underbrace{\| \Delta x\|}_{\to 0}}\cdot \underbrace{\sqrt{\left(\frac{\Delta x_{1}}{\Delta t_{j}}\right)^{2} + \dots + \left(\frac{\Delta x_{n}}{\Delta t_{j}}\right)^{2}}}_{\text{огр., т.к $\exists \lim$}}\to 0$\\ 
+    $\Delta x_{i} = \varphi_{i}(t^{(0)}+\Delta t_{i}) - \varphi_{i}(t^{(0)}) = \sum_{j=1}^{p} \frac{\partial{\varphi_{i}}}{\partial{t_{j}}}(t^{(0)})\cdot \Delta t_{j} + \beta_{i}(\Delta t)$, где $\beta_{i}(\Delta t) = \overline{\overline{o}}(\| \Delta t\| )$ \\ 
+    $ \Delta y = \sum_{i=1}^{n} \frac{\partial{f}}{\partial{x_{i}}}(x^{(0)})\cdot \left(\sum_{j=1}^{p} \frac{\partial{\varphi_{i}}}{\partial{t_{j}}}(t^{(0)})\cdot \Delta t_{j} + \beta(\Delta t) + \alpha(\Delta x) \right) ; \beta(\Delta t) = \sum_{ i   =1}^{n  } \frac{\partial{f}}{\partial{x_{i}}}(x^{(0)})\cdot \beta_{i}(\Delta t) = \overline{\overline{o}}(\| \Delta t\| )$\\
+    $ \frac{ \alpha ( \Delta x)}{\| \Delta t\| } = $ (при $\|\Delta x\| \neq 0$) $= \frac{\alpha(\Delta x)}{\underbrace{\| \Delta x\|}_{\to 0 }}\cdot \frac{\| \Delta x\| }{  \| \Delta t\| } $\qquad $ \|\Delta t\| \to 0 \implies \| \Delta x\| \to 0 \quad \frac{\|\Delta x\|}{\|\Delta t\|} \leqslant \frac{\sqrt{\Delta x_{1}^{2} + \dots+ \Delta x_{n}^{2}}}{\Delta t_{j}} =\\= \sqrt{\left(\frac{\Delta x_{1}}{\Delta  t_{j}}\right)^{2} + \dots + \left(\frac{\Delta x_{n}}{\Delta t_{j}}\right)^{2}}$ - огр., т.к $\exists \lim$
+\end{proof}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\vspace{1cm}
+\begin{flushright}
+    \textit{tg: @moksimqa}
+\end{flushright}

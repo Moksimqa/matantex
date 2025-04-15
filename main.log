@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.9.8)  14 APR 2025 23:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.9.8)  15 APR 2025 17:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1616,24 +1616,54 @@ Overfull \hbox (13.9212pt too wide) in paragraph at lines 67--70
 []\T2A/cmr/m/n/10 Пример: $\OML/cmm/m/it/10 ! \OT1/cmr/m/n/10 = (0\OML/cmm/m/it/10 ; [] ; \OT1/cmr/m/n/10 0\OML/cmm/m/it/10 ; []; [] ; \OT1/cmr/m/n/10 0) [](\OML/cmm/m/it/10 x[]\OT1/cmr/m/n/10 ) = [] [] = [](\OML/cmm/m/it/10 x[]\OT1/cmr/m/n/10 )[][]$ 
  []
 
-[55])) [56] (main.aux)
+) (tex/chapter9/lec17.tex [55]
+Overfull \hbox (18.24112pt too wide) in paragraph at lines 16--17
+[]\T2A/cmr/bx/n/10 Теорема 7.33. []$\OML/cmm/m/it/10 y \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )$ \T2A/cmr/m/it/10 диф-фе-рен-ци-ру-е-мая при $\OML/cmm/m/it/10 x \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 x[]; dy \OT1/cmr/m/n/10 = (\OML/cmm/m/it/10 A; dx\OT1/cmr/m/n/10 ) = [] \OML/cmm/m/it/10 A[]dx[] \OMS/cmsy/m/n/10 ) 8\OML/cmm/m/it/10 i \OT1/cmr/m/n/10 = 1\OML/cmm/m/it/10 ; [] ; n \OMS/cmsy/m/n/10 9[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]\OT1/cmr/m/n/10 ) =
+ []
+
+
+Overfull \hbox (58.40741pt too wide) in paragraph at lines 19--22
+[] \OT1/cmr/m/n/10 = [] = [] =
+ []
+
+
+Overfull \hbox (9.51192pt too wide) in paragraph at lines 27--30
+[]$\OT1/cmr/m/n/10 ^^A\OML/cmm/m/it/10 y \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[] \OT1/cmr/m/n/10 + ^^A\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]\OT1/cmr/m/n/10 ) = \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[] \OT1/cmr/m/n/10 + ^^A\OML/cmm/m/it/10 x[]; x[] \OT1/cmr/m/n/10 + ^^A\OML/cmm/m/it/10 x[]; [] ; x[] \OT1/cmr/m/n/10 + ^^A\OML/cmm/m/it/10 x[]\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]; x[]; [] ; x[]\OT1/cmr/m/n/10 ) =
+ []
+
+[56]
+Underfull \hbox (badness 10000) in paragraph at lines 35--37
+
+ []
+
+
+Overfull \hbox (55.91096pt too wide) in paragraph at lines 40--48
+[] \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10 ^^F[] \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10 ^^F[]\OT1/cmr/m/n/10 ;$ $[][][] = [][][] = [];$ $[]$ 
+ []
+
+
+Overfull \hbox (13.59178pt too wide) in paragraph at lines 53--58
+[]$\OT1/cmr/m/n/10 ^^A\OML/cmm/m/it/10 y \OT1/cmr/m/n/10 = ^^A\OML/cmm/m/it/10 f \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[] \OT1/cmr/m/n/10 + ^^A\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]\OT1/cmr/m/n/10 ) = [] [](\OML/cmm/m/it/10 x[]\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^A \OT1/cmr/m/n/10 ^^A\OML/cmm/m/it/10 x[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 \OT1/cmr/m/n/10 (^^A\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )$\T2A/cmr/m/n/10 , где $\OML/cmm/m/it/10 \OT1/cmr/m/n/10 (^^A\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) = [](\OMS/cmsy/m/n/10 k\OT1/cmr/m/n/10 ^^A\OML/cmm/m/it/10 x\OMS/cmsy/m/n/10 k\OT1/cmr/m/n/10 )(\OMS/cmsy/m/n/10 k\OT1/cmr/m/n/10 ^^A\OML/cmm/m/it/10 x\OMS/cmsy/m/n/10 k !
+ []
+
+)) [57] (main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 29931 strings out of 474486
- 629438 string characters out of 5753562
+ 29937 strings out of 474486
+ 629626 string characters out of 5753562
  1960542 words of memory out of 5000000
- 51512 multiletter control sequences out of 15000+600000
+ 51515 multiletter control sequences out of 15000+600000
  591342 words of font info for 123 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  89i,18n,96p,1505b,877s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\lati0700.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm0700.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\lati1000.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1440.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\lass0900.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx2074.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1000.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1000.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1200.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1200.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx2488.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msam7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on main.pdf (56 pages, 562831 bytes).
+Output written on main.pdf (57 pages, 576703 bytes).
 PDF statistics:
- 745 PDF objects out of 1000 (max. 8388607)
+ 751 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
