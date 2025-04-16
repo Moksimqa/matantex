@@ -20,7 +20,7 @@
 \begin{proof}
     $f(t) $ непрерывна при $t=x_{0}\implies \forall \varepsilon >0 \exists \delta > 0 : \forall t\in (x_{0}-\delta,x_{0}+\delta)\cap [a,b]\implies |f(t)-f(x_{0})|<\frac{\varepsilon}{2}$\\ 
     Берем $\Delta x : \Delta x \in (-\delta,\delta) \textbackslash \{0\},x_{0}+\Delta x\in [a,b].$ Рассмотрим $\left| \frac{F(x_{0}+\Delta x)-F(x_{0})}{\Delta x}-f(x_{0}) \right|=$\\ \vspace{0.5cm}$ = \left| \frac{1}{\Delta x} \int\limits_{ x_{0}    }^{x_{0}+\Delta x} f(t)dt- \frac{1}{\Delta x}\int\limits_{x_{0}}^{x_{0}+\Delta x}f(x_{0})dt\right| =\left| \int\limits_{x_{0}}^{x_{0}+\Delta x} \frac{f(t)-f(x_{0})}{\Delta x} dt\right| \leqslant \left| \int\limits_{x_{0}}^{x_{0}+\Delta x} \frac{|f(t)|-|f(x_{0})|}{|\Delta x|}dt\right|    \leqslant \frac{\epsilon}{2} \frac{1}{|\Delta x|} |\Delta x| =\frac{\varepsilon}{2 } <\varepsilon$, т.е
-    $\lim\limits_{\Delta x\to 0}\frac{F(x_{0}+\Delta x)-F(x_{0})}{\Delta x}=F(x_{0})$, т.е $ \exists F'(x_{0})=f(x_{0})$
+    $\lim\limits_{\Delta x\to 0}\frac{F(x_{0}+\Delta x)-F(x_{0})}{\Delta x}=f(x_{0})$, т.е $ \exists F'(x_{0})=f(x_{0})$
 \end{proof}
 \begin{theorem}
     $f(x)\in C[a,b]\implies \exists \text{ первообразная к }f(x) \text{ на } [a,b]$

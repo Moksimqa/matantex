@@ -14,7 +14,16 @@ INPUT C:\Program Files\MiKTeX\tex\latex\base\inputenc.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\base\inputenc.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\base\fontenc.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\base\fontenc.sty
-INPUT C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecrm1000.tfm
+INPUT C:\Program Files\MiKTeX\tex\latex\cyrillic\t2aenc.def
+INPUT C:\Program Files\MiKTeX\tex\latex\cyrillic\t2aenc.def
+INPUT C:\Program Files\MiKTeX\tex\latex\cyrillic\t2aenc.def
+INPUT C:\Program Files\MiKTeX\tex\latex\base\t2aenc.dfu
+INPUT C:\Program Files\MiKTeX\tex\latex\base\t2aenc.dfu
+INPUT C:\Program Files\MiKTeX\tex\latex\base\t2aenc.dfu
+INPUT C:\Program Files\MiKTeX\tex\latex\cyrillic\t2acmr.fd
+INPUT C:\Program Files\MiKTeX\tex\latex\cyrillic\t2acmr.fd
+INPUT C:\Program Files\MiKTeX\tex\latex\cyrillic\t2acmr.fd
+INPUT C:\Users\moksimqa\AppData\Local\MiKTeX\fonts\tfm\lh\lh-t2a\larm1000.tfm
 INPUT C:\Program Files\MiKTeX\tex\latex\base\textcomp.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\base\textcomp.sty
 INPUT C:\Program Files\MiKTeX\tex\generic\babel\babel.sty
@@ -26,10 +35,6 @@ INPUT C:\Program Files\MiKTeX\tex\latex\arabi\bblopts.cfg
 INPUT C:\Program Files\MiKTeX\tex\latex\babel-russian\russianb.ldf
 INPUT C:\Program Files\MiKTeX\tex\latex\babel-russian\russianb.ldf
 INPUT C:\Program Files\MiKTeX\tex\latex\babel-russian\russianb.ldf
-INPUT C:\Program Files\MiKTeX\tex\latex\cyrillic\t2aenc.def
-INPUT C:\Program Files\MiKTeX\tex\latex\base\t2aenc.dfu
-INPUT C:\Program Files\MiKTeX\tex\latex\base\t2aenc.dfu
-INPUT C:\Program Files\MiKTeX\tex\latex\base\t2aenc.dfu
 INPUT C:\Program Files\MiKTeX\tex\generic\babel\locale\ru\babel-russian.tex
 INPUT C:\Program Files\MiKTeX\tex\generic\babel\locale\ru\babel-russian.tex
 INPUT C:\Program Files\MiKTeX\tex\generic\babel\locale\ru\babel-russian.tex
@@ -323,10 +328,6 @@ INPUT C:\Program Files\MiKTeX\tex\latex\transparent\transparent-nometadata.sty
 INPUT .\main.aux
 INPUT .\main.aux
 INPUT main.aux
-INPUT C:\Program Files\MiKTeX\tex\latex\cyrillic\t2acmr.fd
-INPUT C:\Program Files\MiKTeX\tex\latex\cyrillic\t2acmr.fd
-INPUT C:\Program Files\MiKTeX\tex\latex\cyrillic\t2acmr.fd
-INPUT C:\Users\moksimqa\AppData\Local\MiKTeX\fonts\tfm\lh\lh-t2a\larm1000.tfm
 OUTPUT main.aux
 INPUT C:\Program Files\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Program Files\MiKTeX\tex\context\base\mkii\supp-pdf.mkii

@@ -36,7 +36,7 @@
 \end{theorem}
 \begin{proof}
     1) $a=b$ - очевидно.\\
-    2) $a<b\implies \exists \int\limits_{a    }^{b    } f(x)dx=I\geqslant S_{T}(f)=\sum_{k=1}^{n   } \underset{\geqslant 0}{m_{k}}\underset{\geqslant 0}{\Delta x_{k}}\geqslant 0$
+    2) $a<b\implies \exists \int\limits_{a    }^{b    } f(x)dx=I\geqslant s_{T}(f)=\sum_{k=1}^{n   } \underset{\geqslant 0}{m_{k}}\underset{\geqslant 0}{\Delta x_{k}}\geqslant 0$
 \end{proof}
 \begin{theorem}
     $a\leqslant b; f(x) \text{ и } g(x) \text{ интегрируемы на  }[a,b], \text{ причем } f(x)\geqslant g(x)  x\in[a,b]\implies \\ \implies\int\limits_{a   }^{b    } f(x)dx\geqslant \int\limits_{a   }^{b    } g(x)dx$
@@ -70,7 +70,7 @@
     \end{align*}
     \noindent а) $0\leqslant m_{k}\leqslant M_{k}\implies f(x)\geqslant 0 \text{ на }[x_{k-1},x_{k}\implies|f(x)|=f(x) \text{ на }[x_{k-1},x_{k}]\implies m'_{k}=m_{k},M_{k}'=M_{k}\implies M_{k}'-m_{k}'=M_{k}-m_{k}$\\ 
     б) $m_{k}\leqslant M_{k}\leqslant 0 \implies f(x)\leqslant 0 \text{ на }[x_{k-1},x_{k}]\implies |f(x)| = -f(x) \text{ на }[x_{k-1},x_{k}],M_{k}'=-m_{k},m_{k}'=-M_{k}\implies M_{k}'-m_{k}'=M_{k}-m_{k}$\\ 
-    в) $m_{k}\leqslant 0\leqslant M_{k}\implies M_{k}'=\max(m_{k},-m_{k})\implies M_{k}'-m_{K}'\leqslant M_{k}'\leqslant M_{k}-m_{k}\implies\text{ в любом случае } \\ \left.0\leqslant M_{k}'-m_{k}'\leqslant M_{k}-m_{k}\right| \Delta x_{k} \text{ и } \sum_{k=1}^{n}\implies 0\leqslant S_{T}(|f|)-s_{T}(|f|)\leqslant S_{T}(f)-s_{T}(f)<\varepsilon\implies\lim\limits_{\delta_{T}\to 0}(S_{T}(|f|)-s_{T}(|f|))=0\underset{\text{кр. инт}}{\implies} |f(x)| \text{ интегрируема на }[a,b]. $\\ 
+    в) $m_{k}\leqslant 0\leqslant M_{k}\implies M_{k}'=\max(m_{k},-m_{k})\implies M_{k}'-m_{k}'\leqslant M_{k}'\leqslant M_{k}-m_{k}\implies\text{ в любом случае } \\ 0\leqslant M_{k}'-m_{k}'\leqslant M_{k}-m_{k}\bigg| \Delta x_{k} \text{ и } \sum_{k=1}^{n}\implies 0\leqslant S_{T}(|f|)-s_{T}(|f|)\leqslant S_{T}(f)-s_{T}(f)<\varepsilon\implies\lim\limits_{\delta_{T}\to 0}(S_{T}(|f|)-s_{T}(|f|))=0\underset{\text{кр. инт}}{\implies} |f(x)| \text{ интегрируема на }[a,b]. $\\ 
     $-|f(x)|\leqslant f(x)\leqslant |f(x)| \quad\forall x\in[a,b]\implies -\int\limits_{a  }^{b    } |f(x)|dx\leqslant \int\limits_{a }^{b    } f(x)dx\leqslant \int\limits_{a }^{b    } |f(x)|dx\implies \\ \implies \left| \int\limits_{a }^{b    } f(x)dx\right|\leqslant \int\limits_{a    }^{b    } |f(x)|dx$
     \\ Если $a>b\implies \left|\int\limits_{a    }^{b    } f(x)dx\right|\leqslant \left| \int\limits_{a   }^{b    } |f(x)|dx\right|$
 \end{proof}
@@ -82,7 +82,7 @@
     Пусть $a<b$.\\
     Рассмотрим $\varphi(\lambda)=\int\limits_{a    }^{b    } (\lambda f(x)+g(x))^{2}=\lambda^{2}\underbrace{\int\limits_{a    }^{b    } f^{2}(x)dx}_{=A}+2\lambda\underbrace{\int\limits_{a    }^{b    } f(x)g(x)dx}_{=B}+\underbrace{\int\limits_{a    }^{b    } g^{2}(x)dx}_{=C}=A\lambda^{2}+2B\lambda+C$\\ 
     Если $A=0\implies B=0\implies B^{2}\leqslant AC$\\ 
-    Если $A\geqslant 0 \implies B^{2} -AC\leqslant 0,\text{ т.е } B^{2}\leqslant AC\implies \left[\int\limits_{a }^{b    } f(x)g(x)dx\right]\leqslant \left(\int\limits_{a   }^{b    } f^{2}(x)dx\right)\left(\int\limits_{a   }^{b    } g^{2}(x)dx\right)$\\ 
+    Если $A\geqslant 0 \implies B^{2} -AC\leqslant 0,\text{ т.е } B^{2}\leqslant AC\implies \left[\int\limits_{a }^{b    } f(x)g(x)dx\right]^{2}\leqslant \left(\int\limits_{a   }^{b    } f^{2}(x)dx\right)\left(\int\limits_{a   }^{b    } g^{2}(x)dx\right)$\\ 
     Если $a=b\implies$ верно\\
     Если $a>b\implies$ верно
 \end{proof}
