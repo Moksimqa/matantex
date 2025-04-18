@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1744966100.72491 "c:/Users/moksimqa/Documents/Projects/latexmatan/main.tex" "main.pdf" "main" 1744966102.99189 0
+["pdflatex"] 1744986016.4333 "c:/Users/moksimqa/Documents/Projects/latexmatan/main.tex" "main.pdf" "main" 1744986018.56624 0
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1233951848 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1233951848 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmbsy7.tfm" 1233951848 1120 7f9f170e8aa57527ad6c49feafd45d54 ""
@@ -271,10 +271,10 @@
   "C:/Users/moksimqa/AppData/Local/MiKTeX/fonts/tfm/public/stmaryrd/stmary7.tfm" 1728739062 848 26631fcb3e4cb6757598b9cda7967b63 ""
   "C:/Users/moksimqa/AppData/Local/MiKTeX/fonts/tfm/public/stmaryrd/stmary8.tfm" 1728739057 848 6125cdd3627e68d3db8013b98e587508 ""
   "C:/Users/moksimqa/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1744833823 24215240 5eefc35855770a4b8cf5cda3753bef7b ""
-  "c:/Users/moksimqa/Documents/Projects/latexmatan/main.tex" 1744966100 699 4e26f5913eb2eb973d18d2719b718360 ""
-  "main.aux" 1744966102 12662 a2383314292c4c3b38481e2e5d6173f8 "pdflatex"
-  "main.tex" 1744966100 699 4e26f5913eb2eb973d18d2719b718360 ""
-  "main.toc" 1744966102 9817 720580694256ac2f553f80562939d0be "pdflatex"
+  "c:/Users/moksimqa/Documents/Projects/latexmatan/main.tex" 1744986013 699 4e26f5913eb2eb973d18d2719b718360 ""
+  "main.aux" 1744986018 12662 911e70de3830c8d951e2a65f991b5c17 "pdflatex"
+  "main.tex" 1744986013 699 4e26f5913eb2eb973d18d2719b718360 ""
+  "main.toc" 1744986018 9817 720580694256ac2f553f80562939d0be "pdflatex"
   "preamble.tex" 1744962386 8278 045886ce65909cc0f1195c238abb2d07 ""
   "tex/chapter3.tex" 1739654785 161 f8c141bd912839ae12bf18be019567bf ""
   "tex/chapter3/lec1.tex" 1738798116 3361 1f6212bca8f13a978b8375531c283e49 ""
@@ -303,7 +303,7 @@
   "tex/chapter9/lec15.tex" 1744051131 8798 43946d4bb80129185bf807cf3609c536 ""
   "tex/chapter9/lec16.tex" 1744724199 9678 265f2b30d938e264b11f8e898dee2a50 ""
   "tex/chapter9/lec17.tex" 1744728617 9972 4b9804b63b2f84d96aa3deee36dfa915 ""
-  "tex/chapter9/lec18.tex" 1744966100 8052 3850cd1fe0fdd8a725eca569f1ac2c6e ""
+  "tex/chapter9/lec18.tex" 1744986013 8071 0deadb82d14cbcc75f51c4816b6ba00f ""
   "tex/title.tex" 1739654912 478 4506dae0de4ded0133cef352b7f8eca0 ""
   (generated)
   "main.aux"

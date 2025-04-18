@@ -10,7 +10,7 @@ $y=y(x), x_{i}=x_{i}(t)$
 
 \noindent$1^{\circ} d(u\pm v)=du\pm dv$\\ 
 $2^{\circ} d(u\cdot v)=vdu+udv$\\ 
-$3^{\circ} d\left(\frac{u}{v}\right)= = \frac{vdu-udv}{v^{2}}$
+$3^{\circ} d\left(\frac{u}{v}\right)=  \frac{vdu-udv}{v^{2}}$
 
 \begin{proof}
     $1^{\circ}$ Рассмотрим $f(u,v)=u\cdot v,$ пусть $u$ и $v$ - независимые переменные, тогда $\frac{\partial{f}}{\partial{u}}=v, \frac{\partial{f}}{\partial{v}}=u\implies d(uv)=vdu+udv$
@@ -23,7 +23,7 @@ $3^{\circ} d\left(\frac{u}{v}\right)= = \frac{vdu-udv}{v^{2}}$
 \end{theorem}
 \begin{proof}
     $t>0\quad \Delta x = t\omega\implies \|\Delta x\| = \|t \omega\| = t\|\omega\| = t$. 
-    \\Рассмотрим $\frac{\partial{f}}{\partial{\omega}}(x^{(0)}) = \lim_{t\to 0+0} \frac{f(x^{(0)}+t\omega)-f(x^{(0)})}{t} = \lim_{t\to 0+0} \frac{(A,t\omega)+\alpha(\Delta x)}{t} =  (A,\omega)+ \lim\limits_{ t\to 0+0} \frac{\alpha(\Delta x)}{t} = (A,\omega)$ 
+    \\Рассмотрим $\frac{\partial{f}}{\partial{\omega}}(x^{(0)}) = \lim_{t\to 0+0} \frac{f(x^{(0)}+t\omega)-f(x^{(0)})}{t} = \lim_{t\to 0+0} \frac{(A,t\omega)+\alpha(\Delta x)}{t} =  (A,\omega)+ \lim\limits_{ t\to 0+0} \frac{\alpha(\Delta x)}{t} = \\ =(A,\omega)$ 
 \end{proof}
 \begin{definition}
     $f(x)$ дифференцируема при $x=x^{(0)}$, т.е $f(x^{(0)}+\Delta x)-f(x^{(0)}) = (A,\Delta x)+\alpha(\Delta x)$, где $\alpha(\Delta x) = \overline{\overline{o}}(\|\Delta x\|)\; (\|\Delta x\| \to 0)$, тогда элемент (вектор) $A$ называется градиентом функции $f(x)$ при $x=x^{(0)}$ и обозначается $A=\grad{f(x^{(0)})}=\nabla f(x^{(0)}), \nabla = \left( \frac{\partial}{\partial{x_{1}}}, \dots, \frac{\partial}{\partial{x_{n}}}\right)$ - оператор Гамильтона. 
@@ -36,7 +36,7 @@ $df = \sum_{i   =1}^{n  } \frac{\partial{f}}{\partial{x_{i}}}dx_{i}= \left(\nabl
 \noindent $1^{\circ} \nabla{(f\pm g)} = \nabla{f} \pm \nabla{g}$\\
 $2^{\circ} \nabla{(\alpha f)} = \alpha \nabla{f}$\\ 
 $3^{\circ} \nabla{(f\cdot g)} = g\nabla{f} + f\nabla{g}$\\
-$4^{\circ} \nabla{(\frac{f}{g})} = \frac{g\nabla{f}-f\nabla{g}}{g^{2}}$\\
+$4^{\circ} \nabla{\left(\frac{f}{g}\right)} = \frac{g\nabla{f}-f\nabla{g}}{g^{2}}$\\
 \begin{proof}
     $3^{\circ}$ Рассмотрим $d(f\cdot g) = gdf + fdg = g\left(\nabla f, dx \right) + f\left(\nabla g, dx \right) = \left(\underbrace{g\nabla f + f\nabla g}_{\nabla{(fg)}}, dx\right)$\\ 
     $1^{\circ},2^{\circ}, 4^{\circ}$ - самостоятельно.   
@@ -46,7 +46,7 @@ $4^{\circ} \nabla{(\frac{f}{g})} = \frac{g\nabla{f}-f\nabla{g}}{g^{2}}$\\
 \end{theorem}
 \begin{proof}
     Рассмотрим функцию одной переменной $t\in[0,1]$ \quad $ F(t) = f(x^{(0)}+t\Delta x)$, $F(t)\in C[0,1] $\\ 
-    $\forall t \in (0,1) \; \exists F'(t) \sum_{i   =1}^{n  } \frac{\partial{f}}{\partial{x_{i}}}\left(x^{(0)}+t\Delta x\right) \Delta x_{i} \implies \exists \Theta \in (0,1): F(1)-F(0) = F'(\Theta) \cdot (1-0)$. Таким образом $f(x^{(0)}+\Delta x) - f(x^{(0)}) = \sum_{i  =1}^{n  } \frac{\partial{f}}{\partial{x_{i}}}\left(x^{(0)}+\Theta \Delta x\right) \Delta x_{i}$
+    $\forall t \in (0,1) \; \exists F'(t) \sum_{i   =1}^{n  } \frac{\partial{f}}{\partial{x_{i}}}\left(x^{(0)}+t\Delta x\right) \Delta x_{i} \implies \exists \Theta \in (0,1): F(1)-F(0) = F'(\Theta) \cdot (1-0)$.\\ Таким образом $f(x^{(0)}+\Delta x) - f(x^{(0)}) = \sum_{i  =1}^{n  } \frac{\partial{f}}{\partial{x_{i}}}\left(x^{(0)}+\Theta \Delta x\right) \Delta x_{i}$
 \end{proof}
 \begin{corollary}
     $f(x)\in C_{1}$(в области $E\in\E_{n}$),$f(x)$, причем $\forall x^{(1)},x^{(2)}\in E \; \exists$ конечнозвенная ломанная $\subset E$ с концами $x^{(1)}, x^{(2)}$, пусть $\forall x \in E \; \forall i=\overline{1,n}\; \frac{\partial{f}}{\partial{x_{i}}} = 0 \implies f(x)\equiv const$ в $E$. 
@@ -58,16 +58,16 @@ $4^{\circ} \nabla{(\frac{f}{g})} = \frac{g\nabla{f}-f\nabla{g}}{g^{2}}$\\
 \section{Дифференциалы высших порядков для функций нескольких переменных}
 $f(x)= f(x_{1},\dots,x_{n})\quad df=\sum_{i =1}^{n}\frac{\partial{f}}{\partial{x_{i}}}dx_{i} \qquad \delta f = \sum_{i  =1}^{n  } \frac{\partial{f}}{\partial_{x_{i}}}\delta x_{i}$
 \begin{definition}
-    $x$ - независимая переменная, $m\geqslant 2 , f(x) \in C_{m}$ в области $E$, причем $dx = \Delta x = const \; \forall x\in E$. Дифференциалом $m$-го порядка функции $f(x)$ в точке $x$ называется $d^{m}f(x) = \delta \left( d^{m-1}f(x)\right)\bigg|_{\delta x = dx}$
+    $x$ - независимая переменная, $m\geqslant 2 , f(x) \in C_{m}$ в области $E$, $dx = \Delta x = const \; \forall x\in E$. Дифференциалом $m$-го порядка функции $f(x)$ в точке $x$ называется $d^{m}f(x) = \delta \left( d^{m-1}f(x)\right)\bigg|_{\delta x = dx}$
 \end{definition}
-\noindent $d^{2}f(x) = \delta ( \sum_{ i  =1}^{n} \frac{\partial{f}}{\partial{x_{i}}}(x)dx_{i})\bigg|_{\delta x = dx} = \sum_{i   =1}^{n} \delta\left( \frac{\partial{f}}{\partial{x_{i}}}(x)\right)\bigg|_{\delta x = dx}\cdot dx_{i}= \sum_{i   =1}^{n  } \left( \sum_{j=1}^{n} \frac{\partial^{2}{f}}{\partial{x_{i}}\partial{x_{j}}}(x)\delta x_{j}\right)\bigg|_{\delta x = dx} \cdot dx_{i} =\\= \sum_{i   =1}^{n  } \sum_{j=1}^{n} \frac{\partial^{2}{f}}{\partial{x_{i}}\partial{x_{j}}}dx_{i}dx_{j} = \sum_{i   =1}^{n  }\sum_{j=1}^{n}\sum_{k=1}^{n} \frac{\partial^{3}{f}}{\partial{x_{i}}\partial{x_{j}}\partial{x_{k}}}dx_{i}dx_{j}dx_{k}, \dots$  \\ 
+\noindent $d^{2}f(x) = \delta \left( \sum_{ i  =1}^{n} \frac{\partial{f}}{\partial{x_{i}}}(x)dx_{i}\right)\bigg|_{\delta x = dx} = \sum_{i   =1}^{n} \delta\left( \frac{\partial{f}}{\partial{x_{i}}}(x)\right)\bigg|_{\delta x = dx}\cdot dx_{i}= \sum_{i   =1}^{n  } \left( \sum_{j=1}^{n} \frac{\partial^{2}{f}}{\partial{x_{i}}\partial{x_{j}}}(x)\delta x_{j}\right)\bigg|_{\delta x = dx} \cdot dx_{i} =\\= \sum_{i   =1}^{n  } \sum_{j=1}^{n} \frac{\partial^{2}{f}}{\partial{x_{i}}\partial{x_{j}}}dx_{i}dx_{j} = \sum_{i   =1}^{n  }\sum_{j=1}^{n}\sum_{k=1}^{n} \frac{\partial^{3}{f}}{\partial{x_{i}}\partial{x_{j}}\partial{x_{k}}}dx_{i}dx_{j}dx_{k}, \dots$  \\ 
 $d^{m}f = \sum_{i_{1}   =1}^{n  } \dots \sum_{i_{m}=1}^{n} \frac{\partial^{m}{f}}{\partial{x_{i_{1}}}\partial{x_{i_{2}}}\dots\partial{x_{i_{m}}}}dx_{i_{1}}dx_{i_{2}}\dots dx_{i_{m}}$; $H = a_{1}  + \dots +a_{n} = \sum_{ i   =1}^{n  } a_{i}; H^{2} = H\cdot H = \left(\sum_{i   =1}^{n} a_{i}\right)\left( \sum_{j=1}^{n} a_{j}\right) =\\= \sum_{i   =1}^{n  } \sum_{j=1}^{n} a_{i}a_{j}, \dots , H^{m} = \sum_{i_{1}   =1}^{n  } \dots \sum_{i_{m}=1}^{n} a_{i_{1}}\cdot  a_{i_{2}}\dots \cdot a_{i_{m}}$\\   
 $df = (\nabla f ,dx), d^{2}f = (\nabla , dx)^{2} f,\dots, d^{m}f = (\nabla,dx)^{m}f$
 
 В общем случае, для дифференциалов высших порядков инвариантности нет. 
 
 Важный частный случай: $ x_{i} = \sum_{i    =1}^{p} \alpha_{ij}t_{j} + \beta_{i}, i =1,2,\dots,n$ 
-\\$dx_{i} = \sum_{i =1}^{p  } \alpha_{ij}dt_{j}$ 
+\qquad $dx_{i} = \sum_{i =1}^{p  } \alpha_{ij}dt_{j}$ 
 \section{Формула Тейлора для функции нескольких переменных}
 \noindent$F(t) = F(t_{0})+ \frac{F'(t_{0})}{1!}(t-t_{0})+ \frac{F''(t_{0})}{2!}(t-t_{0})^{2}+\dots + \frac{F^{(m)}(t_{0})}{m!}(t-t_{0})^{m} + r_{m}(t,F),$ где $r_{m}(t,F) =  \\ = \frac{F^{m+1}(t_{0}+\Theta(t-t_{0}))}{(m+1)!}(t-t_{0})^{m+1}$\\ 
 Рассмотрим $dt = \Delta t  = t -t_{0}, \Delta F(t_{0}) = F(t_{0}+\Delta t) - F(t_{0}) = \frac{dF(t_{0})}{1!} + \frac{d^{2}F(t_{0})}{2!} + \dots + \frac{d^{m}F(t_{0})}{m!} +\\+ r_{m}(t,F), \quad r_{m}(t,F) = \frac{d^{m+1}F(t_{0}+\Theta \Delta t)}{(m+1)!}$
