@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.4.16)  16 APR 2025 23:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.4.16)  18 APR 2025 11:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1017,19 +1017,19 @@ Package: fancyhdr 2024/07/23 v4.3.1 Extensive control of page headers and footer
 )
 
 Package fancyhdr Warning: \fancyhead's `E' option without twoside option is useless.
-(fancyhdr)                Please consider using the `twoside' option on input line 253.
-
-
-Package fancyhdr Warning: \fancyhead's `E' option without twoside option is useless.
-(fancyhdr)                Please consider using the `twoside' option on input line 254.
-
-
-Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless.
 (fancyhdr)                Please consider using the `twoside' option on input line 256.
 
 
-Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless.
+Package fancyhdr Warning: \fancyhead's `E' option without twoside option is useless.
 (fancyhdr)                Please consider using the `twoside' option on input line 257.
+
+
+Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless.
+(fancyhdr)                Please consider using the `twoside' option on input line 259.
+
+
+Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless.
+(fancyhdr)                Please consider using the `twoside' option on input line 260.
 
 (C:\Program Files\MiKTeX\tex/latex/todonotes\todonotes.sty
 Package: todonotes 2024/01/05 v1.1.7 Todonotes source and documentation.
@@ -1639,24 +1639,34 @@ Overfull \hbox (13.59178pt too wide) in paragraph at lines 53--58
 []$\OT1/cmr/m/n/10 ^^A\OML/cmm/m/it/10 y \OT1/cmr/m/n/10 = ^^A\OML/cmm/m/it/10 f \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[] \OT1/cmr/m/n/10 + ^^A\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]\OT1/cmr/m/n/10 ) = [] [](\OML/cmm/m/it/10 x[]\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^A \OT1/cmr/m/n/10 ^^A\OML/cmm/m/it/10 x[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 \OT1/cmr/m/n/10 (^^A\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )$\T2A/cmr/m/n/10 , где $\OML/cmm/m/it/10 \OT1/cmr/m/n/10 (^^A\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) = [](\OMS/cmsy/m/n/10 k\OT1/cmr/m/n/10 ^^A\OML/cmm/m/it/10 x\OMS/cmsy/m/n/10 k\OT1/cmr/m/n/10 )(\OMS/cmsy/m/n/10 k\OT1/cmr/m/n/10 ^^A\OML/cmm/m/it/10 x\OMS/cmsy/m/n/10 k !
  []
 
-)) [57] (main.aux)
+) (tex/chapter9/lec18.tex [57]
+Underfull \hbox (badness 10000) in paragraph at lines 36--41
+
+ []
+
+[58]
+Overfull \hbox (25.17888pt too wide) in paragraph at lines 63--66
+\OML/cmm/m/it/10 d[]f \OT1/cmr/m/n/10 = [] [] [] []\OML/cmm/m/it/10 dx[]dx[] [] dx[]$\T2A/cmr/m/n/10 ; $\OML/cmm/m/it/10 H \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 a[] \OT1/cmr/m/n/10 + [] + \OML/cmm/m/it/10 a[] \OT1/cmr/m/n/10 = [] \OML/cmm/m/it/10 a[]\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 H[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 H \OMS/cmsy/m/n/10 ^^A \OML/cmm/m/it/10 H \OT1/cmr/m/n/10 = [] [] =
+ []
+
+[59])) [60] (main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 30134 strings out of 474486
- 635198 string characters out of 5753561
+ 30141 strings out of 474486
+ 635390 string characters out of 5753561
  1960542 words of memory out of 5000000
- 51713 multiletter control sequences out of 15000+600000
+ 51717 multiletter control sequences out of 15000+600000
  590579 words of font info for 122 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  89i,18n,96p,1505b,877s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\lati0700.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm0700.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\lati1000.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1440.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\lass0900.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx2074.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1000.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1000.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1200.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1200.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx2488.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msam7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on main.pdf (57 pages, 576825 bytes).
+Output written on main.pdf (60 pages, 589095 bytes).
 PDF statistics:
- 751 PDF objects out of 1000 (max. 8388607)
+ 760 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
