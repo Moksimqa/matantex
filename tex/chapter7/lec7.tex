@@ -5,12 +5,12 @@
 \begin{proof}
     $\varphi'(t),\psi'(t), \chi'(t) \in C[\alpha,\beta] \implies \exists M>0: |\varphi'(t)|\leqslant M, |\psi'(t)|\leqslant M, |\chi'(t)|\leqslant M \forall t \in [\alpha,\beta].$\\ 
     Берем $\forall T=\{\alpha=t_{0}<t_{1}<\dots<t_{k-1}<t_{k}<\dots<t_{ n}=\beta\}.$ \\По теореме Лагранжа $\exists \alpha_{k},\beta_{k},\gamma_{k}\in (t_{k-1},t_{k}): $
-    $\begin{aligned} &\varphi(t_{k})-\varphi(t_{k-1})=\varphi'(\alpha_{k})\Delta t_{k}\\ &\psi(t_{k})-\psi_{t_{k-1}}=\psi'(\beta_{k})\Delta t_{k}\\ &\chi(t_{k})-\chi(t_{k-1})=\chi'(\gamma_{k})\Delta t_{k}\end{aligned} $ $k=\overline{1,n}$
-    $\implies\\\implies l_{t}=\sum_{k=1}^{n} \sqrt{(\varphi(t_{k})-\varphi(t_{k-1}))^{2}+(\psi(t_{k-})-\psi(t_{k-1}))^{2}+(\chi(t_{k})-\chi(t_{k-1}))^{2}} = \sum_{k=1}^{n    } \underbrace{\sqrt{{(\varphi'(\alpha_{k}))^{2}}+(\psi'(\beta_{k}))^{2}+(\chi(\gamma_{k}))^{2}}}_{\leqslant 3M^{2}}\leqslant\\\leqslant M\sqrt{3}\sum_{k=1}^{n   } \Delta t_{k}=M \sqrt{3}(\beta-\alpha)=\{l_{T}\}-$ ограничена сверху $\implies L-$ спрямляемая. 
+    $\begin{aligned} &\varphi(t_{k})-\varphi(t_{k-1})=\varphi'(\alpha_{k})\Delta t_{k}\\ &\psi(t_{k})-\psi(t_{k-1})=\psi'(\beta_{k})\Delta t_{k}\\ &\chi(t_{k})-\chi(t_{k-1})=\chi'(\gamma_{k})\Delta t_{k}\end{aligned} $ $k=\overline{1,n}$
+    $\implies\\\implies l_{T}=\sum_{k=1}^{n} \sqrt{(\varphi(t_{k})-\varphi(t_{k-1}))^{2}+(\psi(t_{k-})-\psi(t_{k-1}))^{2}+(\chi(t_{k})-\chi(t_{k-1}))^{2}} = \sum_{k=1}^{n    } \Delta t_{k}{\sqrt{\underbrace{{(\varphi'(\alpha_{k}))^{2}}+(\psi'(\beta_{k}))^{2}+(\chi(\gamma_{k}))^{2}}_{\leqslant 3M^{2}}}}\leqslant\\\leqslant M\sqrt{3}\sum_{k=1}^{n   } \Delta t_{k}=M \sqrt{3}(\beta-\alpha)\implies\{l_{T}\}-$ ограничена сверху $\implies L-$ спрямляемая. 
     \\ Введем $f(t)=\sqrt{(\varphi(t))^{2}+(\psi(t))^{2}+(\chi(t))^{2}}\in C[\alpha,\beta]\implies f(t) $ интегрируема на $[\alpha,\beta]\implies \exists \int\limits_{\alpha       }^{\beta} f(t)dt=I$, т.е $\underline{\forall \varepsilon>0} \exists \delta_{1}>0: \forall T, \delta_{T}<\delta_{1}, \forall \Xi=\{\xi_{k}\}_{k=1}^{n}\implies |\sigma_{T}(f,\Xi)-I| < \frac{\varepsilon}{2}$ 
     \\$\varphi'(t),\psi'(t),\chi'(t)\in C[\alpha,\beta]\underset{\text{т. Кантора}}{\implies} \varphi'(t),\psi'(t),\chi'(t) - $ равномерно непрерывны на $[\alpha,\beta]\implies \\ \implies \exists \delta_{2}>0 : \forall t',t'' \in [\alpha,\beta] : |t'-t''|<\delta_{2} \implies |\phi'(t')-\varphi'(t'')|<\frac{\varepsilon}{4(\beta-\alpha)}; \; |\psi'(t')-\psi'(t'')|<\frac{\varepsilon}{4(\beta-\alpha)}; \; |\chi'(t')-\chi'(t'')|<\frac{\varepsilon}{4(\beta-\alpha)}.$
-    Берем $\delta=\max{(\delta_{1},\delta_{2})}>0, \quad \forall T ,\delta_{T}<\delta, \forall \Xi=\{\xi_{k}\}_{k=1}^{n},$\\ рассмотрим $|l_{T}-I|=|l_{T}-\sigma_{T}(f,\Xi)+\sigma_{T}(f,\Xi)-I| \leqslant |l_{T}-\sigma_{T}(f,\Xi)| + \underbrace{|\sigma_{T}(f,\Xi)-I|}_{<\frac{\varepsilon}{2}}<|l_{T}-\sigma_{T}(f,\Xi)| +\frac{\varepsilon}{2}=\left|\sum_{k=1}^{n} \left[\sqrt{(\varphi'(\alpha_{k}))^{2}+(\psi'(\beta_{k}))^{2}+(\chi'(\gamma_{k}))^{2}}\Delta t_{k}-\sqrt{(\varphi'(\xi_{k}))^{2}+(\psi'(\xi_{k}))^{2}+(\chi'(\xi_{k}))^{2}}\Delta t_{k} \right] \right| + \frac{\varepsilon}{2}\leqslant\\ \leqslant\frac{\varepsilon}{2}+ \sum_{k=1}^{n    } \left| \sqrt{(\varphi'(\alpha_{k}))^{2}+(\psi'(\beta_{k}))^{2}+(\chi'(\gamma_{k}))^{2}} - \sqrt{(\varphi'(\xi_{k}))^{2}+(\psi'(\xi_{k}))^{2}+(\chi'(\xi_{k}))^{2}} \right| \Delta t_{k}\leqslant \\\leqslant\sum_{k=1}^{n    } \sqrt{(\varphi'(\alpha_{k})-\varphi'(\xi_{k}))^{2}+(\psi'(\beta_{k})-\psi'(\xi_{k}))^{2}+(\chi'(\gamma_{k})-\chi'(\xi_{k}))^{2}}\Delta t_{k} +2 < \sum_{k=1}^{n   }\sqrt{\frac{3\varepsilon^{2}}{16(\beta-\alpha)^{2}}}\Delta t_{k} +\frac{\varepsilon}{2}=\\= \frac{\varepsilon\sqrt{3}}{4(\beta-\alpha)}(\beta-\alpha)+\frac{\varepsilon}{2}= \frac{\varepsilon\sqrt{3}}{4}+\frac{\varepsilon}{2}<\frac{\varepsilon}{2}+\frac{\varepsilon}{2}=\varepsilon\implies \lim\limits_{\delta_{T}\to 0} l_{T}=I$ 
-    \\ Осталось докзаать, что $L_{T}\leqslant I \;\forall T.$ От противного, предположим, что $\exists T_{0}: l_{T_{0}}>I$. Известно, что $\lim\limits_{\delta_{T}\to 0}l_{T}=I,$ т.е $\forall \varepsilon>0 \exists \delta >0: \forall T, \delta_{T}<\delta\implies |l_{T}-I|<\varepsilon.$
+    Берем $\delta=\min{(\delta_{1},\delta_{2})}>0, \quad \forall T ,\delta_{T}<\delta, \forall \Xi=\{\xi_{k}\}_{k=1}^{n},$\\ рассмотрим $|l_{T}-I|=|l_{T}-\sigma_{T}(f,\Xi)+\sigma_{T}(f,\Xi)-I| \leqslant |l_{T}-\sigma_{T}(f,\Xi)| + \underbrace{|\sigma_{T}(f,\Xi)-I|}_{<\frac{\varepsilon}{2}}<|l_{T}-\sigma_{T}(f,\Xi)| +\frac{\varepsilon}{2}=\left|\sum_{k=1}^{n} \left[\sqrt{(\varphi'(\alpha_{k}))^{2}+(\psi'(\beta_{k}))^{2}+(\chi'(\gamma_{k}))^{2}}\Delta t_{k}-\sqrt{(\varphi'(\xi_{k}))^{2}+(\psi'(\xi_{k}))^{2}+(\chi'(\xi_{k}))^{2}}\Delta t_{k} \right] \right| + \frac{\varepsilon}{2}\leqslant\\ \leqslant\frac{\varepsilon}{2}+ \sum_{k=1}^{n    } \left| \sqrt{(\varphi'(\alpha_{k}))^{2}+(\psi'(\beta_{k}))^{2}+(\chi'(\gamma_{k}))^{2}} - \sqrt{(\varphi'(\xi_{k}))^{2}+(\psi'(\xi_{k}))^{2}+(\chi'(\xi_{k}))^{2}} \right| \Delta t_{k}\leqslant \\\leqslant\sum_{k=1}^{n    } \sqrt{(\varphi'(\alpha_{k})-\varphi'(\xi_{k}))^{2}+(\psi'(\beta_{k})-\psi'(\xi_{k}))^{2}+(\chi'(\gamma_{k})-\chi'(\xi_{k}))^{2}}\Delta t_{k} +2 < \sum_{k=1}^{n   }\sqrt{\frac{3\varepsilon^{2}}{16(\beta-\alpha)^{2}}}\Delta t_{k} +\frac{\varepsilon}{2}=\\= \frac{\varepsilon\sqrt{3}}{4(\beta-\alpha)}(\beta-\alpha)+\frac{\varepsilon}{2}= \frac{\varepsilon\sqrt{3}}{4}+\frac{\varepsilon}{2}<\frac{\varepsilon}{2}+\frac{\varepsilon}{2}=\varepsilon\implies \lim\limits_{\delta_{T}\to 0} l_{T}=I$ 
+    \\ Осталось доказать, что $l_{T}\leqslant I \;\forall T.$ От противного, предположим, что $\exists T_{0}: l_{T_{0}}>I$. Известно, что $\lim\limits_{\delta_{T}\to 0}l_{T}=I,$ т.е $\forall \varepsilon>0 \exists \delta >0: \forall T, \delta_{T}<\delta\implies |l_{T}-I|<\varepsilon.$
     \\ Берем $\varepsilon=\frac{l_{T_{0}}-I}{2}>0 \implies \exists \delta>0 : \forall T ,\delta_{T}<\delta \implies |l_{T}-I| < \frac{l_{T_{0}}-I}{2}$. Берем $T_{1}\succ T_{0} : \delta_{T_{1}}<\delta\implies \frac{l_{T_{0}}-I}{2}=\varepsilon>|l_{T_{1}}-I|=l_{T_{1}}-I \geqslant l_{T_{0}}-I =2\varepsilon\implies$ противоречие $\implies $ предположение неверно $\implies l_{T}\leqslant I \; \forall T$
     
 \end{proof}
@@ -34,7 +34,7 @@
     P - плоская фигура. Число $\mu(P)- $ площадь, если: \\
     $\begin{aligned} &1) \mu(P)\geqslant 0
     \\&2) \text{Если фигуры } P_{1} и P_{2} \text{ равны в геометрическом смысле }\implies \mu(P_{1})=\mu(P_{2})
-    \\&3)P_{1},P_{2}: P_{1} \cap P_{2} =\varnothing = \implies\mu(P_{1} \cup P_{2})=\mu(P_{1})+\mu(P_{2})
+    \\&3)P_{1},P_{2}: P_{1} \cap P_{2} =\varnothing  \implies\mu(P_{1} \cup P_{2})=\mu(P_{1})+\mu(P_{2})
     \\&4) \text{Если } P- \text{ единичный квадрат } \implies \mu(P)=1\end{aligned}$
 \end{definition}
 \vspace{1cm}
@@ -47,7 +47,7 @@ $P$- плоская фигура $\implies Q, S : \underset{вписанный}{
     $ P-$ плоская фигура. $\underline{\mu(P)}=\underset{Q \subset P }{\sup}{\tilde{\mu}(Q)}$ - нижняя площадь. $\overline{\mu(P)}=\underset{S\supset P}{\inf}{\tilde{\mu}(S)}$
 \end{definition}
 
-$Q\subset P \subset S \implies \tilde{\mu}(Q)\leqslant \tilde{\mu}(S)\implies \underline{\mu}(p)\leqslant \tilde{\mu}(S)\implies \underline{\mu}(P)\leqslant \overline{\mu}(P)$
+$Q\subset P \subset S \implies \tilde{\mu}(Q)\leqslant \tilde{\mu}(S)\implies \underline{\mu}(P)\leqslant \tilde{\mu}(S)\implies \underline{\mu}(P)\leqslant \overline{\mu}(P)$
 
 \begin{definition}
     Плоская фигура $P$ называется квадрируемой, если $\underline{\mu(P)}=\overline{\mu(P)}.$ При этом $\mu(P)=\underline{\mu(P)}=\overline{\mu(P)}$
@@ -55,7 +55,7 @@ $Q\subset P \subset S \implies \tilde{\mu}(Q)\leqslant \tilde{\mu}(S)\implies \u
 
 \begin{theorem}
     Введеная таким образом $\mu(P)$ - площадь т.е 
-    \\1) $P$ - квадрируема фигура $\implies \mu (P)\geqslant 0$
+    \\1) $P$ - квадрируемая фигура $\implies \mu (P)\geqslant 0$
     \\2) $P_{1},P_{2}$ - квадрируемые плоские фигуры, причем $P_{1}$ и $P_{2}$ равны в геометрическом смысле $\implies \mu(P_{1})=\mu(P_{2}) $
     \\3) $P_{1},P_{2}$ - квадрируемые плоские фигуры, причем $P_{1} \cap P_{2} = \varnothing \implies P=P_{1}\cup P_{2}$ - тоже квадрируема, причем $\mu(P)=\mu(P_{1})+\mu(P_{2})$
     \\4) Если $P$ - единичный квадрат $\implies P$ - плоская квадрируемая фигура, причем $\mu(P)=1$ 
