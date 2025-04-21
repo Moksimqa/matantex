@@ -88,8 +88,8 @@ $v.p. \int\limits_{-\infty  }^{+\infty}f(x)dx=\lim\limits_{R\to +\infty}\int\lim
 \end{proof}
 Но не наооборот! 
 \begin{proof}
-$v.p. \int\limits_{-\infty  }^{+\infty  } \arctan{(x)}dx=\lim\limits_{R\to +\infty}\underbrace{\int\limits_{-R}^{R}\arctan{(x)}dx}_{\substack{\text{интеграл от функции}\\ \text{в симметричных пределах}}}  =0, \text{ но } \int\limits_{-\infty  }^{+\infty  } \arctan{(x)}dx$ расходится, т.к $\int\limits_{0}^{+\infty}\arctan{(x)}dx = \underbrace{\int\limits_{0}^{\frac{\pi}{4}}\arctan{(x)}dx}_{\text{собственный}} +\underbrace{\int\limits_{\frac{\pi}{4}}^{+\infty}\arctan{(x)}dx}_{\geqslant 1} $
-\\ $\int\limits_{\frac{\pi}{4}}^{+\infty}1\cdot dx  $ расходится $\implies \int\limits_{0}^{+\infty}\arctan{(x)}dx $ расходится.
+$v.p. \int\limits_{-\infty  }^{+\infty  } \arctan{(x)}dx=\lim\limits_{R\to +\infty}\underbrace{\int\limits_{-R}^{R}\arctan{(x)}dx}_{\substack{\text{интеграл от функции}\\ \text{в симметричных пределах}}}  =0, \text{ но } \int\limits_{-\infty  }^{+\infty  } \arctan{(x)}dx$ расходится, т.к $\int\limits_{0}^{+\infty}\arctan{(x)}dx = \underbrace{\int\limits_{0}^{1}\arctan{(x)}dx}_{\text{собственный}} +\underbrace{\int\limits_{1}^{+\infty}\arctan{(x)}dx}_{\geqslant \frac{\pi}{4}} $
+\\ $\int\limits_{1}^{+\infty}\frac{\pi}{4} dx  $ расходится $\implies \int\limits_{0}^{+\infty}\arctan{(x)}dx $ расходится.
 \end{proof}
 
 
