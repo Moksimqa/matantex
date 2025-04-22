@@ -1,0 +1,93 @@
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+\lecture{19}{22.04}{}
+\begin{theorem}
+    $m\geqslant 0, f(x)\in C_{m+1}$ в области $E \subset \E_{n}, x\in E, x^{(0)}\in E, \Delta x = x- x^{(0)}, x_{0}+t\Delta x \in E \; \forall t \in [0,1] \\ \implies \exists \Theta \in (0,1): \Delta f(x^{(0)}) = f(x^{(0)}+ \Delta x) - f(x^{(0)}) = \sum_{j=1}^{n} \frac{d^{j}F(x^{(0)})}{j!}+ r_{m}(x,f)$, где $r_{m}(x,f) = \frac{d^{m+1}F(x^{(0)}+\Theta\Delta x)}{(m+1)!}$ 
+\end{theorem}
+\begin{proof}
+    Рассмотрим функцию одной переменной $F(t) = f(x^{(0)}+t\Delta x) \implies \Delta F(0) = F(1)-F(0) =\\= \sum_{j=1}^{m}\frac{d^{j}F(0)}{j!}+ \frac{d^{m+1}F(\Theta)}{(m+1)!},\Theta \in (0,1)\\ x = x^{(0)}+t\Delta x \implies d^{k}f(x^{(0)}+t\Delta x) = d^{k}F(t),$ где $k=1,2,\dots,m,m+1$
+\end{proof}
+Некоторые частные случаи: 
+
+\noindent $m=0\implies \Delta f(x^{(0)})=f(x^{(0)}+\Delta x)-f(x^{(0)})=df(x^{(0)}+\Theta \Delta x)= \sum_{i    =1}^{n  }\frac{\partial{f}}{\partial{x_{i}}}(x^{(0)}+ \Theta \Delta x)\Delta x_{i} $
+
+\noindent $m=1\implies \Delta f(x^{(0)})=f(x^{(0)}+\Delta x)-f(x^{(0)})=df(x^{(0)})+ \frac{1}{2}d^{2}f(x^{(0)}+\Theta \Delta x) = \sum_{i   =1}^{n  } \frac{\partial{f}}{\partial{x_{i}}}\Delta x_{i}+\\+ \frac{1}{2} \sum_{i  =1}^{n} \sum_{j=1}^{n} \frac{\partial^{2}{f}}{\partial{x_{i}}\partial{x_{j}}} (x^{(0)}+\Theta \Delta x) \Delta x_{i} \Delta x_{j} $  
+
+\begin{corollary}
+    Пусть выполняются все условия предыдущей теоремы $\implies \Delta f(x^{(0)}) = f(x^{(0)}+\Delta x) - f(x^{(0)}) = \sum_{j=1}^{n}\frac{d^{j}f(x^{(0)})}{j!}+r_{m}(x,f)$, где $r_{m}(x,f) = \overline{\overline{o}}(\|\Delta x\|^{m}) \; (\| \Delta x\| \to 0)$ 
+\end{corollary}
+\begin{proof}
+    Самостоятельно.
+\end{proof}
+
+\section{Экстремум функции многих переменных} 
+Ниже речь идет о \underline{локальных} экстремумах.
+\begin{definition}
+    $f(x)$ определена при $x\in E$ - области $E\subset \E_{n}, x^{(0)}\in E, x^{(0)}$ называется точкой максимума (минимума, строгого максимума, строгого минимума) для функции $f(x)$, если $\exists \delta > 0 : \forall x \in \overset{\circ}{U}_{\delta}(x^{(0)}) \implies f(x) \leqslant f(x^{(0)}) \left( \geqslant, <, > \right)$
+\end{definition}
+\begin{theorem}[Необходимое условие экстремума]
+    $x^{(0)} = \{x_{1}^{(0)},\dots,x_{i}^{(0)},\dots,x_{n}^{(0)}\}$ - точка экстремума для $f(x)$, причем $\exists i (1\leqslant i \leqslant n): \exists \frac{\partial{f}}{\partial{x_{i}}}(x^{(0)})\implies \frac{\partial{f}}{\partial{x_{i}}}(x^{(0)})=0$
+\end{theorem}
+\begin{proof}
+    Рассмотрим функцию одной перменной $\varphi(x_{i}) = f(x_{1}^{(0)},\dots,x_{i-1}^{(0)},x_{i}^{(0)},x_{i+1}^{(0)},\dots,x_{n}^{(0)})\implies x_{i}^{(0)}$ - точка экстремума $\varphi(x_{i})$. Тогда $\exists \varphi'_{x_{i}}(x_{i}^{(0)}) = \frac{\partial{f}}{\partial{x_{i}}}(x^{(0)})\implies 0 = \varphi'_{x_{i}}(x_{i}^{(0)}) = \frac{\partial{f}}{\partial{x_{i}}} (x^{(0)})$
+\end{proof}
+\begin{corollary}
+    $f(x)\in C_{1}$ в $E$ - области, $x^{(0)}\in E$, $x^{(0)}$ - точка экстремума $\implies df(x^{(0)})=0$
+\end{corollary}
+\begin{definition}
+    $f(x)\in C_{1}$ в области $E, x^{(0)}\in E: df(x^{(0)})=0\implies x^{(0)}$ - стационарная точка (критическая точка)
+\end{definition}
+Примеры:
+
+\noindent $f(x,y)=x^{2}+y^{2}\quad df(x,y) = 2xdx +2ydy\quad \begin{cases}
+    2x=0 \\ 
+    2y=0 
+\end{cases}\implies (0,0)$ - стационарная точка. Возьмем  $\forall (x,y)\neq (0,0) \implies f(x,y)=  x^{2}+y^{2}>0=f(0,0)$ - строгий минимум
+
+\noindent $f(x,y)=xy \quad df(x,y)=ydx+xdy\quad \begin{cases}
+    y=0 \\ 
+    x= 0 
+\end{cases} \implies (0,0)$ - стационарная точка. Рассмотрим $\forall \alpha>0 \implies f(\alpha,\alpha) = \alpha^{2}>0 = f(0,0)> -\alpha^{2} = f(\alpha,-\alpha)$
+
+\begin{theorem}
+    $f(x)\in C_{2}$ в области $E\subset \E_{n}, x^{(0)}\in E , x^{(0)}$ - стационарная точка $f(x); A (\xi) = A(\xi_{1},\dots,\xi_{n}) =\\= \sum_{ i   =1}^{n  } \sum_{j=1}^{n } \frac{\partial^{2}{f}}{\partial{x_{i}}\partial{x_{j}}}(x^{(0)})\xi_{i}\xi_{j}\implies 
+    \begin{aligned}
+        &1. \forall \xi \neq  \Theta \; f(\xi)>0 \implies x^{(0)} - \text{ строгий минимум} \\ 
+        &2. \forall \xi \neq  \Theta \; A(\xi)<0 \implies x^{(0)} - \text{ строгий максимум}\\
+        &3. \exists \xi, \eta: A(\xi)>0, A(\eta)<0\implies x^{(0)} - \text{ не экстремум}
+    \end{aligned} $ 
+\end{theorem}
+\begin{proof}
+    $A(\Theta) = 0, A(a \cdot \xi) = a^{2} A(\xi)\quad f(x) = f(x^{(0)}+\Delta x) = f(x^{(0)})+\\+ \frac{1}{2 }\sum_{i =1}^{n}\sum_{j=1}^{n} \frac{\partial^{2}{f}}{\partial{x_{i}}\partial{x_{j}}}(x^{(0)}+\underbrace{\Theta}_{\in [0,1]} \Delta x) \Delta x_{i}\Delta x_{j}$ 
+    \\ $f(x^{(0)}+\Delta x) - f(x^{(0)}) = \frac{1}{2}A(\Delta x)+\frac{1}{2}\sum_{i=1}^{n}\sum_{j=1}^{n} \left[ \frac{\partial^{2}{f}}{\partial{x_{i}}\partial{x_{j}}}(x^{(0)}+\Theta \Delta x) - \frac{\partial^{2}{f}}{\partial{x_{i}}\partial{x_{j}}}(x^{(0)}) \right] \Delta x_{i}\Delta x_{j}$.
+    Из непрерывности в $x^{(0)}\implies \forall \varepsilon> 0 \; \exists \delta>0 : \forall \Delta x , \|\Delta x\| < \delta \implies \forall i=\overline{1,n} \forall j =\overline{1,n} \; \left| \frac{\partial^{2}{f}}{\partial{x_{i}}\partial{x_{j}}}(x^{(0)}+\Theta \Delta x) - \frac{\partial^{2}{f}}{\partial{x_{i}}\partial{x_{j}}}(x^{(0)}) \right| < \varepsilon $
+    \\1. $\forall \xi = \Theta \; A(\xi)> 0 \quad m = \underset{\|\xi\| = 1}{\inf}{A(\xi)}=\underset{\|\xi\|=1}{\min}{A(\xi)}>0$. Возьем $\varepsilon = \frac{m}{2n^{2}}>0 \; \exists \delta>0$. Берем $\Delta x :0< \|\Delta x\| < \delta $
+    $A(\Delta x) = A\left(\|\Delta x\| \frac{\Delta x}{\|\Delta x\|}\right)= \|\Delta x\|^{2} A\left(\frac{\Delta x}{\|\Delta x\|}\right) \geqslant m\|\Delta x\|^{2}$
+    \\Возьем $\forall x \in \overset{\circ}{U}_{\delta}(x^{(0)}) \implies \Delta x = x-x^{(0)} : 0< \|\Delta x\| < \delta \implies f(x) - f(x^{(0)}) > \frac{m}{2} \|\Delta x\|^{2} -\frac{1}{2} \sum_{i  =1}^{n  } \sum_{j=1}^{n } \varepsilon \|\Delta x\| \|\Delta x\| =\\= \frac{m}{2} \|\Delta x\|^{2} - \frac{m}{2\cdot 2n^{2}}^{2}\|\Delta x \|^{2} = \frac{m}{4}\|\Delta x\|^{2}> 0$. 
+    \\2. Самостоятельно.
+    \\3. $\| \xi \| = \| \eta \| = 1, A(\xi)> 0 > A(\eta).$ Возьмем $\varepsilon = \frac{\min{(A(\xi),-A(\eta))}}{2n^{2}}>0\; \exists \delta >0$. Рассмотрим следующие приращения: $\delta \tilde{x} = \alpha \cdot \xi, 0< \alpha < \delta \quad 0<\|\Delta \tilde{x} \| = \alpha <\delta$. Берем $x = x^{(0)} + \Delta \tilde{x},\quad f(x)-f(x^{(0)}) = \frac{1}{2} A (\Delta \tilde{x}) + \\ + \frac{1}{2} \sum_{i=1}^{n}\sum_{j=1}^{n} \left[ \frac{\partial^{2}{f}}{\partial{x_{i}}\partial{x_{j}}}(x^{(0)}+\Theta \Delta \tilde{x}) - \frac{\partial^{2}{f}}{\partial{x_{i}}\partial{x_{j}}}(x^{(0)}) \right] \Delta \tilde{x}_{i}\Delta \tilde{x}_{j} > \frac{\alpha^{2}}{2}A(\xi)- \frac{1}{2} \cdot \frac{A(\xi)}{2n^{2}}\cdot n^{2} \alpha^{2} =\frac{\alpha^{2}}{4} A(\xi) > 0\implies\\ \implies  \underline{f(x) > f(x^{(0)})}$. 
+    \\Рассмотрим $\Delta \overline{x} = \alpha \eta , 0<\alpha<\delta , 0 < \|\Delta \overline{x}\| = \alpha < \delta \quad \overline{x} = x^{(0)} + \Delta \overline{x},\quad f(\overline{x}) - f(x^{(0)}) = \frac{1}{2} A (\Delta \overline{x}) + \\ + \frac{1}{2} \sum_{i=1}^{n}\sum_{j=1}^{n} \left[ \frac{\partial^{2}{f}}{\partial{x_{i}}\partial{x_{j}}}(x^{(0)}+\Theta \Delta \overline{x}) - \frac{\partial^{2}{f}}{\partial{x_{i}}\partial{x_{j}}}(x^{(0)}) \right] \Delta \overline{x}_{i}\Delta \overline{x}_{j} < \frac{\alpha^{2}}{2}A(\eta) + \frac{1}{2} \frac{-A(\eta)}{2n^{2}} n^{2} \alpha^{2}  = \frac{\alpha^{2}}{4} A(\eta) < 0 \implies \\ \implies \underline{f(\overline{x}) < f(x^{(0)})}$.
+\end{proof}
+
+\noindent $\begin{pmatrix}
+     f''_{11} & f''_{12} & \dots & f''_{1n} \\
+        f''_{21} & f''_{22} & \dots & f''_{2n} \\
+        \vdots & \vdots & \ddots & \vdots \\
+        f''_{n1} & f''_{n2} & \dots & f''_{nn}
+\end{pmatrix}$ \qquad Рассматриваются главные угловые миноры, пусть $\Delta_{n}\neq 0 \implies\\\implies \begin{aligned}
+    &1. \text{Положительно определена }\Leftrightarrow \Delta_{1}>0 , \Delta_{2}>0, \dots,\Delta_{n}>0 \\ 
+    &2. \text{Отрицательно определена }\Leftrightarrow \Delta_{1}<0 , \Delta_{2}>0, \Delta_{3}<0,\dots \\ 
+    &3. \text{Остальное - неопределена.}
+\end{aligned}
+$
+
+
+
+
+
+
+
+\vspace{1cm}
+\begin{flushright}
+    \textit{tg: @moksimqa}
+\end{flushright}
