@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.4.16)  22 APR 2025 10:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.4.16)  25 APR 2025 12:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1659,24 +1659,34 @@ Overfull \hbox (9.83302pt too wide) in paragraph at lines 53--59
 []\T2A/cmr/bx/n/10 Теорема 7.40. []$\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 2 \OML/cmm/m/it/10 C[]$ \T2A/cmr/m/it/10 в об-ла-сти $\OML/cmm/m/it/10 E \OMS/cmsy/m/n/10 ^^Z \U/msb/m/n/10 E[]\OML/cmm/m/it/10 ; x[] \OMS/cmsy/m/n/10 2 \OML/cmm/m/it/10 E; x[]$ \T2A/cmr/m/it/10 - ста-ци-о-нар-ная точ-ка $\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ); \OML/cmm/m/it/10 A\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^X\OT1/cmr/m/n/10 ) = \OML/cmm/m/it/10 A\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^X[]; [] ; ^^X[]\OT1/cmr/m/n/10 ) =
  []
 
-[60])) [61] (main.aux)
+[60]) (tex/chapter9/lec20.tex [61]
+Underfull \hbox (badness 10000) in paragraph at lines 11--26
+
+ []
+
+
+Overfull \hbox (25.07773pt too wide) in paragraph at lines 43--44
+[]\T2A/cmr/bx/n/10 Теорема 7.42. []$\OML/cmm/m/it/10 F\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 2 \OML/cmm/m/it/10 C[]$ \T2A/cmr/m/it/10 в $[][]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]; y[]\OT1/cmr/m/n/10 )$\T2A/cmr/m/it/10 ,$\OML/cmm/m/it/10 F\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]; y[]\OT1/cmr/m/n/10 ) = 0\OML/cmm/m/it/10 ; []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]; y[]\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 6\OT1/cmr/m/n/10 = 0 \OMS/cmsy/m/n/10 ) 9$$[][]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]; y[]\OT1/cmr/m/n/10 )$$\OMS/cmsy/m/n/10 ^^Z$$[][]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]; y[]\OT1/cmr/m/n/10 )$\T2A/cmr/m/it/10 ,
+ []
+
+[62])) [63] (main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 30149 strings out of 474486
- 635636 string characters out of 5753561
+ 30157 strings out of 474486
+ 635882 string characters out of 5753561
  1960542 words of memory out of 5000000
- 51722 multiletter control sequences out of 15000+600000
+ 51727 multiletter control sequences out of 15000+600000
  590579 words of font info for 122 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 89i,18n,96p,1505b,877s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 89i,20n,96p,1505b,877s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\lati0700.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm0700.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\lati1000.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1440.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\lass0900.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx2074.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1000.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1000.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1200.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1200.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx2488.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msam7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on main.pdf (61 pages, 600084 bytes).
+Output written on main.pdf (63 pages, 611606 bytes).
 PDF statistics:
- 765 PDF objects out of 1000 (max. 8388607)
+ 772 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

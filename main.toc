@@ -52,3 +52,5 @@
 \contentsline {section}{\numberline {7.7}Дифференциалы высших порядков для функций нескольких переменных}{59}{}%
 \contentsline {section}{\numberline {7.8}Формула Тейлора для функции нескольких переменных}{59}{}%
 \contentsline {section}{\numberline {7.9}Экстремум функции многих переменных}{60}{}%
+\contentsline {section}{\numberline {7.10}Неявные функции.}{62}{}%
+\contentsline {section}{\numberline {7.11}Зависимость функций.}{63}{}%

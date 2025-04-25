@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1745305560.92287 "c:/Users/moksimqa/Documents/Projects/latexmatan/main.tex" "main.pdf" "main" 1745305562.99189 0
+["pdflatex"] 1745573307.13903 "c:/Users/moksimqa/Documents/Projects/latexmatan/main.tex" "main.pdf" "main" 1745573309.6251 0
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1233951848 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1233951848 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmbsy7.tfm" 1233951848 1120 7f9f170e8aa57527ad6c49feafd45d54 ""
@@ -271,10 +271,10 @@
   "C:/Users/moksimqa/AppData/Local/MiKTeX/fonts/tfm/public/stmaryrd/stmary7.tfm" 1728739062 848 26631fcb3e4cb6757598b9cda7967b63 ""
   "C:/Users/moksimqa/AppData/Local/MiKTeX/fonts/tfm/public/stmaryrd/stmary8.tfm" 1728739057 848 6125cdd3627e68d3db8013b98e587508 ""
   "C:/Users/moksimqa/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1744833823 24215240 5eefc35855770a4b8cf5cda3753bef7b ""
-  "c:/Users/moksimqa/Documents/Projects/latexmatan/main.tex" 1745305558 699 4e26f5913eb2eb973d18d2719b718360 ""
-  "main.aux" 1745305562 12820 6a40719737e0336be5c8f4040f8e08f2 "pdflatex"
-  "main.tex" 1745305558 699 4e26f5913eb2eb973d18d2719b718360 ""
-  "main.toc" 1745305562 9934 62e5e01c78d8d5fe096c43920905a725 "pdflatex"
+  "c:/Users/moksimqa/Documents/Projects/latexmatan/main.tex" 1745573305 699 4e26f5913eb2eb973d18d2719b718360 ""
+  "main.aux" 1745573309 13072 19fec3ce375468130c303ea0d85a9334 "pdflatex"
+  "main.tex" 1745573305 699 4e26f5913eb2eb973d18d2719b718360 ""
+  "main.toc" 1745573309 10104 7a91bc112f2aca959f560bb44b80f728 "pdflatex"
   "preamble.tex" 1744962386 8278 045886ce65909cc0f1195c238abb2d07 ""
   "tex/chapter3.tex" 1739654785 161 f8c141bd912839ae12bf18be019567bf ""
   "tex/chapter3/lec1.tex" 1738798116 3361 1f6212bca8f13a978b8375531c283e49 ""
@@ -296,7 +296,7 @@
   "tex/chapter8/lec11.tex" 1745243829 15847 04e04173c37f0bbbe40c552ca3fb8550 ""
   "tex/chapter8/lec8'.tex" 1741706139 9911 a055ce8e7533c78995fae4a2c21e7259 ""
   "tex/chapter8/lec9.tex" 1741365648 13159 21c2f37045f10652f68046845a45cf1a ""
-  "tex/chapter9.tex" 1745300132 373 5905c92836cbfe9e64e3b576fac63d54 ""
+  "tex/chapter9.tex" 1745565973 403 f31e4455dcd0510d40f8341ba6500bfd ""
   "tex/chapter9/lec12.tex" 1743003186 7219 ecdf076a5cff5862dbba0ebbc1b9df55 ""
   "tex/chapter9/lec13.tex" 1743147076 11524 30377f5d16391474b547435957f37cbe ""
   "tex/chapter9/lec14.tex" 1743751491 8307 ec4b1b949ad2f86e49f258edc2c5313f ""
@@ -305,6 +305,7 @@
   "tex/chapter9/lec17.tex" 1744728617 9972 4b9804b63b2f84d96aa3deee36dfa915 ""
   "tex/chapter9/lec18.tex" 1744986013 8071 0deadb82d14cbcc75f51c4816b6ba00f ""
   "tex/chapter9/lec19.tex" 1745305558 9177 ad5b5578782a9a00b639c330b346cd33 ""
+  "tex/chapter9/lec20.tex" 1745573306 8182 ea4e2a9844e6e87e3d47087d001690d4 ""
   "tex/title.tex" 1739654912 478 4506dae0de4ded0133cef352b7f8eca0 ""
   (generated)
   "main.aux"

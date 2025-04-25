@@ -1,0 +1,79 @@
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+\lecture{20}{25.04}{}
+\section{Неявные функции.}
+\noindent $F(x,y) = F(x_{1},\dots,x_{n},y)$ - непрерывна на области из $\E_{n+1}.$ $\forall x \in E \subset \E_{n} \; \exists y $ (один или больше)$: F(x,y)=0$. 
+\\$F(x,y) = 0 $, определен $y=f(x)$ (один или больше)$: F(x,f(x))\equiv 0 $ при $x\in E\subset \E_{n}$
+\\$F_{j}(x,y)=F_{j}(x_{1},\dots,x_{n},y_{1},\dots,y_{m}), j =1,2,\dots,m\quad F_{j}(x,y) = 0, \; y_{j}=f_{j}(x):F_{j}(x,f_{1}(x),\dots,f_{m}(x))\equiv\\ \equiv 0 (x\in E)$
+ 
+Пример:
+
+\noindent $F(x,y) = y^{2}-x^{2} \qquad y^{2}-x^{2}=0$\\
+$\begin{aligned} 
+&1. y=x
+&&3. y= |x|  
+&&&5.y= \begin{cases}
+    x, x - \text{ рац.} \\ 
+    -x, x - \text{ ирр.}
+\end{cases}\\
+&2. y=-x
+&&4. y=-|x|
+&&&6. y = \begin{cases}
+     x, x \in \mathbb{D} \\ 
+     -x , x \notin \mathbb{D}
+\end{cases} 
+\end{aligned}$\\
+
+\begin{theorem}
+    $F(x,y) = F(x_{1},\dots,x_{n},y)$ непрерывна в $\textstyle \prod_{\tilde{\delta},\tilde{\Delta}}^{n+1}(x^{(0)},y_{0})$ $\equiv \{|x_{i}-x_{i}^{(0)}|<\tilde{\delta}, i=1,\dots,n;\\ |y-y_{0}| < \tilde{\Delta}\}; F(x^{(0)},y_{0})= 0. \forall x \in K_{\tilde{\delta}}^{n}(x^{(0)}) \equiv \{ |x_{i}-x_{i}^{(0)}|<\tilde{\delta}, i=1,\dots,n\}\; F(x,y)$ строго возрастает (строго убывает) по $(y_{0}-\tilde{\Delta},y_{0}+\tilde{\Delta}). \implies \exists$ $\textstyle \prod_{\delta_{0},\Delta_{0}}^{n+1}(x^{(0)},y_{0})$$\subset$ $\textstyle \prod_{\tilde{\delta},\tilde{\Delta}}^{n+1}(x^{(0)},y_{0})$, что $\exists$ единственный $y= f(x): y_{0} =f(x^{(0)}), F(x,f(x))\equiv 0 \; \forall x \in K_{\tilde{\delta}}^{n}(x^{(0)}), f(x)$ непрерывна в $K_{\tilde{\delta}}^{n}(x^{(0)})$.
+\end{theorem}
+
+\begin{proof}
+    Рассмотрим случай строго возрастания. Пусть $F(x,y)$ строго возрастает по $y$.\\ $F(x^{(0)},y_{0}) = 0$. $\exists \Delta_{0}\in  (0,\tilde{\Delta}) \; F(x^{(0)},y_{0}+\Delta_{0}) > 0 > F(x^{(0)},y_{0}-\Delta_{0})$. По теореме о сохранении знака:\\ $\exists \delta_{1}>0 : \forall x = (x_{1},\dots,x_{n}): |x_{i}-x_{i}^{(0)}|<\delta_{1} , i=1,\dots,n\implies F(x,y_{0}+\Delta_{0}) > 0$ 
+    \\$\exists \delta_{2}>0 : \forall x = (x_{1},\dots,x_{n}) : |x_{i}-x_{i}^{(0)}| < \delta_{2},i=1,\dots,n\implies F(x,y_{0}-\Delta_{0}) < 0$. Возьмем $\delta_{0} = \min\{\delta_{1},\delta_{2}\}$. 
+    \\$\forall x \in K_{\delta_{0}}^{n}(x^{(0)}) \implies F(x,y_{0}- \Delta_{0}) < 0 < F(x,y_{0}+\Delta_{0}) \implies \exists$ единственный $y \in (y_{0}-\Delta_{0},y_{0}+\Delta_{0}) :\\ F(x,y) = 0, y= f(x)$.
+    \\$F(x,f(x))\equiv 0\;(\forall x \in K_{\delta_{0}}^{n}(x^{(0)})), f(x^{(0)}) = y_{0}$. Осталось установить, что построенная нами функция непрерывна. Сначала установим, что она непрерывна хотя бы в центральной точке, т.е при $x=x^{(0)}$.
+    \\$\forall \varepsilon> 0 \; \exists \delta >0: \forall x, |x_{i} - x_{i}^{(0)}|<\delta , i=1,\dots,n \implies \underset{|y-y_{0}|<\varepsilon}{|f(x) - f(x^{(0)})| < \varepsilon} \; (?)$. 
+    \\$\varepsilon \geqslant \Delta_{0} \implies \delta = \delta_{0}\; x \in K_{\delta_{0}}^{n}(x^{(0)}) \implies |y - y_{0}| < \Delta_{0} \leqslant \varepsilon$. Пусть теперь $0< \varepsilon < \Delta_{0}$. 
+    \\Возьем $\varepsilon \in (0,\tilde{\Delta}), \varepsilon\in (0,\Delta_{0}) \implies \delta = \min{(\delta_{1}, \delta_{2})}$
+    \\Берем $\forall \overline{x} \in K_{\delta}^{n}(x^{(0)}), \overline{y} = f(\overline{x}) \; F(\overline{x},\overline{y}) = 0$. Теперь возьмем с самого начала $\overline{x}, \overline{y}$ в качестве центральной точки. Далее можем построить функцию $y=\overline{f}(x),\overline{y} = \overline{f}(\overline{x})$ - непрерывна при $x= \overline{x}$. Ввиду единственности $\overline{x} \implies \overline{f} = f$.
+\end{proof}
+
+\begin{theorem}
+    $F(x,y) \in C_{1}$ в $\textstyle \prod_{\tilde{\delta},\tilde{\Delta}}^{n+1}(x^{(0)},y_{0})$,$ F(x^{(0)},y_{0})= 0, \frac{\partial{F}}{\partial{y}}(x^{(0)},y_{0}) \neq 0 \implies \exists$$\textstyle \prod_{\delta_{0},\Delta_{0}}^{n+1}(x^{(0)},y_{0}) $$\subset$$\textstyle \prod_{\tilde{\delta},\tilde{\Delta}}^{n+1}(x^{(0)},y_{0})$, что $\exists$ единственный $y= f(x): y_{0} = f(x^{(0)}), F(x,f(x))\equiv 0 \; \forall x \in K_{\tilde{\delta}}^{n}(x^{(0)}), f(x) \in C_{1}$ в $K_{\delta_{0}}^{n}(x^{(0)})$.
+\end{theorem}
+
+\begin{proof}
+    $\frac{\partial{F}}{\partial{y}}(x,y) \neq  0$\quad $\exists \textstyle \prod_{\delta_{0}, \Delta_{0}}^{n+1}(x^{(0)},y_{0}) \subset \textstyle \prod_{\tilde{\delta},\tilde{\Delta}}^{n+1}(x^{(0)},y_{0})$, что $\exists $ единственный $y=f(x)$:\\ $F(x,f(x))\equiv 0, y_{0} = f(x^{(0)})$. 
+    \\$\forall x \in K_{\delta_{0}}^{n}(x^{(0)}) \; \Delta x = (0, \dots,\Delta x_{i}, \dots, 0)\quad \Delta y = \underbrace{f(x+\Delta x)}_{y+\Delta y} - \underbrace{f(x)}_{y}$.
+    \\ $ 0 = F(x+\Delta x, y+ \Delta y)  - F(x,y)  = F(x_{1},\dots,x_{i}+\Delta x_{i},\dots,x_{n},y+\Delta y) - F(x_{1},\dots,x_{i},\dots,x_{n},y) = \\ = \frac{\partial{F}}{\partial{x_{i}}}(x_{1} ,\dots,x_{i} + \Theta \Delta x_{i},\dots,x_{n},y+ \Theta \Delta y) \Delta x_{i} + \frac{\partial{F}}{\partial{y}}(x_{1},\dots,x_{i}+ \Theta \Delta x_{i},\dots,x_{n},y+ \Theta \Delta y) \Delta y $
+    \\$ \frac{\Delta y}{\Delta x_{i}} = - \frac{\frac{\partial{F}}{\partial{x_{i}}}(x_{1},\dots,x_{i}+\Theta \Delta x_{i},\dots,x_{n},y+ \Theta \Delta y)}{\frac{\partial{F}}{\partial{y}}(x_{1},\dots,x_{i}+\Theta \Delta x_{i},\dots,x_{n},y+ \Theta \Delta y)}-> $ (при $\Delta x_{i}\to 0$)$\to \frac{\frac{\partial{F}}{\partial{x_{i}}}(x_{1},\dots, x_{n}, y)}{\frac{\partial{F}}{\partial{y}}(x_{1},\dots,x_{n},y)}\implies \frac{\partial{f}}{\partial{x_{i}}}(x)$ непрерывна $\implies f(x)\in C_{1}$.
+    $\Delta x_{i} \to 0 \implies \Delta y \to 0, \quad 0< \Theta <1$
+\end{proof}
+\begin{theorem}
+    $F_{j}(x,y)= F_{j}(x_{1},\dots,x_{n},y_{1},\dots,y_{m})\in C_{1} $ в $\textstyle \prod_{\tilde{\delta},\tilde{\Delta}}^{n+m}(x^{(0)},y^{(0)}) \equiv \{ |x_{i}-x_{i}^{(0)}|<\tilde{\delta}, i=1,2,\dots,n, \\|y_{j}-y_{j}^{(0)}|<\tilde{\Delta},j=1,2,\dots,m\}$. $F_{j}(x^{(0)},y^{(0)})= Q,\\ J(x^{(0)},y^{(0)}) \equiv \frac{D(F_{1},\dots,F_{m})}{D(y_{1},\dots,y_{m})}\bigg|_{(x^{(0)},y^{(0)})} = \begin{vmatrix}
+        \frac{\partial{F_{1}}}{\partial{y_{1}}} & \dots & \frac{\partial{F_{1}}}{\partial{y_{m}}} \\
+        \vdots & \ddots & \vdots \\
+        \frac{\partial{F_{m}}}{\partial{y_{1}}} & \dots & \frac{\partial{F_{m}}}{\partial{y_{m}}}
+    \end{vmatrix} \neq  0 \implies \exists \textstyle \prod_{\delta_{0},\Delta_{0}}^{n+m}(x^{(0)},y^{(0)}) \subset \textstyle \prod_{\tilde{\delta},\tilde{\Delta}}^{n+m}(x^{(0)},y^{(0)})$, что $\exists$ единственный $y_{j} = f_{j}(x) \; (j=1,2,\dots,m): y_{j}^{(0)} = f_{j}(x^{(0)}), F(x,f_{1}(x),\dots,f_{m}(x))\equiv 0 \; \forall x \in K_{\delta_{0}}^{n}(x^{(0)})$.
+\end{theorem}
+\begin{proof}
+    Без доказательства.
+\end{proof}
+
+\section{Зависимость функций.}
+
+
+\begin{definition}
+ $y_{j} = f_{j}(x) = f_{j}(x_{1},\dots,x_{n}) \in C_{1} $ в области $E \subset \E_{n}$. $y_{j}(x)$ называются зависимыми, если $\exists j \;(1\leqslant j \leqslant m) \; \exists \varPhi (u_{1},\dots,u_{m-1})\in C_{1} : f_{j}(x) \equiv \varPhi (f_{1}(x),\dots,f_{j-1}(x),f_{j+1}(x),\dots,f_{m}(x)) \; \forall x \in E$.
+\end{definition}
+$\varPhi( u_{1},\dots,u_{m-1}) = \alpha_{1} u_{1}+ \dots + \alpha_{m-1} u_{m-1}$ - линейная зависимость. 
+
+\noindent $1, \cos{x}, \sin{x}$ - линейно зависимы. \qquad $1=\cos^{2}{x} + \sin^{2}{x}$.
+
+
+
+\vspace{1cm}
+\begin{flushright}
+    \textit{tg: @moksimqa}
+\end{flushright}
