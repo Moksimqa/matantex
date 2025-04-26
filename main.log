@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.4.16)  25 APR 2025 12:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.4.16)  26 APR 2025 18:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1107,38 +1107,129 @@ Package: transparent 2022-10-27 v1.5 Transparency with color stacks
 Package: transparent-nometadata 2022-10-27 v1.5 Transparency via pdfTeX's color stack (HO)
 )))
 \c@dfn=\count363
+ (C:\Program Files\MiKTeX\tex/latex/hyperref\hyperref.sty
+Package: hyperref 2023-11-26 v7.01g Hypertext links for LaTeX
+ (C:\Program Files\MiKTeX\tex/generic/pdfescape\pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+) (C:\Program Files\MiKTeX\tex/latex/hycolor\hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+) (C:\Program Files\MiKTeX\tex/latex/letltxmacro\letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+) (C:\Program Files\MiKTeX\tex/latex/hyperref\nameref.sty
+Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
+ (C:\Program Files\MiKTeX\tex/latex/refcount\refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+) (C:\Users\moksimqa\AppData\Roaming\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count364
+)
+\@linkdim=\dimen330
+\Hy@linkcounter=\count365
+\Hy@pagecounter=\count366
+ (C:\Program Files\MiKTeX\tex/latex/hyperref\pd1enc.def
+File: pd1enc.def 2023-11-26 v7.01g Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+) (C:\Program Files\MiKTeX\tex/generic/intcalc\intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count367
+ (C:\Program Files\MiKTeX\tex/latex/hyperref\puenc.def
+File: puenc.def 2023-11-26 v7.01g Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Option `unicode' set `true' on input line 3167.
+Package hyperref Info: Hyper figures OFF on input line 4181.
+Package hyperref Info: Link nesting OFF on input line 4186.
+Package hyperref Info: Hyper index ON on input line 4189.
+Package hyperref Info: Plain pages OFF on input line 4196.
+Package hyperref Info: Backreferencing OFF on input line 4201.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4448.
+\c@Hy@tempcnt=\count368
+LaTeX Info: Redefining \url on input line 4786.
+\XeTeXLinkMargin=\dimen331
+ (C:\Program Files\MiKTeX\tex/generic/bitset\bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+ (C:\Program Files\MiKTeX\tex/generic/bigintcalc\bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
+))
+\Fld@menulength=\count369
+\Field@Width=\dimen332
+\Fld@charsize=\dimen333
+Package hyperref Info: Hyper figures OFF on input line 6065.
+Package hyperref Info: Link nesting OFF on input line 6070.
+Package hyperref Info: Hyper index ON on input line 6073.
+Package hyperref Info: backreferencing OFF on input line 6080.
+Package hyperref Info: Link coloring OFF on input line 6085.
+Package hyperref Info: Link coloring with OCG OFF on input line 6090.
+Package hyperref Info: PDF/A mode OFF on input line 6095.
+ (C:\Program Files\MiKTeX\tex/latex/base\atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count370
+\c@Item=\count371
+\c@Hfootnote=\count372
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+ (C:\Program Files\MiKTeX\tex/latex/hyperref\hpdftex.def
+File: hpdftex.def 2023-11-26 v7.01g Hyperref driver for pdfTeX
+ (C:\Program Files\MiKTeX\tex/latex/base\atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
+with kernel methods
+)
+\HyAnn@Count=\count373
+\Fld@listcount=\count374
+\c@bookmark@seq@number=\count375
+ (C:\Program Files\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+ (C:\Program Files\MiKTeX\tex/generic/uniquecounter\uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
+)
+\Hy@SectionHShift=\skip150
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 19.
  (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Info: Redefining \th on input line 14.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Info: Redefining \th on input line 22.
  (C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count364
-\scratchdimen=\dimen330
+\scratchcounter=\count376
+\scratchdimen=\dimen334
 \scratchbox=\box147
-\nofMPsegments=\count365
-\nofMParguments=\count366
+\nofMPsegments=\count377
+\nofMParguments=\count378
 \everyMPshowfont=\toks61
-\MPscratchCnt=\count367
-\MPscratchDim=\dimen331
-\MPnumerator=\count368
-\makeMPintoPDFobject=\count369
+\MPscratchCnt=\count379
+\MPscratchDim=\dimen335
+\MPnumerator=\count380
+\makeMPintoPDFobject=\count381
 \everyMPtoPDFconversion=\toks62
 ) (C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1181,8 +1272,9 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package translations Info: no dictionary file `translations-basic-dictionary-russian.trsl' found. on input line 14.
+Package translations Info: no dictionary file `translations-basic-dictionary-russian.trsl' found. on input line 22.
 (C:\Program Files\MiKTeX\tex/latex/pdflscape\pdflscape.sty
 Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
  (C:\Program Files\MiKTeX\tex/latex/pdflscape\pdflscape-nometadata.sty
@@ -1191,32 +1283,38 @@ Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PDF
 Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
-)) (tex/title.tex
-LaTeX Font Info:    Trying to load font information for U+msa on input line 16.
+))
+Package hyperref Info: Link coloring ON on input line 22.
+ (main.out) (main.out)
+\@outlinefile=\write5
+\openout5 = `main.out'.
+
+ (tex/title.tex
+LaTeX Font Info:    Trying to load font information for U+msa on input line 17.
  (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 16.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 17.
  (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 16.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 17.
  (C:\Program Files\MiKTeX\tex/latex/jknappen\ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Trying to load font information for U+stmry on input line 16.
+LaTeX Font Info:    Trying to load font information for U+stmry on input line 17.
  (C:\Program Files\MiKTeX\tex/latex/stmaryrd\ustmry.fd) [1
 
 {C:/Users/moksimqa/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]) (main.toc
 Overfull \hbox (4.28061pt too wide) in paragraph at lines 11--11
- [][] []\T2A/cmr/m/n/10 Определение ин-те-гра-ла Ри-ма-на. Су-ще-ство-ва-ние ин-те-гри-ру-е-мых функ-ций. Необ-ра-ти-мое усло- 
+ [][] [][][]\T2A/cmr/m/n/10 Определение ин-те-гра-ла Ри-ма-на. Су-ще-ство-ва-ние ин-те-гри-ру-е-мых функ-ций. Необ-ра-ти-мое усло- 
  []
 
 [2
 
 ] [3])
-\tf@toc=\write5
-\openout5 = `main.toc'.
+\tf@toc=\write6
+\openout6 = `main.toc'.
 
  (tex/chapter3.tex [4]
 {\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 1.
@@ -1292,7 +1390,7 @@ Overfull \hbox (54.51422pt too wide) in paragraph at lines 11--16
 
 
 Overfull \hbox (61.57704pt too wide) in paragraph at lines 20--21
-[]\T2A/cmr/bx/n/10 Теорема 2.7. []$\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )$ \T2A/cmr/m/it/10 мо-но-тон-на на $\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 a; b\OT1/cmr/m/n/10 ]([]) \OMS/cmsy/m/n/10 )
+[][]\T2A/cmr/bx/n/10 Теорема 2.7. []$\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )$ \T2A/cmr/m/it/10 мо-но-тон-на на $\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 a; b\OT1/cmr/m/n/10 ]([]) \OMS/cmsy/m/n/10 )
  []
 
 
@@ -1313,7 +1411,12 @@ Overfull \hbox (13.91408pt too wide) in paragraph at lines 43--53
 []$\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )$ \T2A/cmr/m/n/10 ин-те-гри-ру-е-ма на $\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 a; b\OT1/cmr/m/n/10 ] \OMS/cmsy/m/n/10 ) \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )$$[][]$ 
  []
 
-[13])) (tex/chapter5.tex [14]
+[13]
+pdfTeX warning (ext4): destination with the same identifier (name{corollaryCounter.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.56     $
+          f(x)$ РёРЅС‚РµРіСЂРёСЂСѓРµРјР° РЅР° $[a,b]\implies \tilde{f}(x),$ ...)) (tex/chapter5.tex [14]
 {\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 3.
 (tex/chapter5/lec4'.tex
 Overfull \hbox (20.03828pt too wide) in paragraph at lines 27--27
@@ -1355,7 +1458,7 @@ Overfull \hbox (4.47226pt too wide) in paragraph at lines 10--13
 
 
 Overfull \hbox (10.10948pt too wide) in paragraph at lines 15--16
-[]\T2A/cmr/bx/n/10 Теорема 3.5. []$\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )[][\OML/cmm/m/it/10 a; b\OT1/cmr/m/n/10 ][][\OML/cmm/m/it/10 b; c\OT1/cmr/m/n/10 ] \OMS/cmsy/m/n/10 ) \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )[][\OML/cmm/m/it/10 a; c\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 ; [][] 
+[][]\T2A/cmr/bx/n/10 Теорема 3.5. []$\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )[][\OML/cmm/m/it/10 a; b\OT1/cmr/m/n/10 ][][\OML/cmm/m/it/10 b; c\OT1/cmr/m/n/10 ] \OMS/cmsy/m/n/10 ) \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )[][\OML/cmm/m/it/10 a; c\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 ; [][] 
  []
 
 
@@ -1370,10 +1473,15 @@ Overfull \hbox (28.15657pt too wide) in paragraph at lines 18--26
 
 [17]
 Overfull \hbox (2.981pt too wide) in paragraph at lines 55--56
-[]\T2A/cmr/bx/n/10 Теорема 3.10. []$\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; g\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 2 \OML/cmm/m/it/10 C\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 a; b\OT1/cmr/m/n/10 ](\OML/cmm/m/it/10 a < b\OT1/cmr/m/n/10 ); \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) \U/msa/m/n/10 > \OML/cmm/m/it/10 g\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 x \OMS/cmsy/m/n/10 2 \OT1/cmr/m/n/10 [\OML/cmm/m/it/10 a; b\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 ; []f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 6^^Q \OML/cmm/m/it/10 g\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )[][\OML/cmm/m/it/10 a; b\OT1/cmr/m/n/10 ] \OMS/cmsy/m/n/10 ) [] \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 dx >
+[][]\T2A/cmr/bx/n/10 Теорема 3.10. []$\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; g\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 2 \OML/cmm/m/it/10 C\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 a; b\OT1/cmr/m/n/10 ](\OML/cmm/m/it/10 a < b\OT1/cmr/m/n/10 ); \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) \U/msa/m/n/10 > \OML/cmm/m/it/10 g\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 x \OMS/cmsy/m/n/10 2 \OT1/cmr/m/n/10 [\OML/cmm/m/it/10 a; b\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 ; []f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 6^^Q \OML/cmm/m/it/10 g\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )[][\OML/cmm/m/it/10 a; b\OT1/cmr/m/n/10 ] \OMS/cmsy/m/n/10 ) [] \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 dx >
  []
 
-[18] [19])) (tex/chapter6.tex [20]
+[18] [19]
+pdfTeX warning (ext4): destination with the same identifier (name{corollaryCounter.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.102     Р•
+            СЃР»Рё РІ СѓСЃР»РѕРІРёСЏС… РїСЂРµРґС‹РґСѓС‰РµР№ С‚РµРѕСЂРµРјС‹ $...)) (tex/chapter6.tex [20]
 {\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 4.
 (tex/chapter6/lec6.tex
 Overfull \hbox (13.35564pt too wide) in paragraph at lines 5--5
@@ -1397,7 +1505,7 @@ $\OT1/cmr/m/n/10 = [] = [] \U/msa/m/n/10 6 [] 6 [][]\OMS/cmsy/m/n/10 j\OT1/cmr/m
 
 ]
 Overfull \hbox (39.87248pt too wide) in paragraph at lines 32--33
-[]\T2A/cmr/bx/n/10 Теорема 4.4 \T2A/cmr/m/n/10 (Ос-нов-ная тео-ре-ма ин-те-граль-но-го ис-чис-ле-ния)\T2A/cmr/bx/n/10 . []$\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 2 \OML/cmm/m/it/10 C\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 a; b\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 ; ^^H\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^@ []\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )[][\OML/cmm/m/it/10 a; b\OT1/cmr/m/n/10 ] \OMS/cmsy/m/n/10 )
+[][]\T2A/cmr/bx/n/10 Теорема 4.4 \T2A/cmr/m/n/10 (Ос-нов-ная тео-ре-ма ин-те-граль-но-го ис-чис-ле-ния)\T2A/cmr/bx/n/10 . []$\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 2 \OML/cmm/m/it/10 C\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 a; b\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 ; ^^H\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^@ []\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )[][\OML/cmm/m/it/10 a; b\OT1/cmr/m/n/10 ] \OMS/cmsy/m/n/10 )
  []
 
 
@@ -1545,7 +1653,17 @@ Overfull \hbox (28.59407pt too wide) in paragraph at lines 10--17
 []$[] $ \T2A/cmr/m/n/10 Пусть $[] \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 dx$ \T2A/cmr/m/n/10 схо-дит-ся $\OMS/cmsy/m/n/10 ) 9 []$\T2A/cmr/m/n/10 , т.е $\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 " > \OT1/cmr/m/n/10 0 \OMS/cmsy/m/n/10 9\OML/cmm/m/it/10 B \U/msa/m/n/10 > \OML/cmm/m/it/10 a \OT1/cmr/m/n/10 : \OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 b > B  [] <
  []
 
-[37] [38] [39] [40]
+[37] [38] [39]
+pdfTeX warning (ext4): destination with the same identifier (name{corollaryCounter.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.79     $
+          f(x)\geqslant 0 \; \forall x\geqslant a,f(x)$ РёРЅС‚РµРіСЂРёСЂСѓРµ...
+pdfTeX warning (ext4): destination with the same identifier (name{corollaryCounter.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.94     $
+          f(x)\geqslant 0 \;\forall x\in(0;a], f(x)$ РёРЅС‚РµРіСЂРёСЂСѓРµРјР... [40]
 Overfull \hbox (5.35565pt too wide) in paragraph at lines 119--120
 []\T2A/cmr/m/n/10 Формулировка опре-де-ле-ний услов-но схо-дя-щих-ся $[] \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 dx; [] f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 dx$ \T2A/cmr/m/n/10 с осо-бой точ-кой $\OML/cmm/m/it/10 b \OMS/cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 0$\T2A/cmr/m/n/10 , $[] \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 dx$
  []
@@ -1567,12 +1685,21 @@ Overfull \hbox (47.76051pt too wide) in paragraph at lines 39--41
 
 
 Overfull \hbox (36.21458pt too wide) in paragraph at lines 45--54
-[]\T2A/cmr/bx/n/10 Теорема 6.27. []$[][]\OML/cmm/m/it/10 ;$ $g\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) : [][] \OMS/cmsy/m/n/10 ) [] \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 g\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 dx$
+[][]\T2A/cmr/bx/n/10 Теорема 6.27. []$[][]\OML/cmm/m/it/10 ;$ $g\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) : [][] \OMS/cmsy/m/n/10 ) [] \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 g\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 dx$
  []
 
 [42] [43] [44])) (tex/chapter9.tex [45]
 {\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 7.
-(tex/chapter9/lec12.tex [46
+(tex/chapter9/lec12.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 4.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 4.
+
+[46
 
 ]
 Overfull \hbox (14.81291pt too wide) in paragraph at lines 42--43
@@ -1585,16 +1712,57 @@ Overfull \hbox (21.57494pt too wide) in paragraph at lines 73--78
  []
 
 [47]) (tex/chapter9/lec13.tex [48]
+pdfTeX warning (ext4): destination with the same identifier (name{corollaryCounter.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.87     $
+          E$ - Р·Р°РјРєРЅСѓС‚РѕРµ $\Leftrightarrow CE$ - РѕС‚РєСЂС‹С‚РѕРµ.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 90.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 90.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 90.
+
+
 Overfull \hbox (5.08073pt too wide) in paragraph at lines 101--102
 []\T2A/cmr/bx/n/10 Определение \T2A/cmr/m/n/10 (схо-ди-мость по рас-сто-я-нию)\T2A/cmr/bx/n/10 . []$\OML/cmm/m/it/10 a \OMS/cmsy/m/n/10 2 \U/msb/m/n/10 E[]\OML/cmm/m/it/10 ; a$ \T2A/cmr/m/n/10 - пре-дел $\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 x[]\OMS/cmsy/m/n/10 g$\T2A/cmr/m/n/10 , ес-ли $\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 " > \OT1/cmr/m/n/10 0 \OMS/cmsy/m/n/10 9\OML/cmm/m/it/10 N \OT1/cmr/m/n/10 : \OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 m > N ^^Z\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]; a\OT1/cmr/m/n/10 ) =
  []
 
-[49]) (tex/chapter9/lec14.tex
+[49]
+pdfTeX warning (ext4): destination with the same identifier (name{corollaryCounter.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.154     $
+           \lim\limits_{m\to \infty}x^{(m)}=x\implies \exists \lim\limits_{m...
+pdfTeX warning (ext4): destination with the same identifier (name{corollaryCounter.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.161     $
+           \lim\limits_{m \to \infty}x^{(m)}=x, \lim\limits_{m  \to \infty}y...) (tex/chapter9/lec14.tex
 Overfull \hbox (7.7379pt too wide) in paragraph at lines 19--20
 \T2A/cmr/m/n/10 смот-рим чис-ло-вую по-сле-до-ва-тель-ность толь-ко пер-вых ко-ор-ди-нат $\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 x[]\OMS/cmsy/m/n/10 g$ \T2A/cmr/m/n/10 - огра-ни-че-на $[]
  []
 
-[50] [51]) (tex/chapter9/lec15.tex [52]) (tex/chapter9/lec16.tex [53]
+[50]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 32.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 32.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 32.
+
+[51]) (tex/chapter9/lec15.tex [52]) (tex/chapter9/lec16.tex [53]
 Underfull \hbox (badness 10000) in paragraph at lines 37--38
 
  []
@@ -1611,7 +1779,7 @@ Overfull \hbox (13.9212pt too wide) in paragraph at lines 67--70
 
 ) (tex/chapter9/lec17.tex [55]
 Overfull \hbox (18.24112pt too wide) in paragraph at lines 16--17
-[]\T2A/cmr/bx/n/10 Теорема 7.33. []$\OML/cmm/m/it/10 y \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )$ \T2A/cmr/m/it/10 диф-фе-рен-ци-ру-е-мая при $\OML/cmm/m/it/10 x \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 x[]; dy \OT1/cmr/m/n/10 = (\OML/cmm/m/it/10 A; dx\OT1/cmr/m/n/10 ) = [] \OML/cmm/m/it/10 A[]dx[] \OMS/cmsy/m/n/10 ) 8\OML/cmm/m/it/10 i \OT1/cmr/m/n/10 = 1\OML/cmm/m/it/10 ; [] ; n \OMS/cmsy/m/n/10 9[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]\OT1/cmr/m/n/10 ) =
+[][]\T2A/cmr/bx/n/10 Теорема 7.33. []$\OML/cmm/m/it/10 y \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )$ \T2A/cmr/m/it/10 диф-фе-рен-ци-ру-е-мая при $\OML/cmm/m/it/10 x \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 x[]; dy \OT1/cmr/m/n/10 = (\OML/cmm/m/it/10 A; dx\OT1/cmr/m/n/10 ) = [] \OML/cmm/m/it/10 A[]dx[] \OMS/cmsy/m/n/10 ) 8\OML/cmm/m/it/10 i \OT1/cmr/m/n/10 = 1\OML/cmm/m/it/10 ; [] ; n \OMS/cmsy/m/n/10 9[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]\OT1/cmr/m/n/10 ) =
  []
 
 
@@ -1645,6 +1813,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 36--41
  []
 
 [58]
+pdfTeX warning (ext4): destination with the same identifier (name{corollaryCounter.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.52     $
+          f(x)\in C_{1}$(РІ РѕР±Р»Р°СЃС‚Рё $E\in\E_{n}$),$f(x)$, РїСЂРёС‡РµР...
 Overfull \hbox (25.17888pt too wide) in paragraph at lines 63--66
 \OML/cmm/m/it/10 d[]f \OT1/cmr/m/n/10 = [] [] [] []\OML/cmm/m/it/10 dx[]dx[] [] dx[]$\T2A/cmr/m/n/10 ; $\OML/cmm/m/it/10 H \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 a[] \OT1/cmr/m/n/10 + [] + \OML/cmm/m/it/10 a[] \OT1/cmr/m/n/10 = [] \OML/cmm/m/it/10 a[]\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 H[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 H \OMS/cmsy/m/n/10 ^^A \OML/cmm/m/it/10 H \OT1/cmr/m/n/10 = [] [] =
  []
@@ -1655,8 +1828,18 @@ Overfull \hbox (6.51233pt too wide) in paragraph at lines 5--6
  []
 
 
+pdfTeX warning (ext4): destination with the same identifier (name{corollaryCounter.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.17     Рџ
+           СѓСЃС‚СЊ РІС‹РїРѕР»РЅСЏСЋС‚СЃСЏ РІСЃРµ СѓСЃР»РѕРІРёСЏ РїСЂРµРґС‹Р...
+pdfTeX warning (ext4): destination with the same identifier (name{corollaryCounter.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.35     $
+          f(x)\in C_{1}$ РІ $E$ - РѕР±Р»Р°СЃС‚Рё, $x^{(0)}\in E$, $x^{(0)}$ ...
 Overfull \hbox (9.83302pt too wide) in paragraph at lines 53--59
-[]\T2A/cmr/bx/n/10 Теорема 7.40. []$\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 2 \OML/cmm/m/it/10 C[]$ \T2A/cmr/m/it/10 в об-ла-сти $\OML/cmm/m/it/10 E \OMS/cmsy/m/n/10 ^^Z \U/msb/m/n/10 E[]\OML/cmm/m/it/10 ; x[] \OMS/cmsy/m/n/10 2 \OML/cmm/m/it/10 E; x[]$ \T2A/cmr/m/it/10 - ста-ци-о-нар-ная точ-ка $\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ); \OML/cmm/m/it/10 A\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^X\OT1/cmr/m/n/10 ) = \OML/cmm/m/it/10 A\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^X[]; [] ; ^^X[]\OT1/cmr/m/n/10 ) =
+[][]\T2A/cmr/bx/n/10 Теорема 7.40. []$\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 2 \OML/cmm/m/it/10 C[]$ \T2A/cmr/m/it/10 в об-ла-сти $\OML/cmm/m/it/10 E \OMS/cmsy/m/n/10 ^^Z \U/msb/m/n/10 E[]\OML/cmm/m/it/10 ; x[] \OMS/cmsy/m/n/10 2 \OML/cmm/m/it/10 E; x[]$ \T2A/cmr/m/it/10 - ста-ци-о-нар-ная точ-ка $\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ); \OML/cmm/m/it/10 A\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^X\OT1/cmr/m/n/10 ) = \OML/cmm/m/it/10 A\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^X[]; [] ; ^^X[]\OT1/cmr/m/n/10 ) =
  []
 
 [60]) (tex/chapter9/lec20.tex [61]
@@ -1666,7 +1849,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--26
 
 
 Overfull \hbox (25.07773pt too wide) in paragraph at lines 43--44
-[]\T2A/cmr/bx/n/10 Теорема 7.42. []$\OML/cmm/m/it/10 F\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 2 \OML/cmm/m/it/10 C[]$ \T2A/cmr/m/it/10 в $[][]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]; y[]\OT1/cmr/m/n/10 )$\T2A/cmr/m/it/10 ,$\OML/cmm/m/it/10 F\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]; y[]\OT1/cmr/m/n/10 ) = 0\OML/cmm/m/it/10 ; []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]; y[]\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 6\OT1/cmr/m/n/10 = 0 \OMS/cmsy/m/n/10 ) 9$$[][]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]; y[]\OT1/cmr/m/n/10 )$$\OMS/cmsy/m/n/10 ^^Z$$[][]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]; y[]\OT1/cmr/m/n/10 )$\T2A/cmr/m/it/10 ,
+[][]\T2A/cmr/bx/n/10 Теорема 7.42. []$\OML/cmm/m/it/10 F\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 2 \OML/cmm/m/it/10 C[]$ \T2A/cmr/m/it/10 в $[][]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]; y[]\OT1/cmr/m/n/10 )$\T2A/cmr/m/it/10 ,$\OML/cmm/m/it/10 F\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]; y[]\OT1/cmr/m/n/10 ) = 0\OML/cmm/m/it/10 ; []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]; y[]\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 6\OT1/cmr/m/n/10 = 0 \OMS/cmsy/m/n/10 ) 9$$[][]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]; y[]\OT1/cmr/m/n/10 )$$\OMS/cmsy/m/n/10 ^^Z$$[][]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]; y[]\OT1/cmr/m/n/10 )$\T2A/cmr/m/it/10 ,
  []
 
 [62])) [63] (main.aux)
@@ -1674,19 +1857,21 @@ Overfull \hbox (25.07773pt too wide) in paragraph at lines 43--44
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: CBA8A58F7B6BE5A3EB1A45A33A7BDA59;33495.
  ) 
 Here is how much of TeX's memory you used:
- 30157 strings out of 474486
- 635882 string characters out of 5753561
- 1960542 words of memory out of 5000000
- 51727 multiletter control sequences out of 15000+600000
+ 36697 strings out of 474486
+ 733891 string characters out of 5753561
+ 1962542 words of memory out of 5000000
+ 57949 multiletter control sequences out of 15000+600000
  590579 words of font info for 122 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 89i,20n,96p,1505b,877s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 89i,20n,96p,1710b,1223s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\lati0700.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm0700.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\lati1000.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1440.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\lass0900.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx2074.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1000.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1000.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1200.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1200.pk> <C:\Users\moksimqa\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx2488.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msam7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on main.pdf (63 pages, 611606 bytes).
+Output written on main.pdf (63 pages, 701171 bytes).
 PDF statistics:
- 772 PDF objects out of 1000 (max. 8388607)
- 0 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1312 PDF objects out of 1440 (max. 8388607)
+ 252 named destinations out of 1000 (max. 500000)
+ 437 words of extra memory for PDF output out of 10000 (max. 10000000)
 

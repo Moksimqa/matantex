@@ -1,33 +1,41 @@
-\documentclass[a4paper]{report}
+    \documentclass[a4paper]{report}
 
-\input{preamble.tex}
-
-
-\newtheorem{dfn}{Определение}
-\linespread{1.5} % Межстрочный интервал
-\setlength{\parindent}{1.25cm} % Табуляция
-\setlength{\parskip}{0cm}
+    \input{preamble.tex}
 
 
-\title{Математический анализ}
+    \newtheorem{dfn}{Определение}
+    \linespread{1.5} % Межстрочный интервал
+    \setlength{\parindent}{1.25cm} % Табуляция
+    \setlength{\parskip}{0cm}
 
-\begin{document}
-\subfile{tex/title.tex}
+    \usepackage{hyperref}
+    \hypersetup{
+        colorlinks=true,
+        linkcolor=blue,
+        filecolor=magenta,      
+        urlcolor=cyan,
+        pdftitle={Математический анализ},
+        pdfpagemode=FullScreen,
+    }
+    \title{Математический анализ}
 
-\tableofcontents
+    \begin{document}
+    \subfile{tex/title.tex}
 
-%start lections
-%\subfile{tex/chapter1.tex}
-%\subfile{tex/chapter2.tex}
-%\subfile{tex/chapter22.tex}
+    \tableofcontents
+
+    %start lections
+    %\subfile{tex/chapter1.tex}
+    %\subfile{tex/chapter2.tex}
+    %\subfile{tex/chapter22.tex}
 
 
-%###########
-\subfile{tex/chapter3.tex}
-\subfile{tex/chapter4.tex}
-\subfile{tex/chapter5.tex}
-\subfile{tex/chapter6.tex}
-\subfile{tex/chapter7.tex}
-\subfile{tex/chapter8.tex}
-\subfile{tex/chapter9.tex}
-\end{document} 
+    %###########
+    \subfile{tex/chapter3.tex}
+    \subfile{tex/chapter4.tex}
+    \subfile{tex/chapter5.tex}
+    \subfile{tex/chapter6.tex}
+    \subfile{tex/chapter7.tex}
+    \subfile{tex/chapter8.tex}
+    \subfile{tex/chapter9.tex}
+    \end{document} 
