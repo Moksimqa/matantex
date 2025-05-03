@@ -1,14 +1,15 @@
 # Fdb version 4
-["pdflatex"] 1728742319.97261 "c:/Users/moksimqa/Documents/Projects/latexmatan/tex/chapter1/lec1.tex" "lec1.pdf" "lec1" 1728742320.36462 2
-  "../../main.tex" 1728742308 19062 7345afb22ac95dab81a1341cecfd358a ""
+["pdflatex"] 1734543239.56059 "c:/Users/moksimqa/Documents/Projects/latexmatan/tex/chapter3/lec1.tex" "lec1.pdf" "lec1" 1734543240.01529 2
+  "../../main.tex" 1734543096 495 a105b6b431a97f75bfd5e60ef017bd11 ""
+  "C:/Program Files/MiKTeX/fonts/tfm/public/cm/cmr12.tfm" 1136765053 1288 655e228510b4c2a1abe905c368440826 ""
   "C:/Program Files/MiKTeX/tex/latex/base/report.cls" 1705273579 23203 f5d913095ece2233436f0e628619cd37 ""
-  "C:/Program Files/MiKTeX/tex/latex/base/size10.clo" 1705273578 8448 dbc0dbf4156c0bb9ba01a1c685d3bad0 ""
+  "C:/Program Files/MiKTeX/tex/latex/base/size12.clo" 1705273578 8449 f07039d8e4e89f21078d9b5137579bfc ""
   "C:/Program Files/MiKTeX/tex/latex/import/import.sty" 1585736816 6201 0ad8b5da8e12f60a88d546b2198a56f2 ""
   "C:/Program Files/MiKTeX/tex/latex/subfiles/subfiles.cls" 1606222980 1507 57de335d88fde4e5c924dfed577fdb74 ""
   "C:/Users/moksimqa/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1725800942 24215239 d745990f62584c7ec7462d613203a172 ""
-  "c:/Users/moksimqa/Documents/Projects/latexmatan/tex/chapter1/lec1.tex" 1728742319 78 ac40339a9d250bf267bc88f8e90e8398 ""
-  "lec1.aux" 1728742319 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "lec1.tex" 1728742319 78 ac40339a9d250bf267bc88f8e90e8398 ""
+  "c:/Users/moksimqa/Documents/Projects/latexmatan/tex/chapter3/lec1.tex" 1734543237 3346 556b50ea39e19525e65e409d865b8664 ""
+  "lec1.aux" 1734543239 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "lec1.tex" 1734543237 3346 556b50ea39e19525e65e409d865b8664 ""
   "preamble.tex" 0 -1 0 ""
   (generated)
   "lec1.aux"

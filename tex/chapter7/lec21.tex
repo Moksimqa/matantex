@@ -1,0 +1,58 @@
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+\lecture{21}{2.05}{}
+$f_{1}(x),\dots,f_{m}(x),x=(x_{1},\dots,x_{n})\in E\subset \E_{n}, m\leqslant n$\\ 
+$JF(x) = \left\| \frac{\partial{f_{j}}}{\partial{x_{i}}} \right\| = \begin{pmatrix}
+    \frac{\partial{f_{1}}}{\partial{x_{1}}} & \dots & \frac{\partial{f_{1}}}{\partial{x_{i}}} & \dots & \frac{\partial{f_{1}}}{\partial{x_{n}}} \\
+    \vdots & \ddots & \vdots & \ddots & \vdots \\
+    \frac{\partial{f_{i}}}{\partial{x_{1}}} & \dots & \frac{\partial{f_{i}}}{\partial{x_{i}}} & \dots & \frac{\partial{f_{i}}}{\partial{x_{n}}} \\
+    \vdots & \ddots & \vdots & \ddots & \vdots \\
+    \frac{\partial{f_{m}}}{\partial{x_{1}}} & \dots & \frac{\partial{f_{m}}}{\partial{x_{i}}} & \dots & \frac{\partial{f_{m}}}{\partial{x_{n}}}
+\end{pmatrix}$
+\vspace{0.5cm} 
+\begin{theorem}[Необходимое условие зависимости]
+    $f_{j}(x) \in C_{1}$ в области $E\subset \E_{n} \; (j=1,2,\dots,m; m\leqslant n)$, если $f_{1}(x),\dots,f_{m}(x)$ зависымы в $E \implies RgJF(x)<m$, т.е все миноры $m$-го порядка $\equiv 0 $ в $E$.
+\end{theorem}
+
+\begin{proof}
+$\exists \varPhi(u_{1},\dots,u_{m-1})\in C_{1}, \exists j : y_{j}= \varPhi(y_{1},\dots,y_{j-1},y_{j+1},\dots,y_{m})$,т.е $f_{j}(x)\equiv \\ \equiv \varPhi(f_{1}(x),\dots,f_{j-1}(x),f_{j+1}(x),\dots,f_{m}(x)) \forall x \in E$ \\ 
+$\frac{\partial{f}}{\partial{x_{i}}} = \frac{\partial{\varPhi}}{\partial{u_{1}}}\frac{\partial{f_{1}}}{\partial{x_{i}}} + \dots + \frac{\partial{\varPhi}}{\partial{u_{j-1}}}\frac{\partial{f_{j-1}}}{\partial{x_{i}}} + \frac{\partial{\varPhi}}{\partial{u_{j}}}\frac{\partial{f_{j+1}}}{\partial{x_{i}}} + \dots + \frac{\partial{\varPhi}}{\partial{u_{m-1}}}\frac{\partial{f_{m}}}{\partial{x_{i}}} \quad i=1,2,\dots, n; 1 \leqslant j \leqslant m $
+\end{proof}
+\newpage
+\begin{theorem}[Достаточное условие зависимости]
+    $f_{j}(x)\in C_{1}$ в области $E\subset \E_{n} \; (j=1,2,\dots,m;\\ m\leqslant n), RgJF(x)= s < m $ в $E\implies \exists$ область $G\subset E : $ в $G$ $s$ функций независимы, а остальные зависимы от них.  
+\end{theorem}
+\begin{proof}
+    Без доказательства.
+\end{proof}
+
+Пример: 
+$\begin{aligned}
+&y_{1} = f_{1}(x) = x_{1}+ x_{2}+ \dots +x_{n}, \;n\geqslant 3 \\ 
+&y_{2} = f_{2}(x) =x_{1}^{2}+x_{2}^{2}+\dots+x_{n}^{2}, \\ 
+&y_{3} = f_{3}(x) = x_{1}x_{2}+\dots+x_{1}x_{n}+\dots + x_{2}x_{3} + \dots + x_{n-1}x_{n} 
+\end{aligned}$\\
+$JF(x) = \begin{pmatrix}
+    1& 1& \dots & 1 \\
+    2x_{1} & 2x_{2} & \dots & 2x_{n} \\
+    x_{2}+x_{3}+\dots+x_{n} & x_{1}+x_{3}+x_{4}+\dots+x_{n} & \dots & x_{1}+x_{2}+\dots+x_{n-1} 
+\end{pmatrix} \quad RgJF(x) = 2 $
+\\$f_{1}^{2}(x) = f_{2}(x) + 2 f_{3}(x); \; f_{2}(x) = f_{1}^{2}(x) - 2f_{3}(x); \; f_{3}(x) = \frac{f_{1}^{2}(x) - f_{2}(x)}{2} $
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\vspace{1cm}
+\begin{flushright}
+    \textit{tg: @moksimqa}
+\end{flushright}

@@ -1,83 +1,53 @@
 \documentclass[../main.tex]{subfiles}
 \begin{document}
 
-\lecture{1}{02.09}{}
-\section{Множества и действия над ними.}
-Множество, элемент множества - неопределимые понятия.
-$a\in A;$ a - элемент; A - множество. ;$A\equiv\{a,...,\}$\\
-Некоторые обозначения:\\
-$\forall$ - для каждого, для любого, для всякого;\\
-$\exists$ - существуе, найдется;\\
-$\in$ - принадлежит, входит;\\
-$\implies$ - следует, влечёт;\\
-$\Leftrightarrow$ - тогда и только тогда;\\
-$:$ - так, что\\
-\textbf{Определение.} A - подмножество множества B($A\in B$), если $\forall a \in A \implies a\in B | A\subset B$; В частности B=A\\
-Определение A, B называются равными, если состоят из одних и тех же элементов A=B; В частности $ A\subset B, B\subset A \Leftrightarrow A=B$\\
-$\varnothing \subset A\forall A$\\
-\textbf{Определение.} Пересечением A и B называется: $A \cap B \equiv $\{$a:a\in A$ и $a\in B$\}\\
-\textbf{Определение.} Объединением A и B называется: $A \cup B \equiv $\{$a:a\in A$ или $a\in B$\}\\
-\textbf{Определение.} $\cup A_\alpha \equiv\{a: \exists\alpha, a \in A_\alpha\}$\\
-\textbf{Определение.} $\cap A_\alpha \equiv\{a:\forall\alpha,a\in A_\alpha\}$\\
-\textbf{Определение.} Разностью A и B называется $A\setminus B\equiv$\{$a:a \in A$ и $a\notin B$\}\\
-\textbf{Определение.} Симметричной разностью A и B:$A\Delta B\equiv(A\setminus B)\cap (B\setminus A)$\\
-\textbf{Определение.} Если $\forall a \in A$ по некотормоу закону(правилу) поставлен в соответствие единственный элемент $b\in B$ и 
-$\forall b \in B$ оказался поставлен в соответствие единственный $a\in A$, то множества A и B называются эквивалентыми(равномощными),
-а соответствие взаимооднозначным. A ~ B\\
+\lecture{1}{13.12}{}
+\section{Первообразная и неопределенный интеграл}
 
-\section{Числа и числовые множества}
-\subsection{Натуральные числа $\mathbb{N}$}
-\textbf{Определение.} A - конечное, если состоит из конечного числа элементов, т.е $\exists n\in \mathbb{N}: A~\{1,2,...,n\}$\\
-\textbf{Определение.} A - счетное, если $A~\mathbb{N}\equiv\{1,2,3,..,n,..\}$\\
-\subsection{Целые числа $\mathbb{Z}$}
-$\mathbb{Z}\equiv\{0,\pm 1, \pm 2, ...\}$\\
-\begin{math}
-    |a| = 
-    \begin{cases}
-        a, a\geqslant 0\\
-        -a, a < 0
-    \end{cases}
-\end{math}
-\begin{math}
-    a*b = 
-    \begin{cases}
-        0,&\text{если $a=0$ или $b=0$}\\
-        |a|*|b|&\text{если a,b - одного знака}\\
-        -|a|*|b|&\text{если a,b - разных знаков}
-    \end{cases}
-\end{math}
-$\mathbb{N} \subset \mathbb{Z}$; $\mathbb{Z}\setminus\mathbb{N}\neq\varnothing$\\
-0,1,-1,2,-2,...,n,-n,...\\
-1,2,3,4,5,...,2n,2n+1\\
-Если множество элементов эквивалентно своей части, то оно обязательно бесконечное.
-\subsection{Рациональные числа $\mathbb{Q}$}
-$\mathbb{Q} \equiv\{\frac{p}{q} : p\in \mathbb{Z}, q\in \mathbb{N}\}$\\
-$\mathbb{Z} ~\mathbb{Z}_1\equiv\{\frac{p}{1};p\in\mathbb{Z}\}\subset\mathbb{Q}$\\
-$\frac{p}{q} \in\mathbb{Q}   r=|p|+|q|$ - "вес" числа $\frac{p}{q}$\\
-    $r=1:(\frac{0}{1})_1
-    r=2:\frac{0}{2} (\frac{1}{1})_2 (\frac{-1}{1})_3\\
-    r=3:\frac{0}{3} (\frac{1}{2})_4 (\frac{-1}{2})_5 (\frac{2}{1})_6 (\frac{-2}{1})_7\\
-    r=4:\frac{0}{4} (\frac{1}{3})_8 (\frac-1/3)_9 \frac{2}{2} \frac{-2}{2} (\frac{3}{1})_10 (\frac{-3}{1})_11$\\
-\begin{math}
-    1. a>b,b>c \implies a>c(a=b,b=c\implies a=c)\\
-    2. a+b = b+a\\
-    3.(a+b)+c=a+(b+c)\\
-    4.\exists 0 : a-0=a\forall a\\
-    5.\forall a\exists a^{\prime}:a+a'=0\\
-    6.ab=bab\\
-    7.|ab|c=a|bc|\\
-    8.\exists 1\neq0: a*1 = a\forall a\\
-    9.\forall a \neq \exists a'' :a*a''=1\\
-    10. (a+b)c=ac+bc\\
-    11.a>b\implies\forall c a+c>b+c\\
-    12.a>b \implies\forall c>0 ac>bc\\
-    13.\forall a  \exists n\in  \mathbb{N} : \underbrace{1+1+...+1}_n >a\\\\
-    a>b,c>d \implies a+c>b+d\\
-    a>b\implies a+c> b+c\\
-    c>d \implies b+c> b+d \implies a+c>b+d\\
-\end{math}
-Предположим, что $\sqrt{2} = \frac{p}{q}$ - несократимая дробь.\\
-$\frac{p^2}{q^2}=2 \implies p^2=2q^2\implies p^2\vdots 2\implies 4k^2=2q^2\implies q^2=2k^2\implies q^2\vdots2
-\implies q^2\vdots 2\implies q\vdots 2 \implies \frac{p}{q}$ - сократимая - противоречие 
-$\implies \sqrt{2}\neq\mathbb{Q}$\\
+\begin{definition}
+     $X$ - промежуток $f(x)$ определена $x\in X. F(x), x\in X,$ называется первообразной к $f(x)$, если $\forall x \in X\; \exists F'(x)=f(x)$
+\end{definition}
+\begin{definition}
+    Множество всех первообразных к $f(x)$ на $X$ называется неопределенным интегралом.(об.$\displaystyle\int{f(x)dx}, f(x)$ - подынтегральная функция,$f(x)dx$ - подынтегральное выражение)\\
+\end{definition}
+
+$F(x) - $ первообразная к $f(x)\implies F(x)+C$ - тоже первообразная.\\
+$\varPhi(x)$ - первообразная к $f(x)\qquad F'(x)=f(x)=\varPhi'(x)$\\
+Рассмотрим $(\varPhi(x)-F(x))'=\varPhi'(x)-F'(x)=f(x)-f(x)=0\;\forall x \in X$\\ 
+$\varPhi(x)-F(x)=C=const\qquad \varPhi(x)=F(x)+C$\\
+$\displaystyle\int f(x)dx=F(x)+C,\quad d(\int (f(x)dx))=f(x)dx;\;\int dF(x)=F(x)+C$\\
+$dF(x)=F'(x)dx=f(x)dx\qquad d(\displaystyle\int f(x)dx)=d(F(x)+C)=f(x)dx$
+
+\begin{theorem}
+    $f(x),g(x)$ имеют первообразные $\implies f(x)\pm g(x)$ тоже имеют первообразные, причем $\displaystyle\int(f(x)\pm g(x))dx=\int f(x)dx \pm \int g(x)dx.$
+\end{theorem}
+\begin{proof}
+    $\displaystyle\int f(x)dx=F(x)+C_{1},\int g(x)dx=G(x)+C_{2}.$ Рассмотрим $H_{\pm}(x)=F(x)\pm G(x), H'_{\pm}(x)=F'(x)\pm G'(x)=f(x)\pm g(x)$\\ 
+$\displaystyle\int(f(x)\pm g(x))dx=F(x)\pm G(x)+C=\int f(x)dx+\int g(x)dx$ 
+\end{proof}
+\begin{theorem}
+    $f(x)$ имеет первообразную $\implies \forall k, kf(x)$ тоже имеет первообразную, а если $k \neq 0,$ то $\int kf(x)dx=k\int f(x)dx$
+\end{theorem}
+\begin{proof}
+$\displaystyle\int f(x)dx=F(x)+C\qquad (kF(x))'=kF'(x)=kf(x)\qquad\int kf(x)dx=kF(x)+C_{1}\qquad k\int f(x)dx=k(F(x)+C)=kF(x)+kC,\quad \int kf(x)dx=kF(x)=C_{1},\quad k\int f(x)dx=k(F(x)+C)=kF(x)+kC,$ если $k\neq 0,$
+то $\displaystyle\int kf(x)dx=k\int f(x)dx$
+\end{proof}
+
+
+\subsection{Таблица интегралов.} 
+\noindent 1. $\displaystyle \int x^{\alpha}dx=\frac{x^{\alpha+1}}{\alpha+1}+C,\alpha\neq -1(\alpha=0\implies x^{\alpha}=1)$\\
+2. $\displaystyle \int \frac{dx}{x}=ln|x|+C$\\
+3. $\displaystyle \int a^{x}dx=\frac{a^{x}}{lna}+C$\\
+4. $\displaystyle \int  sinxdx=-cosx+C$\\
+5. $\displaystyle\int cosxdx=sinx+C$\\
+6. $\displaystyle \int \frac{dx}{cos^{2}x}=tgx+C$\\
+7. $\displaystyle \int \frac{dx}{sin^2x}=-ctgx+C$\\
+8. $\displaystyle \int shxdx=chx+C$\\ 
+9. $\displaystyle \int chxdx=shx+C$\\
+10. $\displaystyle \int  \frac{dx}{ch^{2}x}=thx+C$\\
+11. $\displaystyle \int  \frac{dx}{sh^{2}x}=-cthx+C$\\
+12. $\displaystyle \int \frac{dx}{x^{2}+a^{2}}=\frac{1}{a} \arctan{\frac{x}{a}}+C=-\frac{1}{a}\arctan{\frac{x}{a}}+C,a>0$\\
+13. $\displaystyle \int  \frac{dx}{x^2-a^2}=\frac{1}{2a}\ln{\left|\frac{x-a}{x+a}\right|}+C$\\
+14. $\displaystyle\int \frac{dx}{\sqrt{a^{2}-x^{2}}}=\arcsin{\frac{x}{a}}+C=-\arccos{\frac{x}{a}}+\tilde{C},a>0$\\
+15.$\displaystyle \int \frac{dx}{\sqrt{x^{2}\pm a^{2}}}=\ln{|x+\sqrt{x^{2}\pm a^{2}}|}+C,a>0$
 \end{document}

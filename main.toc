@@ -1,5 +1,5 @@
 \babel@toc {russian}{}\relax 
-\contentsline {chapter}{\numberline {1}Интегралы}{5}{chapter.1}%
+\contentsline {chapter}{\numberline {1}Неопределенный интеграл}{5}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Первообразная и неопределенный интеграл}{5}{section.1.1}%
 \contentsline {subsection}{\numberline {1.1.1}Таблица интегралов.}{6}{subsection.1.1.1}%
 \contentsline {section}{\numberline {1.2}Способы вычисления неопределенных интегралов}{7}{section.1.2}%

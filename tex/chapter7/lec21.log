@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.9.8)  27 OCT 2024 18:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.4.16)  2 MAY 2025 10:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/moksimqa/Documents/Projects/latexmatan/tex/chapter2/lec4'.tex
-(c:/Users/moksimqa/Documents/Projects/latexmatan/tex/chapter2/lec4'.tex
+**c:/Users/moksimqa/Documents/Projects/latexmatan/tex/chapter9/lec21.tex
+(c:/Users/moksimqa/Documents/Projects/latexmatan/tex/chapter9/lec21.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
 (C:\Program Files\MiKTeX\tex/latex/subfiles\subfiles.cls
@@ -37,20 +37,20 @@ Type X to quit or <RETURN> to proceed,
 or enter new name. (Default extension: tex)
 
 Enter file name: 
-../../main.tex:2: Emergency stop.
+../../main.tex:3: Emergency stop.
 <read *> 
          
-l.2 \input{preamble.tex}
-                        ^^M
+l.3     \input{preamble.tex}
+                            ^^M
 *** (cannot \read from terminal in nonstop modes)
 
  
 Here is how much of TeX's memory you used:
  313 strings out of 474486
- 4568 string characters out of 5753562
+ 4568 string characters out of 5753561
  1924542 words of memory out of 5000000
  22676 multiletter control sequences out of 15000+600000
  558069 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,0n,58p,245b,36s stack positions out of 10000i,1000n,20000p,200000b,200000s
-../../main.tex:2:  ==> Fatal error occurred, no output PDF file produced!
+ 55i,0n,58p,225b,36s stack positions out of 10000i,1000n,20000p,200000b,200000s
+../../main.tex:3:  ==> Fatal error occurred, no output PDF file produced!

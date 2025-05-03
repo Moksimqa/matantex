@@ -2,21 +2,11 @@
 
     \input{preamble.tex}
 
-
-    \newtheorem{dfn}{Определение}
     \linespread{1.5} % Межстрочный интервал
     \setlength{\parindent}{1.25cm} % Табуляция
     \setlength{\parskip}{0cm}
 
-    \usepackage{hyperref}
-    \hypersetup{
-        colorlinks=true,
-        linkcolor=blue,
-        filecolor=magenta,      
-        urlcolor=cyan,
-        pdftitle={Математический анализ},
-        pdfpagemode=FullScreen,
-    }
+    
     \title{Математический анализ}
 
     \begin{document}
@@ -24,18 +14,13 @@
 
     \tableofcontents
 
-    %start lections
-    %\subfile{tex/chapter1.tex}
-    %\subfile{tex/chapter2.tex}
-    %\subfile{tex/chapter22.tex}
-
-
-    %###########
+    % Подключение глав
+    \subfile{tex/chapter1.tex}
+    \subfile{tex/chapter2.tex}
     \subfile{tex/chapter3.tex}
     \subfile{tex/chapter4.tex}
     \subfile{tex/chapter5.tex}
     \subfile{tex/chapter6.tex}
     \subfile{tex/chapter7.tex}
-    \subfile{tex/chapter8.tex}
-    \subfile{tex/chapter9.tex}
     \end{document} 
+    
